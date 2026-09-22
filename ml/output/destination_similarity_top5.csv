@@ -1,0 +1,126 @@
+source_destination,rank,candidate_destination,similarity_score
+Langkawi,1,Kota Kinabalu,99.33
+Langkawi,2,Cherating,99.2
+Langkawi,3,Port Dickson,98.93
+Langkawi,4,Pangkor Island,98.91
+Langkawi,5,Desaru,98.65
+George Town,1,Melaka,99.96
+George Town,2,Kota Bharu,99.54
+George Town,3,Kuala Terengganu,98.09
+George Town,4,Kuala Lumpur,97.84
+George Town,5,Ipoh,97.69
+Kuala Lumpur,1,Putrajaya,97.86
+Kuala Lumpur,2,George Town,97.84
+Kuala Lumpur,3,Ipoh,97.66
+Kuala Lumpur,4,Melaka,97.55
+Kuala Lumpur,5,Kota Bharu,97.13
+Melaka,1,George Town,99.96
+Melaka,2,Kota Bharu,99.44
+Melaka,3,Kuala Terengganu,98.04
+Melaka,4,Kuala Lumpur,97.55
+Melaka,5,Ipoh,97.51
+Cameron Highlands,1,Kundasang,98.63
+Cameron Highlands,2,Taiping,97.04
+Cameron Highlands,3,Sandakan,96.66
+Cameron Highlands,4,Taman Negara,96.63
+Cameron Highlands,5,Kuching,96.22
+Kota Kinabalu,1,Langkawi,99.33
+Kota Kinabalu,2,Cherating,99
+Kota Kinabalu,3,Port Dickson,98.47
+Kota Kinabalu,4,Mersing,98.34
+Kota Kinabalu,5,Pangkor Island,97.66
+Kuching,1,Taiping,98.33
+Kuching,2,Kuala Terengganu,98.02
+Kuching,3,Kota Kinabalu,97.32
+Kuching,4,Sandakan,97.01
+Kuching,5,Ipoh,96.66
+Redang Island,1,Perhentian Islands,99.86
+Redang Island,2,Tioman Island,99.83
+Redang Island,3,Pangkor Island,99.29
+Redang Island,4,Desaru,99.14
+Redang Island,5,Mersing,98.58
+Perhentian Islands,1,Redang Island,99.86
+Perhentian Islands,2,Tioman Island,99.49
+Perhentian Islands,3,Pangkor Island,98.63
+Perhentian Islands,4,Desaru,98.58
+Perhentian Islands,5,Mersing,97.84
+Tioman Island,1,Redang Island,99.83
+Tioman Island,2,Perhentian Islands,99.49
+Tioman Island,3,Pangkor Island,99.45
+Tioman Island,4,Mersing,99.27
+Tioman Island,5,Desaru,99.15
+Kuala Terengganu,1,George Town,98.09
+Kuala Terengganu,2,Melaka,98.04
+Kuala Terengganu,3,Kuching,98.02
+Kuala Terengganu,4,Kota Bharu,97.97
+Kuala Terengganu,5,Langkawi,95.97
+Cherating,1,Mersing,99.77
+Cherating,2,Pangkor Island,99.33
+Cherating,3,Langkawi,99.2
+Cherating,4,Kota Kinabalu,99
+Cherating,5,Tioman Island,99
+Kota Bharu,1,George Town,99.54
+Kota Bharu,2,Melaka,99.44
+Kota Bharu,3,Ipoh,98.56
+Kota Bharu,4,Kuala Terengganu,97.97
+Kota Bharu,5,Kuala Lumpur,97.13
+Semporna,1,Mersing,98.74
+Semporna,2,Bako National Park,98.59
+Semporna,3,Tioman Island,98.31
+Semporna,4,Sandakan,97.92
+Semporna,5,Cherating,97.65
+Kundasang,1,Taman Negara,98.71
+Kundasang,2,Cameron Highlands,98.63
+Kundasang,3,Sandakan,96.49
+Kundasang,4,Taiping,93.21
+Kundasang,5,Bako National Park,92.84
+Desaru,1,Pangkor Island,99.79
+Desaru,2,Tioman Island,99.15
+Desaru,3,Redang Island,99.14
+Desaru,4,Port Dickson,98.97
+Desaru,5,Cherating,98.93
+Pangkor Island,1,Desaru,99.79
+Pangkor Island,2,Tioman Island,99.45
+Pangkor Island,3,Cherating,99.33
+Pangkor Island,4,Redang Island,99.29
+Pangkor Island,5,Mersing,99.01
+Taiping,1,Kuching,98.33
+Taiping,2,Ipoh,97.25
+Taiping,3,Cameron Highlands,97.04
+Taiping,4,Putrajaya,96.2
+Taiping,5,Kuala Terengganu,95.44
+Ipoh,1,Kota Bharu,98.56
+Ipoh,2,Putrajaya,98.52
+Ipoh,3,George Town,97.69
+Ipoh,4,Kuala Lumpur,97.66
+Ipoh,5,Melaka,97.51
+Taman Negara,1,Kundasang,98.71
+Taman Negara,2,Cameron Highlands,96.63
+Taman Negara,3,Sandakan,96.27
+Taman Negara,4,Bako National Park,95.19
+Taman Negara,5,Semporna,93.18
+Mersing,1,Cherating,99.77
+Mersing,2,Tioman Island,99.27
+Mersing,3,Pangkor Island,99.01
+Mersing,4,Semporna,98.74
+Mersing,5,Desaru,98.6
+Port Dickson,1,Desaru,98.97
+Port Dickson,2,Langkawi,98.93
+Port Dickson,3,Pangkor Island,98.56
+Port Dickson,4,Kota Kinabalu,98.47
+Port Dickson,5,Cherating,98.22
+Putrajaya,1,Ipoh,98.52
+Putrajaya,2,Kuala Lumpur,97.86
+Putrajaya,3,George Town,96.44
+Putrajaya,4,Melaka,96.38
+Putrajaya,5,Kota Bharu,96.31
+Sandakan,1,Semporna,97.92
+Sandakan,2,Mersing,97.79
+Sandakan,3,Kota Kinabalu,97.49
+Sandakan,4,Cherating,97.38
+Sandakan,5,Kuching,97.01
+Bako National Park,1,Semporna,98.59
+Bako National Park,2,Sandakan,96.06
+Bako National Park,3,Taman Negara,95.19
+Bako National Park,4,Mersing,94.86
+Bako National Park,5,Tioman Island,94.41

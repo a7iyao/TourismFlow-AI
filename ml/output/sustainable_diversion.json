@@ -1,0 +1,5031 @@
+{
+  "schema": "sustainable-diversion-v1",
+  "generatedAt": "2026-09-22T12:51:21.575459+00:00",
+  "metadata": {
+    "prototypeNote": "Analytical prototype indicators (rail accessibility, congestion, economic opportunity) - NOT official statistics or KTMB classifications.",
+    "tourismPressureLevel": "state-level tourism pressure index (2023)",
+    "destinationCount": 25,
+    "gatewayMappingCount": 25,
+    "destinationsWithoutDirectRail": 11,
+    "topPerDestination": 10,
+    "interests": [],
+    "interestWeight": 1.5,
+    "scoreWeights": {
+      "similarity": 0.35,
+      "lower_pressure": 0.3,
+      "economic_opportunity": 0.2,
+      "sustainable_mobility": 0.15
+    },
+    "economicWeights": {
+      "demand": 0.4,
+      "receipts": 0.3,
+      "capacity": 0.3
+    },
+    "mobilityWeights": {
+      "rail_accessibility": 0.6,
+      "low_congestion": 0.4
+    }
+  },
+  "recommendations": [
+    {
+      "sourceDestination": "Langkawi",
+      "destination": "Desaru",
+      "state": "Johor",
+      "score": 79.83,
+      "similarity": 98.65,
+      "tourismPressure": 31.74,
+      "lowerPressureScore": 68.26,
+      "economicOpportunity": 78.37,
+      "sustainableMobility": 61.0,
+      "railAccessibility": 35.0,
+      "railCongestion": "",
+      "gatewayStation": "Johor Bahru Sentral",
+      "matchedInterests": [
+        "Beach",
+        "Adventure",
+        "Nature"
+      ],
+      "explanation": "Desaru closely matches your interests (Beach, Adventure, Nature, 99%). Compared with Langkawi, it shows comparable tourism pressure and strong economic headroom, and is reachable via Johor Bahru Sentral with some last-mile travel."
+    },
+    {
+      "sourceDestination": "Langkawi",
+      "destination": "Mersing",
+      "state": "Johor",
+      "score": 78.17,
+      "similarity": 98.28,
+      "tourismPressure": 31.74,
+      "lowerPressureScore": 68.26,
+      "economicOpportunity": 78.37,
+      "sustainableMobility": 50.8,
+      "railAccessibility": 18.0,
+      "railCongestion": "",
+      "gatewayStation": "",
+      "matchedInterests": [
+        "Nature",
+        "Adventure",
+        "Beach"
+      ],
+      "explanation": "Mersing closely matches your interests (Nature, Adventure, Beach, 98%). Compared with Langkawi, it shows comparable tourism pressure and strong economic headroom, and has limited direct rail access (last-mile by road/air)."
+    },
+    {
+      "sourceDestination": "Langkawi",
+      "destination": "Taiping",
+      "state": "Perak",
+      "score": 77.71,
+      "similarity": 90.26,
+      "tourismPressure": 32.47,
+      "lowerPressureScore": 67.53,
+      "economicOpportunity": 68.76,
+      "sustainableMobility": 80.72,
+      "railAccessibility": 98.0,
+      "railCongestion": 45.2,
+      "gatewayStation": "Taiping",
+      "matchedInterests": [
+        "Nature",
+        "Heritage",
+        "Culture"
+      ],
+      "explanation": "Taiping closely matches your interests (Nature, Heritage, Culture, 90%). Compared with Langkawi, it shows comparable tourism pressure and strong economic headroom, and offers good rail-based access via Taiping."
+    },
+    {
+      "sourceDestination": "Langkawi",
+      "destination": "Ipoh",
+      "state": "Perak",
+      "score": 76.23,
+      "similarity": 88.48,
+      "tourismPressure": 32.47,
+      "lowerPressureScore": 67.53,
+      "economicOpportunity": 68.76,
+      "sustainableMobility": 75.01,
+      "railAccessibility": 100.0,
+      "railCongestion": 62.48,
+      "gatewayStation": "Ipoh",
+      "matchedInterests": [
+        "Food",
+        "Culture",
+        "Heritage"
+      ],
+      "explanation": "Ipoh closely matches your interests (Food, Culture, Heritage, 88%). Compared with Langkawi, it shows comparable tourism pressure and strong economic headroom, and offers good rail-based access via Ipoh."
+    },
+    {
+      "sourceDestination": "Langkawi",
+      "destination": "Kota Kinabalu",
+      "state": "Sabah",
+      "score": 75.35,
+      "similarity": 99.33,
+      "tourismPressure": 31.89,
+      "lowerPressureScore": 68.11,
+      "economicOpportunity": 63.98,
+      "sustainableMobility": 49.0,
+      "railAccessibility": 15.0,
+      "railCongestion": "",
+      "gatewayStation": "",
+      "matchedInterests": [
+        "Nature",
+        "Adventure",
+        "Food"
+      ],
+      "explanation": "Kota Kinabalu closely matches your interests (Nature, Adventure, Food, 99%). Compared with Langkawi, it shows comparable tourism pressure and strong economic headroom, and has limited direct rail access (last-mile by road/air)."
+    },
+    {
+      "sourceDestination": "Langkawi",
+      "destination": "Pangkor Island",
+      "state": "Perak",
+      "score": 74.48,
+      "similarity": 98.91,
+      "tourismPressure": 32.47,
+      "lowerPressureScore": 67.53,
+      "economicOpportunity": 68.76,
+      "sustainableMobility": 39.01,
+      "railAccessibility": 40.0,
+      "railCongestion": 62.48,
+      "gatewayStation": "Ipoh",
+      "matchedInterests": [
+        "Beach",
+        "Nature",
+        "Adventure"
+      ],
+      "explanation": "Pangkor Island closely matches your interests (Beach, Nature, Adventure, 99%). Compared with Langkawi, it shows comparable tourism pressure and strong economic headroom, and is reachable via Ipoh with some last-mile travel."
+    },
+    {
+      "sourceDestination": "Langkawi",
+      "destination": "Kota Bharu",
+      "state": "Kelantan",
+      "score": 73.93,
+      "similarity": 91.12,
+      "tourismPressure": 22.05,
+      "lowerPressureScore": 77.95,
+      "economicOpportunity": 49.64,
+      "sustainableMobility": 58.17,
+      "railAccessibility": 70.0,
+      "railCongestion": 59.56,
+      "gatewayStation": "Wakaf Bharu",
+      "matchedInterests": [
+        "Food",
+        "Culture",
+        "Heritage"
+      ],
+      "explanation": "Kota Bharu closely matches your interests (Food, Culture, Heritage, 91%). Compared with Langkawi, it shows lower tourism pressure and moderate economic headroom, and offers good rail-based access via Wakaf Bharu."
+    },
+    {
+      "sourceDestination": "Langkawi",
+      "destination": "Sandakan",
+      "state": "Sabah",
+      "score": 73.26,
+      "similarity": 95.93,
+      "tourismPressure": 31.89,
+      "lowerPressureScore": 68.11,
+      "economicOpportunity": 63.98,
+      "sustainableMobility": 43.0,
+      "railAccessibility": 5.0,
+      "railCongestion": "",
+      "gatewayStation": "",
+      "matchedInterests": [
+        "Nature",
+        "Adventure",
+        "Food"
+      ],
+      "explanation": "Sandakan closely matches your interests (Nature, Adventure, Food, 96%). Compared with Langkawi, it shows comparable tourism pressure and strong economic headroom, and has limited direct rail access (last-mile by road/air)."
+    },
+    {
+      "sourceDestination": "Langkawi",
+      "destination": "Semporna",
+      "state": "Sabah",
+      "score": 73.21,
+      "similarity": 95.02,
+      "tourismPressure": 31.89,
+      "lowerPressureScore": 68.11,
+      "economicOpportunity": 63.98,
+      "sustainableMobility": 44.8,
+      "railAccessibility": 8.0,
+      "railCongestion": "",
+      "gatewayStation": "",
+      "matchedInterests": [
+        "Nature",
+        "Adventure",
+        "Beach"
+      ],
+      "explanation": "Semporna closely matches your interests (Nature, Adventure, Beach, 95%). Compared with Langkawi, it shows comparable tourism pressure and strong economic headroom, and has limited direct rail access (last-mile by road/air)."
+    },
+    {
+      "sourceDestination": "Langkawi",
+      "destination": "George Town",
+      "state": "Penang",
+      "score": 70.47,
+      "similarity": 91.47,
+      "tourismPressure": 38.88,
+      "lowerPressureScore": 61.12,
+      "economicOpportunity": 51.63,
+      "sustainableMobility": 65.27,
+      "railAccessibility": 85.0,
+      "railCongestion": 64.31,
+      "gatewayStation": "Butterworth",
+      "matchedInterests": [
+        "Heritage",
+        "Culture",
+        "Food"
+      ],
+      "explanation": "George Town closely matches your interests (Heritage, Culture, Food, 91%). Compared with Langkawi, it shows higher tourism pressure and moderate economic headroom, and offers good rail-based access via Butterworth."
+    },
+    {
+      "sourceDestination": "George Town",
+      "destination": "Ipoh",
+      "state": "Perak",
+      "score": 79.45,
+      "similarity": 97.69,
+      "tourismPressure": 32.47,
+      "lowerPressureScore": 67.53,
+      "economicOpportunity": 68.76,
+      "sustainableMobility": 75.01,
+      "railAccessibility": 100.0,
+      "railCongestion": 62.48,
+      "gatewayStation": "Ipoh",
+      "matchedInterests": [
+        "Food",
+        "Culture",
+        "Heritage"
+      ],
+      "explanation": "Ipoh closely matches your interests (Food, Culture, Heritage, 98%). Compared with George Town, it shows lower tourism pressure and strong economic headroom, and offers good rail-based access via Ipoh."
+    },
+    {
+      "sourceDestination": "George Town",
+      "destination": "Taiping",
+      "state": "Perak",
+      "score": 78.89,
+      "similarity": 93.63,
+      "tourismPressure": 32.47,
+      "lowerPressureScore": 67.53,
+      "economicOpportunity": 68.76,
+      "sustainableMobility": 80.72,
+      "railAccessibility": 98.0,
+      "railCongestion": 45.2,
+      "gatewayStation": "Taiping",
+      "matchedInterests": [
+        "Nature",
+        "Heritage",
+        "Culture"
+      ],
+      "explanation": "Taiping closely matches your interests (Nature, Heritage, Culture, 94%). Compared with George Town, it shows lower tourism pressure and strong economic headroom, and offers good rail-based access via Taiping."
+    },
+    {
+      "sourceDestination": "George Town",
+      "destination": "Kota Bharu",
+      "state": "Kelantan",
+      "score": 76.88,
+      "similarity": 99.54,
+      "tourismPressure": 22.05,
+      "lowerPressureScore": 77.95,
+      "economicOpportunity": 49.64,
+      "sustainableMobility": 58.17,
+      "railAccessibility": 70.0,
+      "railCongestion": 59.56,
+      "gatewayStation": "Wakaf Bharu",
+      "matchedInterests": [
+        "Food",
+        "Culture",
+        "Heritage"
+      ],
+      "explanation": "Kota Bharu closely matches your interests (Food, Culture, Heritage, 100%). Compared with George Town, it shows considerably lower tourism pressure and moderate economic headroom, and offers good rail-based access via Wakaf Bharu."
+    },
+    {
+      "sourceDestination": "George Town",
+      "destination": "Langkawi",
+      "state": "Kedah",
+      "score": 75.69,
+      "similarity": 91.47,
+      "tourismPressure": 26.16,
+      "lowerPressureScore": 73.84,
+      "economicOpportunity": 61.9,
+      "sustainableMobility": 60.92,
+      "railAccessibility": 65.0,
+      "railCongestion": 45.2,
+      "gatewayStation": "Alor Setar",
+      "matchedInterests": [
+        "Beach",
+        "Nature",
+        "Adventure"
+      ],
+      "explanation": "Langkawi closely matches your interests (Beach, Nature, Adventure, 91%). Compared with George Town, it shows considerably lower tourism pressure and strong economic headroom, and is reachable via Alor Setar with some last-mile travel."
+    },
+    {
+      "sourceDestination": "George Town",
+      "destination": "Desaru",
+      "state": "Johor",
+      "score": 74.92,
+      "similarity": 84.63,
+      "tourismPressure": 31.74,
+      "lowerPressureScore": 68.26,
+      "economicOpportunity": 78.37,
+      "sustainableMobility": 61.0,
+      "railAccessibility": 35.0,
+      "railCongestion": "",
+      "gatewayStation": "Johor Bahru Sentral",
+      "matchedInterests": [
+        "Beach",
+        "Adventure",
+        "Nature"
+      ],
+      "explanation": "Desaru closely matches your interests (Beach, Adventure, Nature, 85%). Compared with George Town, it shows lower tourism pressure and strong economic headroom, and is reachable via Johor Bahru Sentral with some last-mile travel."
+    },
+    {
+      "sourceDestination": "George Town",
+      "destination": "Mersing",
+      "state": "Johor",
+      "score": 73.49,
+      "similarity": 84.92,
+      "tourismPressure": 31.74,
+      "lowerPressureScore": 68.26,
+      "economicOpportunity": 78.37,
+      "sustainableMobility": 50.8,
+      "railAccessibility": 18.0,
+      "railCongestion": "",
+      "gatewayStation": "",
+      "matchedInterests": [
+        "Nature",
+        "Adventure",
+        "Beach"
+      ],
+      "explanation": "Mersing closely matches your interests (Nature, Adventure, Beach, 85%). Compared with George Town, it shows lower tourism pressure and strong economic headroom, and has limited direct rail access (last-mile by road/air)."
+    },
+    {
+      "sourceDestination": "George Town",
+      "destination": "Kota Kinabalu",
+      "state": "Sabah",
+      "score": 72.76,
+      "similarity": 91.93,
+      "tourismPressure": 31.89,
+      "lowerPressureScore": 68.11,
+      "economicOpportunity": 63.98,
+      "sustainableMobility": 49.0,
+      "railAccessibility": 15.0,
+      "railCongestion": "",
+      "gatewayStation": "",
+      "matchedInterests": [
+        "Nature",
+        "Adventure",
+        "Food"
+      ],
+      "explanation": "Kota Kinabalu closely matches your interests (Nature, Adventure, Food, 92%). Compared with George Town, it shows lower tourism pressure and strong economic headroom, and has limited direct rail access (last-mile by road/air)."
+    },
+    {
+      "sourceDestination": "George Town",
+      "destination": "Kuala Terengganu",
+      "state": "Terengganu",
+      "score": 70.53,
+      "similarity": 98.09,
+      "tourismPressure": 36.61,
+      "lowerPressureScore": 63.39,
+      "economicOpportunity": 47.8,
+      "sustainableMobility": 50.8,
+      "railAccessibility": 18.0,
+      "railCongestion": "",
+      "gatewayStation": "",
+      "matchedInterests": [
+        "Culture",
+        "Heritage",
+        "Food"
+      ],
+      "explanation": "Kuala Terengganu closely matches your interests (Culture, Heritage, Food, 98%). Compared with George Town, it shows lower tourism pressure and moderate economic headroom, and has limited direct rail access (last-mile by road/air)."
+    },
+    {
+      "sourceDestination": "George Town",
+      "destination": "Kuching",
+      "state": "Sarawak",
+      "score": 70.03,
+      "similarity": 95.5,
+      "tourismPressure": 40.9,
+      "lowerPressureScore": 59.1,
+      "economicOpportunity": 59.86,
+      "sustainableMobility": 46.0,
+      "railAccessibility": 10.0,
+      "railCongestion": "",
+      "gatewayStation": "",
+      "matchedInterests": [
+        "Nature",
+        "Culture",
+        "Food"
+      ],
+      "explanation": "Kuching closely matches your interests (Nature, Culture, Food, 96%). Compared with George Town, it shows comparable tourism pressure and moderate economic headroom, and has limited direct rail access (last-mile by road/air)."
+    },
+    {
+      "sourceDestination": "George Town",
+      "destination": "Sandakan",
+      "state": "Sabah",
+      "score": 69.89,
+      "similarity": 86.32,
+      "tourismPressure": 31.89,
+      "lowerPressureScore": 68.11,
+      "economicOpportunity": 63.98,
+      "sustainableMobility": 43.0,
+      "railAccessibility": 5.0,
+      "railCongestion": "",
+      "gatewayStation": "",
+      "matchedInterests": [
+        "Nature",
+        "Adventure",
+        "Food"
+      ],
+      "explanation": "Sandakan closely matches your interests (Nature, Adventure, Food, 86%). Compared with George Town, it shows lower tourism pressure and strong economic headroom, and has limited direct rail access (last-mile by road/air)."
+    },
+    {
+      "sourceDestination": "Kuala Lumpur",
+      "destination": "Ipoh",
+      "state": "Perak",
+      "score": 79.44,
+      "similarity": 97.66,
+      "tourismPressure": 32.47,
+      "lowerPressureScore": 67.53,
+      "economicOpportunity": 68.76,
+      "sustainableMobility": 75.01,
+      "railAccessibility": 100.0,
+      "railCongestion": 62.48,
+      "gatewayStation": "Ipoh",
+      "matchedInterests": [
+        "Food",
+        "Culture",
+        "Heritage"
+      ],
+      "explanation": "Ipoh closely matches your interests (Food, Culture, Heritage, 98%). Compared with Kuala Lumpur, it shows considerably lower tourism pressure and strong economic headroom, and offers good rail-based access via Ipoh."
+    },
+    {
+      "sourceDestination": "Kuala Lumpur",
+      "destination": "Taiping",
+      "state": "Perak",
+      "score": 78.18,
+      "similarity": 91.61,
+      "tourismPressure": 32.47,
+      "lowerPressureScore": 67.53,
+      "economicOpportunity": 68.76,
+      "sustainableMobility": 80.72,
+      "railAccessibility": 98.0,
+      "railCongestion": 45.2,
+      "gatewayStation": "Taiping",
+      "matchedInterests": [
+        "Nature",
+        "Heritage",
+        "Culture"
+      ],
+      "explanation": "Taiping closely matches your interests (Nature, Heritage, Culture, 92%). Compared with Kuala Lumpur, it shows considerably lower tourism pressure and strong economic headroom, and offers good rail-based access via Taiping."
+    },
+    {
+      "sourceDestination": "Kuala Lumpur",
+      "destination": "Kota Bharu",
+      "state": "Kelantan",
+      "score": 76.03,
+      "similarity": 97.13,
+      "tourismPressure": 22.05,
+      "lowerPressureScore": 77.95,
+      "economicOpportunity": 49.64,
+      "sustainableMobility": 58.17,
+      "railAccessibility": 70.0,
+      "railCongestion": 59.56,
+      "gatewayStation": "Wakaf Bharu",
+      "matchedInterests": [
+        "Food",
+        "Culture",
+        "Heritage"
+      ],
+      "explanation": "Kota Bharu closely matches your interests (Food, Culture, Heritage, 97%). Compared with Kuala Lumpur, it shows considerably lower tourism pressure and moderate economic headroom, and offers good rail-based access via Wakaf Bharu."
+    },
+    {
+      "sourceDestination": "Kuala Lumpur",
+      "destination": "Langkawi",
+      "state": "Kedah",
+      "score": 74.21,
+      "similarity": 87.27,
+      "tourismPressure": 26.16,
+      "lowerPressureScore": 73.84,
+      "economicOpportunity": 61.9,
+      "sustainableMobility": 60.92,
+      "railAccessibility": 65.0,
+      "railCongestion": 45.2,
+      "gatewayStation": "Alor Setar",
+      "matchedInterests": [
+        "Beach",
+        "Nature",
+        "Adventure"
+      ],
+      "explanation": "Langkawi closely matches your interests (Beach, Nature, Adventure, 87%). Compared with Kuala Lumpur, it shows considerably lower tourism pressure and strong economic headroom, and is reachable via Alor Setar with some last-mile travel."
+    },
+    {
+      "sourceDestination": "Kuala Lumpur",
+      "destination": "Desaru",
+      "state": "Johor",
+      "score": 73.29,
+      "similarity": 79.97,
+      "tourismPressure": 31.74,
+      "lowerPressureScore": 68.26,
+      "economicOpportunity": 78.37,
+      "sustainableMobility": 61.0,
+      "railAccessibility": 35.0,
+      "railCongestion": "",
+      "gatewayStation": "Johor Bahru Sentral",
+      "matchedInterests": [
+        "Beach",
+        "Adventure",
+        "Nature"
+      ],
+      "explanation": "Desaru closely matches your interests (Beach, Adventure, Nature, 80%). Compared with Kuala Lumpur, it shows considerably lower tourism pressure and strong economic headroom, and is reachable via Johor Bahru Sentral with some last-mile travel."
+    },
+    {
+      "sourceDestination": "Kuala Lumpur",
+      "destination": "George Town",
+      "state": "Penang",
+      "score": 72.7,
+      "similarity": 97.84,
+      "tourismPressure": 38.88,
+      "lowerPressureScore": 61.12,
+      "economicOpportunity": 51.63,
+      "sustainableMobility": 65.27,
+      "railAccessibility": 85.0,
+      "railCongestion": 64.31,
+      "gatewayStation": "Butterworth",
+      "matchedInterests": [
+        "Heritage",
+        "Culture",
+        "Food"
+      ],
+      "explanation": "George Town closely matches your interests (Heritage, Culture, Food, 98%). Compared with Kuala Lumpur, it shows considerably lower tourism pressure and moderate economic headroom, and offers good rail-based access via Butterworth."
+    },
+    {
+      "sourceDestination": "Kuala Lumpur",
+      "destination": "Mersing",
+      "state": "Johor",
+      "score": 72.18,
+      "similarity": 81.17,
+      "tourismPressure": 31.74,
+      "lowerPressureScore": 68.26,
+      "economicOpportunity": 78.37,
+      "sustainableMobility": 50.8,
+      "railAccessibility": 18.0,
+      "railCongestion": "",
+      "gatewayStation": "",
+      "matchedInterests": [
+        "Nature",
+        "Adventure",
+        "Beach"
+      ],
+      "explanation": "Mersing closely matches your interests (Nature, Adventure, Beach, 81%). Compared with Kuala Lumpur, it shows considerably lower tourism pressure and strong economic headroom, and has limited direct rail access (last-mile by road/air)."
+    },
+    {
+      "sourceDestination": "Kuala Lumpur",
+      "destination": "Kota Kinabalu",
+      "state": "Sabah",
+      "score": 72.03,
+      "similarity": 89.86,
+      "tourismPressure": 31.89,
+      "lowerPressureScore": 68.11,
+      "economicOpportunity": 63.98,
+      "sustainableMobility": 49.0,
+      "railAccessibility": 15.0,
+      "railCongestion": "",
+      "gatewayStation": "",
+      "matchedInterests": [
+        "Nature",
+        "Adventure",
+        "Food"
+      ],
+      "explanation": "Kota Kinabalu closely matches your interests (Nature, Adventure, Food, 90%). Compared with Kuala Lumpur, it shows considerably lower tourism pressure and strong economic headroom, and has limited direct rail access (last-mile by road/air)."
+    },
+    {
+      "sourceDestination": "Kuala Lumpur",
+      "destination": "Sandakan",
+      "state": "Sabah",
+      "score": 69.23,
+      "similarity": 84.42,
+      "tourismPressure": 31.89,
+      "lowerPressureScore": 68.11,
+      "economicOpportunity": 63.98,
+      "sustainableMobility": 43.0,
+      "railAccessibility": 5.0,
+      "railCongestion": "",
+      "gatewayStation": "",
+      "matchedInterests": [
+        "Nature",
+        "Adventure",
+        "Food"
+      ],
+      "explanation": "Sandakan closely matches your interests (Nature, Adventure, Food, 84%). Compared with Kuala Lumpur, it shows considerably lower tourism pressure and strong economic headroom, and has limited direct rail access (last-mile by road/air)."
+    },
+    {
+      "sourceDestination": "Kuala Lumpur",
+      "destination": "Kuching",
+      "state": "Sarawak",
+      "score": 69.18,
+      "similarity": 93.07,
+      "tourismPressure": 40.9,
+      "lowerPressureScore": 59.1,
+      "economicOpportunity": 59.86,
+      "sustainableMobility": 46.0,
+      "railAccessibility": 10.0,
+      "railCongestion": "",
+      "gatewayStation": "",
+      "matchedInterests": [
+        "Nature",
+        "Culture",
+        "Food"
+      ],
+      "explanation": "Kuching closely matches your interests (Nature, Culture, Food, 93%). Compared with Kuala Lumpur, it shows considerably lower tourism pressure and moderate economic headroom, and has limited direct rail access (last-mile by road/air)."
+    },
+    {
+      "sourceDestination": "Melaka",
+      "destination": "Ipoh",
+      "state": "Perak",
+      "score": 79.39,
+      "similarity": 97.51,
+      "tourismPressure": 32.47,
+      "lowerPressureScore": 67.53,
+      "economicOpportunity": 68.76,
+      "sustainableMobility": 75.01,
+      "railAccessibility": 100.0,
+      "railCongestion": 62.48,
+      "gatewayStation": "Ipoh",
+      "matchedInterests": [
+        "Food",
+        "Culture",
+        "Heritage"
+      ],
+      "explanation": "Ipoh closely matches your interests (Food, Culture, Heritage, 98%). Compared with Melaka, it shows considerably lower tourism pressure and strong economic headroom, and offers good rail-based access via Ipoh."
+    },
+    {
+      "sourceDestination": "Melaka",
+      "destination": "Taiping",
+      "state": "Perak",
+      "score": 78.87,
+      "similarity": 93.57,
+      "tourismPressure": 32.47,
+      "lowerPressureScore": 67.53,
+      "economicOpportunity": 68.76,
+      "sustainableMobility": 80.72,
+      "railAccessibility": 98.0,
+      "railCongestion": 45.2,
+      "gatewayStation": "Taiping",
+      "matchedInterests": [
+        "Nature",
+        "Heritage",
+        "Culture"
+      ],
+      "explanation": "Taiping closely matches your interests (Nature, Heritage, Culture, 94%). Compared with Melaka, it shows considerably lower tourism pressure and strong economic headroom, and offers good rail-based access via Taiping."
+    },
+    {
+      "sourceDestination": "Melaka",
+      "destination": "Kota Bharu",
+      "state": "Kelantan",
+      "score": 76.84,
+      "similarity": 99.44,
+      "tourismPressure": 22.05,
+      "lowerPressureScore": 77.95,
+      "economicOpportunity": 49.64,
+      "sustainableMobility": 58.17,
+      "railAccessibility": 70.0,
+      "railCongestion": 59.56,
+      "gatewayStation": "Wakaf Bharu",
+      "matchedInterests": [
+        "Food",
+        "Culture",
+        "Heritage"
+      ],
+      "explanation": "Kota Bharu closely matches your interests (Food, Culture, Heritage, 99%). Compared with Melaka, it shows considerably lower tourism pressure and moderate economic headroom, and offers good rail-based access via Wakaf Bharu."
+    },
+    {
+      "sourceDestination": "Melaka",
+      "destination": "Langkawi",
+      "state": "Kedah",
+      "score": 75.46,
+      "similarity": 90.82,
+      "tourismPressure": 26.16,
+      "lowerPressureScore": 73.84,
+      "economicOpportunity": 61.9,
+      "sustainableMobility": 60.92,
+      "railAccessibility": 65.0,
+      "railCongestion": 45.2,
+      "gatewayStation": "Alor Setar",
+      "matchedInterests": [
+        "Beach",
+        "Nature",
+        "Adventure"
+      ],
+      "explanation": "Langkawi closely matches your interests (Beach, Nature, Adventure, 91%). Compared with Melaka, it shows considerably lower tourism pressure and strong economic headroom, and is reachable via Alor Setar with some last-mile travel."
+    },
+    {
+      "sourceDestination": "Melaka",
+      "destination": "Desaru",
+      "state": "Johor",
+      "score": 74.6,
+      "similarity": 83.7,
+      "tourismPressure": 31.74,
+      "lowerPressureScore": 68.26,
+      "economicOpportunity": 78.37,
+      "sustainableMobility": 61.0,
+      "railAccessibility": 35.0,
+      "railCongestion": "",
+      "gatewayStation": "Johor Bahru Sentral",
+      "matchedInterests": [
+        "Beach",
+        "Adventure",
+        "Nature"
+      ],
+      "explanation": "Desaru closely matches your interests (Beach, Adventure, Nature, 84%). Compared with Melaka, it shows considerably lower tourism pressure and strong economic headroom, and is reachable via Johor Bahru Sentral with some last-mile travel."
+    },
+    {
+      "sourceDestination": "Melaka",
+      "destination": "George Town",
+      "state": "Penang",
+      "score": 73.44,
+      "similarity": 99.96,
+      "tourismPressure": 38.88,
+      "lowerPressureScore": 61.12,
+      "economicOpportunity": 51.63,
+      "sustainableMobility": 65.27,
+      "railAccessibility": 85.0,
+      "railCongestion": 64.31,
+      "gatewayStation": "Butterworth",
+      "matchedInterests": [
+        "Heritage",
+        "Culture",
+        "Food"
+      ],
+      "explanation": "George Town closely matches your interests (Heritage, Culture, Food, 100%). Compared with Melaka, it shows considerably lower tourism pressure and moderate economic headroom, and offers good rail-based access via Butterworth."
+    },
+    {
+      "sourceDestination": "Melaka",
+      "destination": "Mersing",
+      "state": "Johor",
+      "score": 73.17,
+      "similarity": 84.0,
+      "tourismPressure": 31.74,
+      "lowerPressureScore": 68.26,
+      "economicOpportunity": 78.37,
+      "sustainableMobility": 50.8,
+      "railAccessibility": 18.0,
+      "railCongestion": "",
+      "gatewayStation": "",
+      "matchedInterests": [
+        "Nature",
+        "Adventure",
+        "Beach"
+      ],
+      "explanation": "Mersing closely matches your interests (Nature, Adventure, Beach, 84%). Compared with Melaka, it shows considerably lower tourism pressure and strong economic headroom, and has limited direct rail access (last-mile by road/air)."
+    },
+    {
+      "sourceDestination": "Melaka",
+      "destination": "Kota Kinabalu",
+      "state": "Sabah",
+      "score": 72.48,
+      "similarity": 91.14,
+      "tourismPressure": 31.89,
+      "lowerPressureScore": 68.11,
+      "economicOpportunity": 63.98,
+      "sustainableMobility": 49.0,
+      "railAccessibility": 15.0,
+      "railCongestion": "",
+      "gatewayStation": "",
+      "matchedInterests": [
+        "Nature",
+        "Adventure",
+        "Food"
+      ],
+      "explanation": "Kota Kinabalu closely matches your interests (Nature, Adventure, Food, 91%). Compared with Melaka, it shows considerably lower tourism pressure and strong economic headroom, and has limited direct rail access (last-mile by road/air)."
+    },
+    {
+      "sourceDestination": "Melaka",
+      "destination": "Kuala Terengganu",
+      "state": "Terengganu",
+      "score": 70.51,
+      "similarity": 98.04,
+      "tourismPressure": 36.61,
+      "lowerPressureScore": 63.39,
+      "economicOpportunity": 47.8,
+      "sustainableMobility": 50.8,
+      "railAccessibility": 18.0,
+      "railCongestion": "",
+      "gatewayStation": "",
+      "matchedInterests": [
+        "Culture",
+        "Heritage",
+        "Food"
+      ],
+      "explanation": "Kuala Terengganu closely matches your interests (Culture, Heritage, Food, 98%). Compared with Melaka, it shows considerably lower tourism pressure and moderate economic headroom, and has limited direct rail access (last-mile by road/air)."
+    },
+    {
+      "sourceDestination": "Melaka",
+      "destination": "Kuching",
+      "state": "Sarawak",
+      "score": 69.91,
+      "similarity": 95.16,
+      "tourismPressure": 40.9,
+      "lowerPressureScore": 59.1,
+      "economicOpportunity": 59.86,
+      "sustainableMobility": 46.0,
+      "railAccessibility": 10.0,
+      "railCongestion": "",
+      "gatewayStation": "",
+      "matchedInterests": [
+        "Nature",
+        "Culture",
+        "Food"
+      ],
+      "explanation": "Kuching closely matches your interests (Nature, Culture, Food, 95%). Compared with Melaka, it shows considerably lower tourism pressure and moderate economic headroom, and has limited direct rail access (last-mile by road/air)."
+    },
+    {
+      "sourceDestination": "Cameron Highlands",
+      "destination": "Taiping",
+      "state": "Perak",
+      "score": 80.08,
+      "similarity": 97.04,
+      "tourismPressure": 32.47,
+      "lowerPressureScore": 67.53,
+      "economicOpportunity": 68.76,
+      "sustainableMobility": 80.72,
+      "railAccessibility": 98.0,
+      "railCongestion": 45.2,
+      "gatewayStation": "Taiping",
+      "matchedInterests": [
+        "Nature",
+        "Heritage",
+        "Culture"
+      ],
+      "explanation": "Taiping closely matches your interests (Nature, Heritage, Culture, 97%). Compared with Cameron Highlands, it shows considerably lower tourism pressure and strong economic headroom, and offers good rail-based access via Taiping."
+    },
+    {
+      "sourceDestination": "Cameron Highlands",
+      "destination": "Ipoh",
+      "state": "Perak",
+      "score": 78.1,
+      "similarity": 93.82,
+      "tourismPressure": 32.47,
+      "lowerPressureScore": 67.53,
+      "economicOpportunity": 68.76,
+      "sustainableMobility": 75.01,
+      "railAccessibility": 100.0,
+      "railCongestion": 62.48,
+      "gatewayStation": "Ipoh",
+      "matchedInterests": [
+        "Food",
+        "Culture",
+        "Heritage"
+      ],
+      "explanation": "Ipoh closely matches your interests (Food, Culture, Heritage, 94%). Compared with Cameron Highlands, it shows considerably lower tourism pressure and strong economic headroom, and offers good rail-based access via Ipoh."
+    },
+    {
+      "sourceDestination": "Cameron Highlands",
+      "destination": "Mersing",
+      "state": "Johor",
+      "score": 75.29,
+      "similarity": 90.04,
+      "tourismPressure": 31.74,
+      "lowerPressureScore": 68.26,
+      "economicOpportunity": 78.37,
+      "sustainableMobility": 50.8,
+      "railAccessibility": 18.0,
+      "railCongestion": "",
+      "gatewayStation": "",
+      "matchedInterests": [
+        "Nature",
+        "Adventure",
+        "Beach"
+      ],
+      "explanation": "Mersing closely matches your interests (Nature, Adventure, Beach, 90%). Compared with Cameron Highlands, it shows considerably lower tourism pressure and strong economic headroom, and has limited direct rail access (last-mile by road/air)."
+    },
+    {
+      "sourceDestination": "Cameron Highlands",
+      "destination": "Langkawi",
+      "state": "Kedah",
+      "score": 74.73,
+      "similarity": 88.73,
+      "tourismPressure": 26.16,
+      "lowerPressureScore": 73.84,
+      "economicOpportunity": 61.9,
+      "sustainableMobility": 60.92,
+      "railAccessibility": 65.0,
+      "railCongestion": 45.2,
+      "gatewayStation": "Alor Setar",
+      "matchedInterests": [
+        "Beach",
+        "Nature",
+        "Adventure"
+      ],
+      "explanation": "Langkawi closely matches your interests (Beach, Nature, Adventure, 89%). Compared with Cameron Highlands, it shows considerably lower tourism pressure and strong economic headroom, and is reachable via Alor Setar with some last-mile travel."
+    },
+    {
+      "sourceDestination": "Cameron Highlands",
+      "destination": "Desaru",
+      "state": "Johor",
+      "score": 74.45,
+      "similarity": 83.28,
+      "tourismPressure": 31.74,
+      "lowerPressureScore": 68.26,
+      "economicOpportunity": 78.37,
+      "sustainableMobility": 61.0,
+      "railAccessibility": 35.0,
+      "railCongestion": "",
+      "gatewayStation": "Johor Bahru Sentral",
+      "matchedInterests": [
+        "Beach",
+        "Adventure",
+        "Nature"
+      ],
+      "explanation": "Desaru closely matches your interests (Beach, Adventure, Nature, 83%). Compared with Cameron Highlands, it shows considerably lower tourism pressure and strong economic headroom, and is reachable via Johor Bahru Sentral with some last-mile travel."
+    },
+    {
+      "sourceDestination": "Cameron Highlands",
+      "destination": "Kundasang",
+      "state": "Sabah",
+      "score": 74.2,
+      "similarity": 98.63,
+      "tourismPressure": 31.89,
+      "lowerPressureScore": 68.11,
+      "economicOpportunity": 63.98,
+      "sustainableMobility": 43.0,
+      "railAccessibility": 5.0,
+      "railCongestion": "",
+      "gatewayStation": "",
+      "matchedInterests": [
+        "Nature",
+        "Adventure",
+        "Food"
+      ],
+      "explanation": "Kundasang closely matches your interests (Nature, Adventure, Food, 99%). Compared with Cameron Highlands, it shows considerably lower tourism pressure and strong economic headroom, and has limited direct rail access (last-mile by road/air)."
+    },
+    {
+      "sourceDestination": "Cameron Highlands",
+      "destination": "Sandakan",
+      "state": "Sabah",
+      "score": 73.51,
+      "similarity": 96.66,
+      "tourismPressure": 31.89,
+      "lowerPressureScore": 68.11,
+      "economicOpportunity": 63.98,
+      "sustainableMobility": 43.0,
+      "railAccessibility": 5.0,
+      "railCongestion": "",
+      "gatewayStation": "",
+      "matchedInterests": [
+        "Nature",
+        "Adventure",
+        "Food"
+      ],
+      "explanation": "Sandakan closely matches your interests (Nature, Adventure, Food, 97%). Compared with Cameron Highlands, it shows considerably lower tourism pressure and strong economic headroom, and has limited direct rail access (last-mile by road/air)."
+    },
+    {
+      "sourceDestination": "Cameron Highlands",
+      "destination": "Kota Bharu",
+      "state": "Kelantan",
+      "score": 73.24,
+      "similarity": 89.16,
+      "tourismPressure": 22.05,
+      "lowerPressureScore": 77.95,
+      "economicOpportunity": 49.64,
+      "sustainableMobility": 58.17,
+      "railAccessibility": 70.0,
+      "railCongestion": 59.56,
+      "gatewayStation": "Wakaf Bharu",
+      "matchedInterests": [
+        "Food",
+        "Culture",
+        "Heritage"
+      ],
+      "explanation": "Kota Bharu closely matches your interests (Food, Culture, Heritage, 89%). Compared with Cameron Highlands, it shows considerably lower tourism pressure and moderate economic headroom, and offers good rail-based access via Wakaf Bharu."
+    },
+    {
+      "sourceDestination": "Cameron Highlands",
+      "destination": "Kota Kinabalu",
+      "state": "Sabah",
+      "score": 72.91,
+      "similarity": 92.36,
+      "tourismPressure": 31.89,
+      "lowerPressureScore": 68.11,
+      "economicOpportunity": 63.98,
+      "sustainableMobility": 49.0,
+      "railAccessibility": 15.0,
+      "railCongestion": "",
+      "gatewayStation": "",
+      "matchedInterests": [
+        "Nature",
+        "Adventure",
+        "Food"
+      ],
+      "explanation": "Kota Kinabalu closely matches your interests (Nature, Adventure, Food, 92%). Compared with Cameron Highlands, it shows considerably lower tourism pressure and strong economic headroom, and has limited direct rail access (last-mile by road/air)."
+    },
+    {
+      "sourceDestination": "Cameron Highlands",
+      "destination": "Semporna",
+      "state": "Sabah",
+      "score": 71.43,
+      "similarity": 89.94,
+      "tourismPressure": 31.89,
+      "lowerPressureScore": 68.11,
+      "economicOpportunity": 63.98,
+      "sustainableMobility": 44.8,
+      "railAccessibility": 8.0,
+      "railCongestion": "",
+      "gatewayStation": "",
+      "matchedInterests": [
+        "Nature",
+        "Adventure",
+        "Beach"
+      ],
+      "explanation": "Semporna closely matches your interests (Nature, Adventure, Beach, 90%). Compared with Cameron Highlands, it shows considerably lower tourism pressure and strong economic headroom, and has limited direct rail access (last-mile by road/air)."
+    },
+    {
+      "sourceDestination": "Kota Kinabalu",
+      "destination": "Desaru",
+      "state": "Johor",
+      "score": 79.43,
+      "similarity": 97.51,
+      "tourismPressure": 31.74,
+      "lowerPressureScore": 68.26,
+      "economicOpportunity": 78.37,
+      "sustainableMobility": 61.0,
+      "railAccessibility": 35.0,
+      "railCongestion": "",
+      "gatewayStation": "Johor Bahru Sentral",
+      "matchedInterests": [
+        "Beach",
+        "Adventure",
+        "Nature"
+      ],
+      "explanation": "Desaru closely matches your interests (Beach, Adventure, Nature, 98%). Compared with Kota Kinabalu, it shows lower tourism pressure and strong economic headroom, and is reachable via Johor Bahru Sentral with some last-mile travel."
+    },
+    {
+      "sourceDestination": "Kota Kinabalu",
+      "destination": "Langkawi",
+      "state": "Kedah",
+      "score": 78.44,
+      "similarity": 99.33,
+      "tourismPressure": 26.16,
+      "lowerPressureScore": 73.84,
+      "economicOpportunity": 61.9,
+      "sustainableMobility": 60.92,
+      "railAccessibility": 65.0,
+      "railCongestion": 45.2,
+      "gatewayStation": "Alor Setar",
+      "matchedInterests": [
+        "Beach",
+        "Nature",
+        "Adventure"
+      ],
+      "explanation": "Langkawi closely matches your interests (Beach, Nature, Adventure, 99%). Compared with Kota Kinabalu, it shows lower tourism pressure and strong economic headroom, and is reachable via Alor Setar with some last-mile travel."
+    },
+    {
+      "sourceDestination": "Kota Kinabalu",
+      "destination": "Taiping",
+      "state": "Perak",
+      "score": 78.32,
+      "similarity": 91.99,
+      "tourismPressure": 32.47,
+      "lowerPressureScore": 67.53,
+      "economicOpportunity": 68.76,
+      "sustainableMobility": 80.72,
+      "railAccessibility": 98.0,
+      "railCongestion": 45.2,
+      "gatewayStation": "Taiping",
+      "matchedInterests": [
+        "Nature",
+        "Heritage",
+        "Culture"
+      ],
+      "explanation": "Taiping closely matches your interests (Nature, Heritage, Culture, 92%). Compared with Kota Kinabalu, it shows comparable tourism pressure and strong economic headroom, and offers good rail-based access via Taiping."
+    },
+    {
+      "sourceDestination": "Kota Kinabalu",
+      "destination": "Mersing",
+      "state": "Johor",
+      "score": 78.19,
+      "similarity": 98.34,
+      "tourismPressure": 31.74,
+      "lowerPressureScore": 68.26,
+      "economicOpportunity": 78.37,
+      "sustainableMobility": 50.8,
+      "railAccessibility": 18.0,
+      "railCongestion": "",
+      "gatewayStation": "",
+      "matchedInterests": [
+        "Nature",
+        "Adventure",
+        "Beach"
+      ],
+      "explanation": "Mersing closely matches your interests (Nature, Adventure, Beach, 98%). Compared with Kota Kinabalu, it shows lower tourism pressure and strong economic headroom, and has limited direct rail access (last-mile by road/air)."
+    },
+    {
+      "sourceDestination": "Kota Kinabalu",
+      "destination": "Ipoh",
+      "state": "Perak",
+      "score": 77.08,
+      "similarity": 90.9,
+      "tourismPressure": 32.47,
+      "lowerPressureScore": 67.53,
+      "economicOpportunity": 68.76,
+      "sustainableMobility": 75.01,
+      "railAccessibility": 100.0,
+      "railCongestion": 62.48,
+      "gatewayStation": "Ipoh",
+      "matchedInterests": [
+        "Food",
+        "Culture",
+        "Heritage"
+      ],
+      "explanation": "Ipoh closely matches your interests (Food, Culture, Heritage, 91%). Compared with Kota Kinabalu, it shows comparable tourism pressure and strong economic headroom, and offers good rail-based access via Ipoh."
+    },
+    {
+      "sourceDestination": "Kota Kinabalu",
+      "destination": "Kota Bharu",
+      "state": "Kelantan",
+      "score": 74.2,
+      "similarity": 91.89,
+      "tourismPressure": 22.05,
+      "lowerPressureScore": 77.95,
+      "economicOpportunity": 49.64,
+      "sustainableMobility": 58.17,
+      "railAccessibility": 70.0,
+      "railCongestion": 59.56,
+      "gatewayStation": "Wakaf Bharu",
+      "matchedInterests": [
+        "Food",
+        "Culture",
+        "Heritage"
+      ],
+      "explanation": "Kota Bharu closely matches your interests (Food, Culture, Heritage, 92%). Compared with Kota Kinabalu, it shows lower tourism pressure and moderate economic headroom, and offers good rail-based access via Wakaf Bharu."
+    },
+    {
+      "sourceDestination": "Kota Kinabalu",
+      "destination": "Pangkor Island",
+      "state": "Perak",
+      "score": 74.04,
+      "similarity": 97.66,
+      "tourismPressure": 32.47,
+      "lowerPressureScore": 67.53,
+      "economicOpportunity": 68.76,
+      "sustainableMobility": 39.01,
+      "railAccessibility": 40.0,
+      "railCongestion": 62.48,
+      "gatewayStation": "Ipoh",
+      "matchedInterests": [
+        "Beach",
+        "Nature",
+        "Adventure"
+      ],
+      "explanation": "Pangkor Island closely matches your interests (Beach, Nature, Adventure, 98%). Compared with Kota Kinabalu, it shows comparable tourism pressure and strong economic headroom, and is reachable via Ipoh with some last-mile travel."
+    },
+    {
+      "sourceDestination": "Kota Kinabalu",
+      "destination": "Sandakan",
+      "state": "Sabah",
+      "score": 73.8,
+      "similarity": 97.49,
+      "tourismPressure": 31.89,
+      "lowerPressureScore": 68.11,
+      "economicOpportunity": 63.98,
+      "sustainableMobility": 43.0,
+      "railAccessibility": 5.0,
+      "railCongestion": "",
+      "gatewayStation": "",
+      "matchedInterests": [
+        "Nature",
+        "Adventure",
+        "Food"
+      ],
+      "explanation": "Sandakan closely matches your interests (Nature, Adventure, Food, 97%). Compared with Kota Kinabalu, it shows comparable tourism pressure and strong economic headroom, and has limited direct rail access (last-mile by road/air)."
+    },
+    {
+      "sourceDestination": "Kota Kinabalu",
+      "destination": "Semporna",
+      "state": "Sabah",
+      "score": 73.36,
+      "similarity": 95.45,
+      "tourismPressure": 31.89,
+      "lowerPressureScore": 68.11,
+      "economicOpportunity": 63.98,
+      "sustainableMobility": 44.8,
+      "railAccessibility": 8.0,
+      "railCongestion": "",
+      "gatewayStation": "",
+      "matchedInterests": [
+        "Nature",
+        "Adventure",
+        "Beach"
+      ],
+      "explanation": "Semporna closely matches your interests (Nature, Adventure, Beach, 95%). Compared with Kota Kinabalu, it shows comparable tourism pressure and strong economic headroom, and has limited direct rail access (last-mile by road/air)."
+    },
+    {
+      "sourceDestination": "Kota Kinabalu",
+      "destination": "Kundasang",
+      "state": "Sabah",
+      "score": 71.05,
+      "similarity": 89.63,
+      "tourismPressure": 31.89,
+      "lowerPressureScore": 68.11,
+      "economicOpportunity": 63.98,
+      "sustainableMobility": 43.0,
+      "railAccessibility": 5.0,
+      "railCongestion": "",
+      "gatewayStation": "",
+      "matchedInterests": [
+        "Nature",
+        "Adventure",
+        "Food"
+      ],
+      "explanation": "Kundasang closely matches your interests (Nature, Adventure, Food, 90%). Compared with Kota Kinabalu, it shows comparable tourism pressure and strong economic headroom, and has limited direct rail access (last-mile by road/air)."
+    },
+    {
+      "sourceDestination": "Kuching",
+      "destination": "Taiping",
+      "state": "Perak",
+      "score": 80.53,
+      "similarity": 98.33,
+      "tourismPressure": 32.47,
+      "lowerPressureScore": 67.53,
+      "economicOpportunity": 68.76,
+      "sustainableMobility": 80.72,
+      "railAccessibility": 98.0,
+      "railCongestion": 45.2,
+      "gatewayStation": "Taiping",
+      "matchedInterests": [
+        "Nature",
+        "Heritage",
+        "Culture"
+      ],
+      "explanation": "Taiping closely matches your interests (Nature, Heritage, Culture, 98%). Compared with Kuching, it shows lower tourism pressure and strong economic headroom, and offers good rail-based access via Taiping."
+    },
+    {
+      "sourceDestination": "Kuching",
+      "destination": "Ipoh",
+      "state": "Perak",
+      "score": 79.09,
+      "similarity": 96.66,
+      "tourismPressure": 32.47,
+      "lowerPressureScore": 67.53,
+      "economicOpportunity": 68.76,
+      "sustainableMobility": 75.01,
+      "railAccessibility": 100.0,
+      "railCongestion": 62.48,
+      "gatewayStation": "Ipoh",
+      "matchedInterests": [
+        "Food",
+        "Culture",
+        "Heritage"
+      ],
+      "explanation": "Ipoh closely matches your interests (Food, Culture, Heritage, 97%). Compared with Kuching, it shows lower tourism pressure and strong economic headroom, and offers good rail-based access via Ipoh."
+    },
+    {
+      "sourceDestination": "Kuching",
+      "destination": "Langkawi",
+      "state": "Kedah",
+      "score": 77.35,
+      "similarity": 96.22,
+      "tourismPressure": 26.16,
+      "lowerPressureScore": 73.84,
+      "economicOpportunity": 61.9,
+      "sustainableMobility": 60.92,
+      "railAccessibility": 65.0,
+      "railCongestion": 45.2,
+      "gatewayStation": "Alor Setar",
+      "matchedInterests": [
+        "Beach",
+        "Nature",
+        "Adventure"
+      ],
+      "explanation": "Langkawi closely matches your interests (Beach, Nature, Adventure, 96%). Compared with Kuching, it shows considerably lower tourism pressure and strong economic headroom, and is reachable via Alor Setar with some last-mile travel."
+    },
+    {
+      "sourceDestination": "Kuching",
+      "destination": "Desaru",
+      "state": "Johor",
+      "score": 77.19,
+      "similarity": 91.12,
+      "tourismPressure": 31.74,
+      "lowerPressureScore": 68.26,
+      "economicOpportunity": 78.37,
+      "sustainableMobility": 61.0,
+      "railAccessibility": 35.0,
+      "railCongestion": "",
+      "gatewayStation": "Johor Bahru Sentral",
+      "matchedInterests": [
+        "Beach",
+        "Adventure",
+        "Nature"
+      ],
+      "explanation": "Desaru closely matches your interests (Beach, Adventure, Nature, 91%). Compared with Kuching, it shows lower tourism pressure and strong economic headroom, and is reachable via Johor Bahru Sentral with some last-mile travel."
+    },
+    {
+      "sourceDestination": "Kuching",
+      "destination": "Mersing",
+      "state": "Johor",
+      "score": 76.78,
+      "similarity": 94.3,
+      "tourismPressure": 31.74,
+      "lowerPressureScore": 68.26,
+      "economicOpportunity": 78.37,
+      "sustainableMobility": 50.8,
+      "railAccessibility": 18.0,
+      "railCongestion": "",
+      "gatewayStation": "",
+      "matchedInterests": [
+        "Nature",
+        "Adventure",
+        "Beach"
+      ],
+      "explanation": "Mersing closely matches your interests (Nature, Adventure, Beach, 94%). Compared with Kuching, it shows lower tourism pressure and strong economic headroom, and has limited direct rail access (last-mile by road/air)."
+    },
+    {
+      "sourceDestination": "Kuching",
+      "destination": "Kota Bharu",
+      "state": "Kelantan",
+      "score": 75.72,
+      "similarity": 96.24,
+      "tourismPressure": 22.05,
+      "lowerPressureScore": 77.95,
+      "economicOpportunity": 49.64,
+      "sustainableMobility": 58.17,
+      "railAccessibility": 70.0,
+      "railCongestion": 59.56,
+      "gatewayStation": "Wakaf Bharu",
+      "matchedInterests": [
+        "Food",
+        "Culture",
+        "Heritage"
+      ],
+      "explanation": "Kota Bharu closely matches your interests (Food, Culture, Heritage, 96%). Compared with Kuching, it shows considerably lower tourism pressure and moderate economic headroom, and offers good rail-based access via Wakaf Bharu."
+    },
+    {
+      "sourceDestination": "Kuching",
+      "destination": "Kota Kinabalu",
+      "state": "Sabah",
+      "score": 74.64,
+      "similarity": 97.32,
+      "tourismPressure": 31.89,
+      "lowerPressureScore": 68.11,
+      "economicOpportunity": 63.98,
+      "sustainableMobility": 49.0,
+      "railAccessibility": 15.0,
+      "railCongestion": "",
+      "gatewayStation": "",
+      "matchedInterests": [
+        "Nature",
+        "Adventure",
+        "Food"
+      ],
+      "explanation": "Kota Kinabalu closely matches your interests (Nature, Adventure, Food, 97%). Compared with Kuching, it shows lower tourism pressure and strong economic headroom, and has limited direct rail access (last-mile by road/air)."
+    },
+    {
+      "sourceDestination": "Kuching",
+      "destination": "Sandakan",
+      "state": "Sabah",
+      "score": 73.63,
+      "similarity": 97.01,
+      "tourismPressure": 31.89,
+      "lowerPressureScore": 68.11,
+      "economicOpportunity": 63.98,
+      "sustainableMobility": 43.0,
+      "railAccessibility": 5.0,
+      "railCongestion": "",
+      "gatewayStation": "",
+      "matchedInterests": [
+        "Nature",
+        "Adventure",
+        "Food"
+      ],
+      "explanation": "Sandakan closely matches your interests (Nature, Adventure, Food, 97%). Compared with Kuching, it shows lower tourism pressure and strong economic headroom, and has limited direct rail access (last-mile by road/air)."
+    },
+    {
+      "sourceDestination": "Kuching",
+      "destination": "Pangkor Island",
+      "state": "Perak",
+      "score": 72.18,
+      "similarity": 92.34,
+      "tourismPressure": 32.47,
+      "lowerPressureScore": 67.53,
+      "economicOpportunity": 68.76,
+      "sustainableMobility": 39.01,
+      "railAccessibility": 40.0,
+      "railCongestion": 62.48,
+      "gatewayStation": "Ipoh",
+      "matchedInterests": [
+        "Beach",
+        "Nature",
+        "Adventure"
+      ],
+      "explanation": "Pangkor Island closely matches your interests (Beach, Nature, Adventure, 92%). Compared with Kuching, it shows lower tourism pressure and strong economic headroom, and is reachable via Ipoh with some last-mile travel."
+    },
+    {
+      "sourceDestination": "Kuching",
+      "destination": "Kundasang",
+      "state": "Sabah",
+      "score": 72.07,
+      "similarity": 92.55,
+      "tourismPressure": 31.89,
+      "lowerPressureScore": 68.11,
+      "economicOpportunity": 63.98,
+      "sustainableMobility": 43.0,
+      "railAccessibility": 5.0,
+      "railCongestion": "",
+      "gatewayStation": "",
+      "matchedInterests": [
+        "Nature",
+        "Adventure",
+        "Food"
+      ],
+      "explanation": "Kundasang closely matches your interests (Nature, Adventure, Food, 93%). Compared with Kuching, it shows lower tourism pressure and strong economic headroom, and has limited direct rail access (last-mile by road/air)."
+    },
+    {
+      "sourceDestination": "Redang Island",
+      "destination": "Desaru",
+      "state": "Johor",
+      "score": 80.0,
+      "similarity": 99.14,
+      "tourismPressure": 31.74,
+      "lowerPressureScore": 68.26,
+      "economicOpportunity": 78.37,
+      "sustainableMobility": 61.0,
+      "railAccessibility": 35.0,
+      "railCongestion": "",
+      "gatewayStation": "Johor Bahru Sentral",
+      "matchedInterests": [
+        "Beach",
+        "Adventure",
+        "Nature"
+      ],
+      "explanation": "Desaru closely matches your interests (Beach, Adventure, Nature, 99%). Compared with Redang Island, it shows lower tourism pressure and strong economic headroom, and is reachable via Johor Bahru Sentral with some last-mile travel."
+    },
+    {
+      "sourceDestination": "Redang Island",
+      "destination": "Mersing",
+      "state": "Johor",
+      "score": 78.27,
+      "similarity": 98.58,
+      "tourismPressure": 31.74,
+      "lowerPressureScore": 68.26,
+      "economicOpportunity": 78.37,
+      "sustainableMobility": 50.8,
+      "railAccessibility": 18.0,
+      "railCongestion": "",
+      "gatewayStation": "",
+      "matchedInterests": [
+        "Nature",
+        "Adventure",
+        "Beach"
+      ],
+      "explanation": "Mersing closely matches your interests (Nature, Adventure, Beach, 99%). Compared with Redang Island, it shows lower tourism pressure and strong economic headroom, and has limited direct rail access (last-mile by road/air)."
+    },
+    {
+      "sourceDestination": "Redang Island",
+      "destination": "Langkawi",
+      "state": "Kedah",
+      "score": 77.6,
+      "similarity": 96.94,
+      "tourismPressure": 26.16,
+      "lowerPressureScore": 73.84,
+      "economicOpportunity": 61.9,
+      "sustainableMobility": 60.92,
+      "railAccessibility": 65.0,
+      "railCongestion": 45.2,
+      "gatewayStation": "Alor Setar",
+      "matchedInterests": [
+        "Beach",
+        "Nature",
+        "Adventure"
+      ],
+      "explanation": "Langkawi closely matches your interests (Beach, Nature, Adventure, 97%). Compared with Redang Island, it shows considerably lower tourism pressure and strong economic headroom, and is reachable via Alor Setar with some last-mile travel."
+    },
+    {
+      "sourceDestination": "Redang Island",
+      "destination": "Pangkor Island",
+      "state": "Perak",
+      "score": 74.61,
+      "similarity": 99.29,
+      "tourismPressure": 32.47,
+      "lowerPressureScore": 67.53,
+      "economicOpportunity": 68.76,
+      "sustainableMobility": 39.01,
+      "railAccessibility": 40.0,
+      "railCongestion": 62.48,
+      "gatewayStation": "Ipoh",
+      "matchedInterests": [
+        "Beach",
+        "Nature",
+        "Adventure"
+      ],
+      "explanation": "Pangkor Island closely matches your interests (Beach, Nature, Adventure, 99%). Compared with Redang Island, it shows lower tourism pressure and strong economic headroom, and is reachable via Ipoh with some last-mile travel."
+    },
+    {
+      "sourceDestination": "Redang Island",
+      "destination": "Taiping",
+      "state": "Perak",
+      "score": 74.44,
+      "similarity": 80.93,
+      "tourismPressure": 32.47,
+      "lowerPressureScore": 67.53,
+      "economicOpportunity": 68.76,
+      "sustainableMobility": 80.72,
+      "railAccessibility": 98.0,
+      "railCongestion": 45.2,
+      "gatewayStation": "Taiping",
+      "matchedInterests": [
+        "Nature",
+        "Heritage",
+        "Culture"
+      ],
+      "explanation": "Taiping closely matches your interests (Nature, Heritage, Culture, 81%). Compared with Redang Island, it shows lower tourism pressure and strong economic headroom, and offers good rail-based access via Taiping."
+    },
+    {
+      "sourceDestination": "Redang Island",
+      "destination": "Semporna",
+      "state": "Sabah",
+      "score": 74.09,
+      "similarity": 97.54,
+      "tourismPressure": 31.89,
+      "lowerPressureScore": 68.11,
+      "economicOpportunity": 63.98,
+      "sustainableMobility": 44.8,
+      "railAccessibility": 8.0,
+      "railCongestion": "",
+      "gatewayStation": "",
+      "matchedInterests": [
+        "Nature",
+        "Adventure",
+        "Beach"
+      ],
+      "explanation": "Semporna closely matches your interests (Nature, Adventure, Beach, 98%). Compared with Redang Island, it shows lower tourism pressure and strong economic headroom, and has limited direct rail access (last-mile by road/air)."
+    },
+    {
+      "sourceDestination": "Redang Island",
+      "destination": "Kota Kinabalu",
+      "state": "Sabah",
+      "score": 74.0,
+      "similarity": 95.48,
+      "tourismPressure": 31.89,
+      "lowerPressureScore": 68.11,
+      "economicOpportunity": 63.98,
+      "sustainableMobility": 49.0,
+      "railAccessibility": 15.0,
+      "railCongestion": "",
+      "gatewayStation": "",
+      "matchedInterests": [
+        "Nature",
+        "Adventure",
+        "Food"
+      ],
+      "explanation": "Kota Kinabalu closely matches your interests (Nature, Adventure, Food, 95%). Compared with Redang Island, it shows lower tourism pressure and strong economic headroom, and has limited direct rail access (last-mile by road/air)."
+    },
+    {
+      "sourceDestination": "Redang Island",
+      "destination": "Sandakan",
+      "state": "Sabah",
+      "score": 72.53,
+      "similarity": 93.85,
+      "tourismPressure": 31.89,
+      "lowerPressureScore": 68.11,
+      "economicOpportunity": 63.98,
+      "sustainableMobility": 43.0,
+      "railAccessibility": 5.0,
+      "railCongestion": "",
+      "gatewayStation": "",
+      "matchedInterests": [
+        "Nature",
+        "Adventure",
+        "Food"
+      ],
+      "explanation": "Sandakan closely matches your interests (Nature, Adventure, Food, 94%). Compared with Redang Island, it shows lower tourism pressure and strong economic headroom, and has limited direct rail access (last-mile by road/air)."
+    },
+    {
+      "sourceDestination": "Redang Island",
+      "destination": "Ipoh",
+      "state": "Perak",
+      "score": 71.84,
+      "similarity": 75.95,
+      "tourismPressure": 32.47,
+      "lowerPressureScore": 67.53,
+      "economicOpportunity": 68.76,
+      "sustainableMobility": 75.01,
+      "railAccessibility": 100.0,
+      "railCongestion": 62.48,
+      "gatewayStation": "Ipoh",
+      "matchedInterests": [
+        "Food",
+        "Culture",
+        "Heritage"
+      ],
+      "explanation": "Ipoh closely matches your interests (Food, Culture, Heritage, 76%). Compared with Redang Island, it shows lower tourism pressure and strong economic headroom, and offers good rail-based access via Ipoh."
+    },
+    {
+      "sourceDestination": "Redang Island",
+      "destination": "Tioman Island",
+      "state": "Pahang",
+      "score": 71.19,
+      "similarity": 99.83,
+      "tourismPressure": 50.95,
+      "lowerPressureScore": 49.05,
+      "economicOpportunity": 70.94,
+      "sustainableMobility": 49.0,
+      "railAccessibility": 15.0,
+      "railCongestion": "",
+      "gatewayStation": "",
+      "matchedInterests": [
+        "Beach",
+        "Nature",
+        "Adventure"
+      ],
+      "explanation": "Tioman Island closely matches your interests (Beach, Nature, Adventure, 100%). Compared with Redang Island, it shows higher tourism pressure and strong economic headroom, and has limited direct rail access (last-mile by road/air)."
+    },
+    {
+      "sourceDestination": "Perhentian Islands",
+      "destination": "Desaru",
+      "state": "Johor",
+      "score": 79.8,
+      "similarity": 98.58,
+      "tourismPressure": 31.74,
+      "lowerPressureScore": 68.26,
+      "economicOpportunity": 78.37,
+      "sustainableMobility": 61.0,
+      "railAccessibility": 35.0,
+      "railCongestion": "",
+      "gatewayStation": "Johor Bahru Sentral",
+      "matchedInterests": [
+        "Beach",
+        "Adventure",
+        "Nature"
+      ],
+      "explanation": "Desaru closely matches your interests (Beach, Adventure, Nature, 99%). Compared with Perhentian Islands, it shows lower tourism pressure and strong economic headroom, and is reachable via Johor Bahru Sentral with some last-mile travel."
+    },
+    {
+      "sourceDestination": "Perhentian Islands",
+      "destination": "Mersing",
+      "state": "Johor",
+      "score": 78.01,
+      "similarity": 97.84,
+      "tourismPressure": 31.74,
+      "lowerPressureScore": 68.26,
+      "economicOpportunity": 78.37,
+      "sustainableMobility": 50.8,
+      "railAccessibility": 18.0,
+      "railCongestion": "",
+      "gatewayStation": "",
+      "matchedInterests": [
+        "Nature",
+        "Adventure",
+        "Beach"
+      ],
+      "explanation": "Mersing closely matches your interests (Nature, Adventure, Beach, 98%). Compared with Perhentian Islands, it shows lower tourism pressure and strong economic headroom, and has limited direct rail access (last-mile by road/air)."
+    },
+    {
+      "sourceDestination": "Perhentian Islands",
+      "destination": "Langkawi",
+      "state": "Kedah",
+      "score": 77.14,
+      "similarity": 95.63,
+      "tourismPressure": 26.16,
+      "lowerPressureScore": 73.84,
+      "economicOpportunity": 61.9,
+      "sustainableMobility": 60.92,
+      "railAccessibility": 65.0,
+      "railCongestion": 45.2,
+      "gatewayStation": "Alor Setar",
+      "matchedInterests": [
+        "Beach",
+        "Nature",
+        "Adventure"
+      ],
+      "explanation": "Langkawi closely matches your interests (Beach, Nature, Adventure, 96%). Compared with Perhentian Islands, it shows considerably lower tourism pressure and strong economic headroom, and is reachable via Alor Setar with some last-mile travel."
+    },
+    {
+      "sourceDestination": "Perhentian Islands",
+      "destination": "Pangkor Island",
+      "state": "Perak",
+      "score": 74.38,
+      "similarity": 98.63,
+      "tourismPressure": 32.47,
+      "lowerPressureScore": 67.53,
+      "economicOpportunity": 68.76,
+      "sustainableMobility": 39.01,
+      "railAccessibility": 40.0,
+      "railCongestion": 62.48,
+      "gatewayStation": "Ipoh",
+      "matchedInterests": [
+        "Beach",
+        "Nature",
+        "Adventure"
+      ],
+      "explanation": "Pangkor Island closely matches your interests (Beach, Nature, Adventure, 99%). Compared with Perhentian Islands, it shows lower tourism pressure and strong economic headroom, and is reachable via Ipoh with some last-mile travel."
+    },
+    {
+      "sourceDestination": "Perhentian Islands",
+      "destination": "Semporna",
+      "state": "Sabah",
+      "score": 73.98,
+      "similarity": 97.22,
+      "tourismPressure": 31.89,
+      "lowerPressureScore": 68.11,
+      "economicOpportunity": 63.98,
+      "sustainableMobility": 44.8,
+      "railAccessibility": 8.0,
+      "railCongestion": "",
+      "gatewayStation": "",
+      "matchedInterests": [
+        "Nature",
+        "Adventure",
+        "Beach"
+      ],
+      "explanation": "Semporna closely matches your interests (Nature, Adventure, Beach, 97%). Compared with Perhentian Islands, it shows lower tourism pressure and strong economic headroom, and has limited direct rail access (last-mile by road/air)."
+    },
+    {
+      "sourceDestination": "Perhentian Islands",
+      "destination": "Taiping",
+      "state": "Perak",
+      "score": 73.47,
+      "similarity": 78.13,
+      "tourismPressure": 32.47,
+      "lowerPressureScore": 67.53,
+      "economicOpportunity": 68.76,
+      "sustainableMobility": 80.72,
+      "railAccessibility": 98.0,
+      "railCongestion": 45.2,
+      "gatewayStation": "Taiping",
+      "matchedInterests": [
+        "Nature",
+        "Heritage",
+        "Culture"
+      ],
+      "explanation": "Taiping closely matches your interests (Nature, Heritage, Culture, 78%). Compared with Perhentian Islands, it shows lower tourism pressure and strong economic headroom, and offers good rail-based access via Taiping."
+    },
+    {
+      "sourceDestination": "Perhentian Islands",
+      "destination": "Kota Kinabalu",
+      "state": "Sabah",
+      "score": 73.46,
+      "similarity": 93.94,
+      "tourismPressure": 31.89,
+      "lowerPressureScore": 68.11,
+      "economicOpportunity": 63.98,
+      "sustainableMobility": 49.0,
+      "railAccessibility": 15.0,
+      "railCongestion": "",
+      "gatewayStation": "",
+      "matchedInterests": [
+        "Nature",
+        "Adventure",
+        "Food"
+      ],
+      "explanation": "Kota Kinabalu closely matches your interests (Nature, Adventure, Food, 94%). Compared with Perhentian Islands, it shows lower tourism pressure and strong economic headroom, and has limited direct rail access (last-mile by road/air)."
+    },
+    {
+      "sourceDestination": "Perhentian Islands",
+      "destination": "Sandakan",
+      "state": "Sabah",
+      "score": 72.06,
+      "similarity": 92.51,
+      "tourismPressure": 31.89,
+      "lowerPressureScore": 68.11,
+      "economicOpportunity": 63.98,
+      "sustainableMobility": 43.0,
+      "railAccessibility": 5.0,
+      "railCongestion": "",
+      "gatewayStation": "",
+      "matchedInterests": [
+        "Nature",
+        "Adventure",
+        "Food"
+      ],
+      "explanation": "Sandakan closely matches your interests (Nature, Adventure, Food, 93%). Compared with Perhentian Islands, it shows lower tourism pressure and strong economic headroom, and has limited direct rail access (last-mile by road/air)."
+    },
+    {
+      "sourceDestination": "Perhentian Islands",
+      "destination": "Tioman Island",
+      "state": "Pahang",
+      "score": 71.07,
+      "similarity": 99.49,
+      "tourismPressure": 50.95,
+      "lowerPressureScore": 49.05,
+      "economicOpportunity": 70.94,
+      "sustainableMobility": 49.0,
+      "railAccessibility": 15.0,
+      "railCongestion": "",
+      "gatewayStation": "",
+      "matchedInterests": [
+        "Beach",
+        "Nature",
+        "Adventure"
+      ],
+      "explanation": "Tioman Island closely matches your interests (Beach, Nature, Adventure, 99%). Compared with Perhentian Islands, it shows higher tourism pressure and strong economic headroom, and has limited direct rail access (last-mile by road/air)."
+    },
+    {
+      "sourceDestination": "Perhentian Islands",
+      "destination": "Ipoh",
+      "state": "Perak",
+      "score": 70.69,
+      "similarity": 72.66,
+      "tourismPressure": 32.47,
+      "lowerPressureScore": 67.53,
+      "economicOpportunity": 68.76,
+      "sustainableMobility": 75.01,
+      "railAccessibility": 100.0,
+      "railCongestion": 62.48,
+      "gatewayStation": "Ipoh",
+      "matchedInterests": [
+        "Food",
+        "Culture",
+        "Heritage"
+      ],
+      "explanation": "Ipoh closely matches your interests (Food, Culture, Heritage, 73%). Compared with Perhentian Islands, it shows lower tourism pressure and strong economic headroom, and offers good rail-based access via Ipoh."
+    },
+    {
+      "sourceDestination": "Tioman Island",
+      "destination": "Desaru",
+      "state": "Johor",
+      "score": 80.0,
+      "similarity": 99.15,
+      "tourismPressure": 31.74,
+      "lowerPressureScore": 68.26,
+      "economicOpportunity": 78.37,
+      "sustainableMobility": 61.0,
+      "railAccessibility": 35.0,
+      "railCongestion": "",
+      "gatewayStation": "Johor Bahru Sentral",
+      "matchedInterests": [
+        "Beach",
+        "Adventure",
+        "Nature"
+      ],
+      "explanation": "Desaru closely matches your interests (Beach, Adventure, Nature, 99%). Compared with Tioman Island, it shows considerably lower tourism pressure and strong economic headroom, and is reachable via Johor Bahru Sentral with some last-mile travel."
+    },
+    {
+      "sourceDestination": "Tioman Island",
+      "destination": "Mersing",
+      "state": "Johor",
+      "score": 78.52,
+      "similarity": 99.27,
+      "tourismPressure": 31.74,
+      "lowerPressureScore": 68.26,
+      "economicOpportunity": 78.37,
+      "sustainableMobility": 50.8,
+      "railAccessibility": 18.0,
+      "railCongestion": "",
+      "gatewayStation": "",
+      "matchedInterests": [
+        "Nature",
+        "Adventure",
+        "Beach"
+      ],
+      "explanation": "Mersing closely matches your interests (Nature, Adventure, Beach, 99%). Compared with Tioman Island, it shows considerably lower tourism pressure and strong economic headroom, and has limited direct rail access (last-mile by road/air)."
+    },
+    {
+      "sourceDestination": "Tioman Island",
+      "destination": "Langkawi",
+      "state": "Kedah",
+      "score": 77.89,
+      "similarity": 97.76,
+      "tourismPressure": 26.16,
+      "lowerPressureScore": 73.84,
+      "economicOpportunity": 61.9,
+      "sustainableMobility": 60.92,
+      "railAccessibility": 65.0,
+      "railCongestion": 45.2,
+      "gatewayStation": "Alor Setar",
+      "matchedInterests": [
+        "Beach",
+        "Nature",
+        "Adventure"
+      ],
+      "explanation": "Langkawi closely matches your interests (Beach, Nature, Adventure, 98%). Compared with Tioman Island, it shows considerably lower tourism pressure and strong economic headroom, and is reachable via Alor Setar with some last-mile travel."
+    },
+    {
+      "sourceDestination": "Tioman Island",
+      "destination": "Taiping",
+      "state": "Perak",
+      "score": 75.5,
+      "similarity": 83.96,
+      "tourismPressure": 32.47,
+      "lowerPressureScore": 67.53,
+      "economicOpportunity": 68.76,
+      "sustainableMobility": 80.72,
+      "railAccessibility": 98.0,
+      "railCongestion": 45.2,
+      "gatewayStation": "Taiping",
+      "matchedInterests": [
+        "Nature",
+        "Heritage",
+        "Culture"
+      ],
+      "explanation": "Taiping closely matches your interests (Nature, Heritage, Culture, 84%). Compared with Tioman Island, it shows considerably lower tourism pressure and strong economic headroom, and offers good rail-based access via Taiping."
+    },
+    {
+      "sourceDestination": "Tioman Island",
+      "destination": "Pangkor Island",
+      "state": "Perak",
+      "score": 74.67,
+      "similarity": 99.45,
+      "tourismPressure": 32.47,
+      "lowerPressureScore": 67.53,
+      "economicOpportunity": 68.76,
+      "sustainableMobility": 39.01,
+      "railAccessibility": 40.0,
+      "railCongestion": 62.48,
+      "gatewayStation": "Ipoh",
+      "matchedInterests": [
+        "Beach",
+        "Nature",
+        "Adventure"
+      ],
+      "explanation": "Pangkor Island closely matches your interests (Beach, Nature, Adventure, 99%). Compared with Tioman Island, it shows considerably lower tourism pressure and strong economic headroom, and is reachable via Ipoh with some last-mile travel."
+    },
+    {
+      "sourceDestination": "Tioman Island",
+      "destination": "Kota Kinabalu",
+      "state": "Sabah",
+      "score": 74.41,
+      "similarity": 96.65,
+      "tourismPressure": 31.89,
+      "lowerPressureScore": 68.11,
+      "economicOpportunity": 63.98,
+      "sustainableMobility": 49.0,
+      "railAccessibility": 15.0,
+      "railCongestion": "",
+      "gatewayStation": "",
+      "matchedInterests": [
+        "Nature",
+        "Adventure",
+        "Food"
+      ],
+      "explanation": "Kota Kinabalu closely matches your interests (Nature, Adventure, Food, 97%). Compared with Tioman Island, it shows considerably lower tourism pressure and strong economic headroom, and has limited direct rail access (last-mile by road/air)."
+    },
+    {
+      "sourceDestination": "Tioman Island",
+      "destination": "Semporna",
+      "state": "Sabah",
+      "score": 74.36,
+      "similarity": 98.31,
+      "tourismPressure": 31.89,
+      "lowerPressureScore": 68.11,
+      "economicOpportunity": 63.98,
+      "sustainableMobility": 44.8,
+      "railAccessibility": 8.0,
+      "railCongestion": "",
+      "gatewayStation": "",
+      "matchedInterests": [
+        "Nature",
+        "Adventure",
+        "Beach"
+      ],
+      "explanation": "Semporna closely matches your interests (Nature, Adventure, Beach, 98%). Compared with Tioman Island, it shows considerably lower tourism pressure and strong economic headroom, and has limited direct rail access (last-mile by road/air)."
+    },
+    {
+      "sourceDestination": "Tioman Island",
+      "destination": "Sandakan",
+      "state": "Sabah",
+      "score": 73.12,
+      "similarity": 95.56,
+      "tourismPressure": 31.89,
+      "lowerPressureScore": 68.11,
+      "economicOpportunity": 63.98,
+      "sustainableMobility": 43.0,
+      "railAccessibility": 5.0,
+      "railCongestion": "",
+      "gatewayStation": "",
+      "matchedInterests": [
+        "Nature",
+        "Adventure",
+        "Food"
+      ],
+      "explanation": "Sandakan closely matches your interests (Nature, Adventure, Food, 96%). Compared with Tioman Island, it shows considerably lower tourism pressure and strong economic headroom, and has limited direct rail access (last-mile by road/air)."
+    },
+    {
+      "sourceDestination": "Tioman Island",
+      "destination": "Ipoh",
+      "state": "Perak",
+      "score": 72.9,
+      "similarity": 78.96,
+      "tourismPressure": 32.47,
+      "lowerPressureScore": 67.53,
+      "economicOpportunity": 68.76,
+      "sustainableMobility": 75.01,
+      "railAccessibility": 100.0,
+      "railCongestion": 62.48,
+      "gatewayStation": "Ipoh",
+      "matchedInterests": [
+        "Food",
+        "Culture",
+        "Heritage"
+      ],
+      "explanation": "Ipoh closely matches your interests (Food, Culture, Heritage, 79%). Compared with Tioman Island, it shows considerably lower tourism pressure and strong economic headroom, and offers good rail-based access via Ipoh."
+    },
+    {
+      "sourceDestination": "Tioman Island",
+      "destination": "Kota Bharu",
+      "state": "Kelantan",
+      "score": 70.61,
+      "similarity": 81.62,
+      "tourismPressure": 22.05,
+      "lowerPressureScore": 77.95,
+      "economicOpportunity": 49.64,
+      "sustainableMobility": 58.17,
+      "railAccessibility": 70.0,
+      "railCongestion": 59.56,
+      "gatewayStation": "Wakaf Bharu",
+      "matchedInterests": [
+        "Food",
+        "Culture",
+        "Heritage"
+      ],
+      "explanation": "Kota Bharu closely matches your interests (Food, Culture, Heritage, 82%). Compared with Tioman Island, it shows considerably lower tourism pressure and moderate economic headroom, and offers good rail-based access via Wakaf Bharu."
+    },
+    {
+      "sourceDestination": "Kuala Terengganu",
+      "destination": "Taiping",
+      "state": "Perak",
+      "score": 79.52,
+      "similarity": 95.44,
+      "tourismPressure": 32.47,
+      "lowerPressureScore": 67.53,
+      "economicOpportunity": 68.76,
+      "sustainableMobility": 80.72,
+      "railAccessibility": 98.0,
+      "railCongestion": 45.2,
+      "gatewayStation": "Taiping",
+      "matchedInterests": [
+        "Nature",
+        "Heritage",
+        "Culture"
+      ],
+      "explanation": "Taiping closely matches your interests (Nature, Heritage, Culture, 95%). Compared with Kuala Terengganu, it shows lower tourism pressure and strong economic headroom, and offers good rail-based access via Taiping."
+    },
+    {
+      "sourceDestination": "Kuala Terengganu",
+      "destination": "Ipoh",
+      "state": "Perak",
+      "score": 78.7,
+      "similarity": 95.53,
+      "tourismPressure": 32.47,
+      "lowerPressureScore": 67.53,
+      "economicOpportunity": 68.76,
+      "sustainableMobility": 75.01,
+      "railAccessibility": 100.0,
+      "railCongestion": 62.48,
+      "gatewayStation": "Ipoh",
+      "matchedInterests": [
+        "Food",
+        "Culture",
+        "Heritage"
+      ],
+      "explanation": "Ipoh closely matches your interests (Food, Culture, Heritage, 96%). Compared with Kuala Terengganu, it shows lower tourism pressure and strong economic headroom, and offers good rail-based access via Ipoh."
+    },
+    {
+      "sourceDestination": "Kuala Terengganu",
+      "destination": "Langkawi",
+      "state": "Kedah",
+      "score": 77.26,
+      "similarity": 95.97,
+      "tourismPressure": 26.16,
+      "lowerPressureScore": 73.84,
+      "economicOpportunity": 61.9,
+      "sustainableMobility": 60.92,
+      "railAccessibility": 65.0,
+      "railCongestion": 45.2,
+      "gatewayStation": "Alor Setar",
+      "matchedInterests": [
+        "Beach",
+        "Nature",
+        "Adventure"
+      ],
+      "explanation": "Langkawi closely matches your interests (Beach, Nature, Adventure, 96%). Compared with Kuala Terengganu, it shows considerably lower tourism pressure and strong economic headroom, and is reachable via Alor Setar with some last-mile travel."
+    },
+    {
+      "sourceDestination": "Kuala Terengganu",
+      "destination": "Desaru",
+      "state": "Johor",
+      "score": 77.0,
+      "similarity": 90.56,
+      "tourismPressure": 31.74,
+      "lowerPressureScore": 68.26,
+      "economicOpportunity": 78.37,
+      "sustainableMobility": 61.0,
+      "railAccessibility": 35.0,
+      "railCongestion": "",
+      "gatewayStation": "Johor Bahru Sentral",
+      "matchedInterests": [
+        "Beach",
+        "Adventure",
+        "Nature"
+      ],
+      "explanation": "Desaru closely matches your interests (Beach, Adventure, Nature, 91%). Compared with Kuala Terengganu, it shows lower tourism pressure and strong economic headroom, and is reachable via Johor Bahru Sentral with some last-mile travel."
+    },
+    {
+      "sourceDestination": "Kuala Terengganu",
+      "destination": "Kota Bharu",
+      "state": "Kelantan",
+      "score": 76.33,
+      "similarity": 97.97,
+      "tourismPressure": 22.05,
+      "lowerPressureScore": 77.95,
+      "economicOpportunity": 49.64,
+      "sustainableMobility": 58.17,
+      "railAccessibility": 70.0,
+      "railCongestion": 59.56,
+      "gatewayStation": "Wakaf Bharu",
+      "matchedInterests": [
+        "Food",
+        "Culture",
+        "Heritage"
+      ],
+      "explanation": "Kota Bharu closely matches your interests (Food, Culture, Heritage, 98%). Compared with Kuala Terengganu, it shows considerably lower tourism pressure and moderate economic headroom, and offers good rail-based access via Wakaf Bharu."
+    },
+    {
+      "sourceDestination": "Kuala Terengganu",
+      "destination": "Mersing",
+      "state": "Johor",
+      "score": 75.69,
+      "similarity": 91.2,
+      "tourismPressure": 31.74,
+      "lowerPressureScore": 68.26,
+      "economicOpportunity": 78.37,
+      "sustainableMobility": 50.8,
+      "railAccessibility": 18.0,
+      "railCongestion": "",
+      "gatewayStation": "",
+      "matchedInterests": [
+        "Nature",
+        "Adventure",
+        "Beach"
+      ],
+      "explanation": "Mersing closely matches your interests (Nature, Adventure, Beach, 91%). Compared with Kuala Terengganu, it shows lower tourism pressure and strong economic headroom, and has limited direct rail access (last-mile by road/air)."
+    },
+    {
+      "sourceDestination": "Kuala Terengganu",
+      "destination": "Kota Kinabalu",
+      "state": "Sabah",
+      "score": 73.95,
+      "similarity": 95.33,
+      "tourismPressure": 31.89,
+      "lowerPressureScore": 68.11,
+      "economicOpportunity": 63.98,
+      "sustainableMobility": 49.0,
+      "railAccessibility": 15.0,
+      "railCongestion": "",
+      "gatewayStation": "",
+      "matchedInterests": [
+        "Nature",
+        "Adventure",
+        "Food"
+      ],
+      "explanation": "Kota Kinabalu closely matches your interests (Nature, Adventure, Food, 95%). Compared with Kuala Terengganu, it shows lower tourism pressure and strong economic headroom, and has limited direct rail access (last-mile by road/air)."
+    },
+    {
+      "sourceDestination": "Kuala Terengganu",
+      "destination": "George Town",
+      "state": "Penang",
+      "score": 72.79,
+      "similarity": 98.09,
+      "tourismPressure": 38.88,
+      "lowerPressureScore": 61.12,
+      "economicOpportunity": 51.63,
+      "sustainableMobility": 65.27,
+      "railAccessibility": 85.0,
+      "railCongestion": 64.31,
+      "gatewayStation": "Butterworth",
+      "matchedInterests": [
+        "Heritage",
+        "Culture",
+        "Food"
+      ],
+      "explanation": "George Town closely matches your interests (Heritage, Culture, Food, 98%). Compared with Kuala Terengganu, it shows comparable tourism pressure and moderate economic headroom, and offers good rail-based access via Butterworth."
+    },
+    {
+      "sourceDestination": "Kuala Terengganu",
+      "destination": "Pangkor Island",
+      "state": "Perak",
+      "score": 71.94,
+      "similarity": 91.67,
+      "tourismPressure": 32.47,
+      "lowerPressureScore": 67.53,
+      "economicOpportunity": 68.76,
+      "sustainableMobility": 39.01,
+      "railAccessibility": 40.0,
+      "railCongestion": 62.48,
+      "gatewayStation": "Ipoh",
+      "matchedInterests": [
+        "Beach",
+        "Nature",
+        "Adventure"
+      ],
+      "explanation": "Pangkor Island closely matches your interests (Beach, Nature, Adventure, 92%). Compared with Kuala Terengganu, it shows lower tourism pressure and strong economic headroom, and is reachable via Ipoh with some last-mile travel."
+    },
+    {
+      "sourceDestination": "Kuala Terengganu",
+      "destination": "Sandakan",
+      "state": "Sabah",
+      "score": 71.76,
+      "similarity": 91.64,
+      "tourismPressure": 31.89,
+      "lowerPressureScore": 68.11,
+      "economicOpportunity": 63.98,
+      "sustainableMobility": 43.0,
+      "railAccessibility": 5.0,
+      "railCongestion": "",
+      "gatewayStation": "",
+      "matchedInterests": [
+        "Nature",
+        "Adventure",
+        "Food"
+      ],
+      "explanation": "Sandakan closely matches your interests (Nature, Adventure, Food, 92%). Compared with Kuala Terengganu, it shows lower tourism pressure and strong economic headroom, and has limited direct rail access (last-mile by road/air)."
+    },
+    {
+      "sourceDestination": "Cherating",
+      "destination": "Desaru",
+      "state": "Johor",
+      "score": 79.93,
+      "similarity": 98.93,
+      "tourismPressure": 31.74,
+      "lowerPressureScore": 68.26,
+      "economicOpportunity": 78.37,
+      "sustainableMobility": 61.0,
+      "railAccessibility": 35.0,
+      "railCongestion": "",
+      "gatewayStation": "Johor Bahru Sentral",
+      "matchedInterests": [
+        "Beach",
+        "Adventure",
+        "Nature"
+      ],
+      "explanation": "Desaru closely matches your interests (Beach, Adventure, Nature, 99%). Compared with Cherating, it shows considerably lower tourism pressure and strong economic headroom, and is reachable via Johor Bahru Sentral with some last-mile travel."
+    },
+    {
+      "sourceDestination": "Cherating",
+      "destination": "Mersing",
+      "state": "Johor",
+      "score": 78.69,
+      "similarity": 99.77,
+      "tourismPressure": 31.74,
+      "lowerPressureScore": 68.26,
+      "economicOpportunity": 78.37,
+      "sustainableMobility": 50.8,
+      "railAccessibility": 18.0,
+      "railCongestion": "",
+      "gatewayStation": "",
+      "matchedInterests": [
+        "Nature",
+        "Adventure",
+        "Beach"
+      ],
+      "explanation": "Mersing closely matches your interests (Nature, Adventure, Beach, 100%). Compared with Cherating, it shows considerably lower tourism pressure and strong economic headroom, and has limited direct rail access (last-mile by road/air)."
+    },
+    {
+      "sourceDestination": "Cherating",
+      "destination": "Langkawi",
+      "state": "Kedah",
+      "score": 78.39,
+      "similarity": 99.2,
+      "tourismPressure": 26.16,
+      "lowerPressureScore": 73.84,
+      "economicOpportunity": 61.9,
+      "sustainableMobility": 60.92,
+      "railAccessibility": 65.0,
+      "railCongestion": 45.2,
+      "gatewayStation": "Alor Setar",
+      "matchedInterests": [
+        "Beach",
+        "Nature",
+        "Adventure"
+      ],
+      "explanation": "Langkawi closely matches your interests (Beach, Nature, Adventure, 99%). Compared with Cherating, it shows considerably lower tourism pressure and strong economic headroom, and is reachable via Alor Setar with some last-mile travel."
+    },
+    {
+      "sourceDestination": "Cherating",
+      "destination": "Taiping",
+      "state": "Perak",
+      "score": 77.31,
+      "similarity": 89.11,
+      "tourismPressure": 32.47,
+      "lowerPressureScore": 67.53,
+      "economicOpportunity": 68.76,
+      "sustainableMobility": 80.72,
+      "railAccessibility": 98.0,
+      "railCongestion": 45.2,
+      "gatewayStation": "Taiping",
+      "matchedInterests": [
+        "Nature",
+        "Heritage",
+        "Culture"
+      ],
+      "explanation": "Taiping closely matches your interests (Nature, Heritage, Culture, 89%). Compared with Cherating, it shows considerably lower tourism pressure and strong economic headroom, and offers good rail-based access via Taiping."
+    },
+    {
+      "sourceDestination": "Cherating",
+      "destination": "Ipoh",
+      "state": "Perak",
+      "score": 75.47,
+      "similarity": 86.32,
+      "tourismPressure": 32.47,
+      "lowerPressureScore": 67.53,
+      "economicOpportunity": 68.76,
+      "sustainableMobility": 75.01,
+      "railAccessibility": 100.0,
+      "railCongestion": 62.48,
+      "gatewayStation": "Ipoh",
+      "matchedInterests": [
+        "Food",
+        "Culture",
+        "Heritage"
+      ],
+      "explanation": "Ipoh closely matches your interests (Food, Culture, Heritage, 86%). Compared with Cherating, it shows considerably lower tourism pressure and strong economic headroom, and offers good rail-based access via Ipoh."
+    },
+    {
+      "sourceDestination": "Cherating",
+      "destination": "Kota Kinabalu",
+      "state": "Sabah",
+      "score": 75.23,
+      "similarity": 99.0,
+      "tourismPressure": 31.89,
+      "lowerPressureScore": 68.11,
+      "economicOpportunity": 63.98,
+      "sustainableMobility": 49.0,
+      "railAccessibility": 15.0,
+      "railCongestion": "",
+      "gatewayStation": "",
+      "matchedInterests": [
+        "Nature",
+        "Adventure",
+        "Food"
+      ],
+      "explanation": "Kota Kinabalu closely matches your interests (Nature, Adventure, Food, 99%). Compared with Cherating, it shows considerably lower tourism pressure and strong economic headroom, and has limited direct rail access (last-mile by road/air)."
+    },
+    {
+      "sourceDestination": "Cherating",
+      "destination": "Pangkor Island",
+      "state": "Perak",
+      "score": 74.63,
+      "similarity": 99.33,
+      "tourismPressure": 32.47,
+      "lowerPressureScore": 67.53,
+      "economicOpportunity": 68.76,
+      "sustainableMobility": 39.01,
+      "railAccessibility": 40.0,
+      "railCongestion": 62.48,
+      "gatewayStation": "Ipoh",
+      "matchedInterests": [
+        "Beach",
+        "Nature",
+        "Adventure"
+      ],
+      "explanation": "Pangkor Island closely matches your interests (Beach, Nature, Adventure, 99%). Compared with Cherating, it shows considerably lower tourism pressure and strong economic headroom, and is reachable via Ipoh with some last-mile travel."
+    },
+    {
+      "sourceDestination": "Cherating",
+      "destination": "Semporna",
+      "state": "Sabah",
+      "score": 74.13,
+      "similarity": 97.65,
+      "tourismPressure": 31.89,
+      "lowerPressureScore": 68.11,
+      "economicOpportunity": 63.98,
+      "sustainableMobility": 44.8,
+      "railAccessibility": 8.0,
+      "railCongestion": "",
+      "gatewayStation": "",
+      "matchedInterests": [
+        "Nature",
+        "Adventure",
+        "Beach"
+      ],
+      "explanation": "Semporna closely matches your interests (Nature, Adventure, Beach, 98%). Compared with Cherating, it shows considerably lower tourism pressure and strong economic headroom, and has limited direct rail access (last-mile by road/air)."
+    },
+    {
+      "sourceDestination": "Cherating",
+      "destination": "Sandakan",
+      "state": "Sabah",
+      "score": 73.76,
+      "similarity": 97.38,
+      "tourismPressure": 31.89,
+      "lowerPressureScore": 68.11,
+      "economicOpportunity": 63.98,
+      "sustainableMobility": 43.0,
+      "railAccessibility": 5.0,
+      "railCongestion": "",
+      "gatewayStation": "",
+      "matchedInterests": [
+        "Nature",
+        "Adventure",
+        "Food"
+      ],
+      "explanation": "Sandakan closely matches your interests (Nature, Adventure, Food, 97%). Compared with Cherating, it shows considerably lower tourism pressure and strong economic headroom, and has limited direct rail access (last-mile by road/air)."
+    },
+    {
+      "sourceDestination": "Cherating",
+      "destination": "Kota Bharu",
+      "state": "Kelantan",
+      "score": 72.95,
+      "similarity": 88.33,
+      "tourismPressure": 22.05,
+      "lowerPressureScore": 77.95,
+      "economicOpportunity": 49.64,
+      "sustainableMobility": 58.17,
+      "railAccessibility": 70.0,
+      "railCongestion": 59.56,
+      "gatewayStation": "Wakaf Bharu",
+      "matchedInterests": [
+        "Food",
+        "Culture",
+        "Heritage"
+      ],
+      "explanation": "Kota Bharu closely matches your interests (Food, Culture, Heritage, 88%). Compared with Cherating, it shows considerably lower tourism pressure and moderate economic headroom, and offers good rail-based access via Wakaf Bharu."
+    },
+    {
+      "sourceDestination": "Kota Bharu",
+      "destination": "Ipoh",
+      "state": "Perak",
+      "score": 79.76,
+      "similarity": 98.56,
+      "tourismPressure": 32.47,
+      "lowerPressureScore": 67.53,
+      "economicOpportunity": 68.76,
+      "sustainableMobility": 75.01,
+      "railAccessibility": 100.0,
+      "railCongestion": 62.48,
+      "gatewayStation": "Ipoh",
+      "matchedInterests": [
+        "Food",
+        "Culture",
+        "Heritage"
+      ],
+      "explanation": "Ipoh closely matches your interests (Food, Culture, Heritage, 99%). Compared with Kota Bharu, it shows higher tourism pressure and strong economic headroom, and offers good rail-based access via Ipoh."
+    },
+    {
+      "sourceDestination": "Kota Bharu",
+      "destination": "Taiping",
+      "state": "Perak",
+      "score": 79.33,
+      "similarity": 94.88,
+      "tourismPressure": 32.47,
+      "lowerPressureScore": 67.53,
+      "economicOpportunity": 68.76,
+      "sustainableMobility": 80.72,
+      "railAccessibility": 98.0,
+      "railCongestion": 45.2,
+      "gatewayStation": "Taiping",
+      "matchedInterests": [
+        "Nature",
+        "Heritage",
+        "Culture"
+      ],
+      "explanation": "Taiping closely matches your interests (Nature, Heritage, Culture, 95%). Compared with Kota Bharu, it shows higher tourism pressure and strong economic headroom, and offers good rail-based access via Taiping."
+    },
+    {
+      "sourceDestination": "Kota Bharu",
+      "destination": "Langkawi",
+      "state": "Kedah",
+      "score": 75.56,
+      "similarity": 91.12,
+      "tourismPressure": 26.16,
+      "lowerPressureScore": 73.84,
+      "economicOpportunity": 61.9,
+      "sustainableMobility": 60.92,
+      "railAccessibility": 65.0,
+      "railCongestion": 45.2,
+      "gatewayStation": "Alor Setar",
+      "matchedInterests": [
+        "Beach",
+        "Nature",
+        "Adventure"
+      ],
+      "explanation": "Langkawi closely matches your interests (Beach, Nature, Adventure, 91%). Compared with Kota Bharu, it shows comparable tourism pressure and strong economic headroom, and is reachable via Alor Setar with some last-mile travel."
+    },
+    {
+      "sourceDestination": "Kota Bharu",
+      "destination": "Desaru",
+      "state": "Johor",
+      "score": 74.79,
+      "similarity": 84.24,
+      "tourismPressure": 31.74,
+      "lowerPressureScore": 68.26,
+      "economicOpportunity": 78.37,
+      "sustainableMobility": 61.0,
+      "railAccessibility": 35.0,
+      "railCongestion": "",
+      "gatewayStation": "Johor Bahru Sentral",
+      "matchedInterests": [
+        "Beach",
+        "Adventure",
+        "Nature"
+      ],
+      "explanation": "Desaru closely matches your interests (Beach, Adventure, Nature, 84%). Compared with Kota Bharu, it shows comparable tourism pressure and strong economic headroom, and is reachable via Johor Bahru Sentral with some last-mile travel."
+    },
+    {
+      "sourceDestination": "Kota Bharu",
+      "destination": "Mersing",
+      "state": "Johor",
+      "score": 73.75,
+      "similarity": 85.64,
+      "tourismPressure": 31.74,
+      "lowerPressureScore": 68.26,
+      "economicOpportunity": 78.37,
+      "sustainableMobility": 50.8,
+      "railAccessibility": 18.0,
+      "railCongestion": "",
+      "gatewayStation": "",
+      "matchedInterests": [
+        "Nature",
+        "Adventure",
+        "Beach"
+      ],
+      "explanation": "Mersing closely matches your interests (Nature, Adventure, Beach, 86%). Compared with Kota Bharu, it shows comparable tourism pressure and strong economic headroom, and has limited direct rail access (last-mile by road/air)."
+    },
+    {
+      "sourceDestination": "Kota Bharu",
+      "destination": "George Town",
+      "state": "Penang",
+      "score": 73.29,
+      "similarity": 99.54,
+      "tourismPressure": 38.88,
+      "lowerPressureScore": 61.12,
+      "economicOpportunity": 51.63,
+      "sustainableMobility": 65.27,
+      "railAccessibility": 85.0,
+      "railCongestion": 64.31,
+      "gatewayStation": "Butterworth",
+      "matchedInterests": [
+        "Heritage",
+        "Culture",
+        "Food"
+      ],
+      "explanation": "George Town closely matches your interests (Heritage, Culture, Food, 100%). Compared with Kota Bharu, it shows higher tourism pressure and moderate economic headroom, and offers good rail-based access via Butterworth."
+    },
+    {
+      "sourceDestination": "Kota Bharu",
+      "destination": "Kota Kinabalu",
+      "state": "Sabah",
+      "score": 72.74,
+      "similarity": 91.89,
+      "tourismPressure": 31.89,
+      "lowerPressureScore": 68.11,
+      "economicOpportunity": 63.98,
+      "sustainableMobility": 49.0,
+      "railAccessibility": 15.0,
+      "railCongestion": "",
+      "gatewayStation": "",
+      "matchedInterests": [
+        "Nature",
+        "Adventure",
+        "Food"
+      ],
+      "explanation": "Kota Kinabalu closely matches your interests (Nature, Adventure, Food, 92%). Compared with Kota Bharu, it shows comparable tourism pressure and strong economic headroom, and has limited direct rail access (last-mile by road/air)."
+    },
+    {
+      "sourceDestination": "Kota Bharu",
+      "destination": "Kuala Terengganu",
+      "state": "Terengganu",
+      "score": 70.49,
+      "similarity": 97.97,
+      "tourismPressure": 36.61,
+      "lowerPressureScore": 63.39,
+      "economicOpportunity": 47.8,
+      "sustainableMobility": 50.8,
+      "railAccessibility": 18.0,
+      "railCongestion": "",
+      "gatewayStation": "",
+      "matchedInterests": [
+        "Culture",
+        "Heritage",
+        "Food"
+      ],
+      "explanation": "Kuala Terengganu closely matches your interests (Culture, Heritage, Food, 98%). Compared with Kota Bharu, it shows higher tourism pressure and moderate economic headroom, and has limited direct rail access (last-mile by road/air)."
+    },
+    {
+      "sourceDestination": "Kota Bharu",
+      "destination": "Kuching",
+      "state": "Sarawak",
+      "score": 70.29,
+      "similarity": 96.24,
+      "tourismPressure": 40.9,
+      "lowerPressureScore": 59.1,
+      "economicOpportunity": 59.86,
+      "sustainableMobility": 46.0,
+      "railAccessibility": 10.0,
+      "railCongestion": "",
+      "gatewayStation": "",
+      "matchedInterests": [
+        "Nature",
+        "Culture",
+        "Food"
+      ],
+      "explanation": "Kuching closely matches your interests (Nature, Culture, Food, 96%). Compared with Kota Bharu, it shows higher tourism pressure and moderate economic headroom, and has limited direct rail access (last-mile by road/air)."
+    },
+    {
+      "sourceDestination": "Kota Bharu",
+      "destination": "Sandakan",
+      "state": "Sabah",
+      "score": 70.29,
+      "similarity": 87.45,
+      "tourismPressure": 31.89,
+      "lowerPressureScore": 68.11,
+      "economicOpportunity": 63.98,
+      "sustainableMobility": 43.0,
+      "railAccessibility": 5.0,
+      "railCongestion": "",
+      "gatewayStation": "",
+      "matchedInterests": [
+        "Nature",
+        "Adventure",
+        "Food"
+      ],
+      "explanation": "Sandakan closely matches your interests (Nature, Adventure, Food, 87%). Compared with Kota Bharu, it shows comparable tourism pressure and strong economic headroom, and has limited direct rail access (last-mile by road/air)."
+    },
+    {
+      "sourceDestination": "Semporna",
+      "destination": "Desaru",
+      "state": "Johor",
+      "score": 78.86,
+      "similarity": 95.88,
+      "tourismPressure": 31.74,
+      "lowerPressureScore": 68.26,
+      "economicOpportunity": 78.37,
+      "sustainableMobility": 61.0,
+      "railAccessibility": 35.0,
+      "railCongestion": "",
+      "gatewayStation": "Johor Bahru Sentral",
+      "matchedInterests": [
+        "Beach",
+        "Adventure",
+        "Nature"
+      ],
+      "explanation": "Desaru closely matches your interests (Beach, Adventure, Nature, 96%). Compared with Semporna, it shows lower tourism pressure and strong economic headroom, and is reachable via Johor Bahru Sentral with some last-mile travel."
+    },
+    {
+      "sourceDestination": "Semporna",
+      "destination": "Mersing",
+      "state": "Johor",
+      "score": 78.33,
+      "similarity": 98.74,
+      "tourismPressure": 31.74,
+      "lowerPressureScore": 68.26,
+      "economicOpportunity": 78.37,
+      "sustainableMobility": 50.8,
+      "railAccessibility": 18.0,
+      "railCongestion": "",
+      "gatewayStation": "",
+      "matchedInterests": [
+        "Nature",
+        "Adventure",
+        "Beach"
+      ],
+      "explanation": "Mersing closely matches your interests (Nature, Adventure, Beach, 99%). Compared with Semporna, it shows lower tourism pressure and strong economic headroom, and has limited direct rail access (last-mile by road/air)."
+    },
+    {
+      "sourceDestination": "Semporna",
+      "destination": "Langkawi",
+      "state": "Kedah",
+      "score": 76.93,
+      "similarity": 95.02,
+      "tourismPressure": 26.16,
+      "lowerPressureScore": 73.84,
+      "economicOpportunity": 61.9,
+      "sustainableMobility": 60.92,
+      "railAccessibility": 65.0,
+      "railCongestion": 45.2,
+      "gatewayStation": "Alor Setar",
+      "matchedInterests": [
+        "Beach",
+        "Nature",
+        "Adventure"
+      ],
+      "explanation": "Langkawi closely matches your interests (Beach, Nature, Adventure, 95%). Compared with Semporna, it shows lower tourism pressure and strong economic headroom, and is reachable via Alor Setar with some last-mile travel."
+    },
+    {
+      "sourceDestination": "Semporna",
+      "destination": "Taiping",
+      "state": "Perak",
+      "score": 76.19,
+      "similarity": 85.92,
+      "tourismPressure": 32.47,
+      "lowerPressureScore": 67.53,
+      "economicOpportunity": 68.76,
+      "sustainableMobility": 80.72,
+      "railAccessibility": 98.0,
+      "railCongestion": 45.2,
+      "gatewayStation": "Taiping",
+      "matchedInterests": [
+        "Nature",
+        "Heritage",
+        "Culture"
+      ],
+      "explanation": "Taiping closely matches your interests (Nature, Heritage, Culture, 86%). Compared with Semporna, it shows comparable tourism pressure and strong economic headroom, and offers good rail-based access via Taiping."
+    },
+    {
+      "sourceDestination": "Semporna",
+      "destination": "Kota Kinabalu",
+      "state": "Sabah",
+      "score": 73.99,
+      "similarity": 95.45,
+      "tourismPressure": 31.89,
+      "lowerPressureScore": 68.11,
+      "economicOpportunity": 63.98,
+      "sustainableMobility": 49.0,
+      "railAccessibility": 15.0,
+      "railCongestion": "",
+      "gatewayStation": "",
+      "matchedInterests": [
+        "Nature",
+        "Adventure",
+        "Food"
+      ],
+      "explanation": "Kota Kinabalu closely matches your interests (Nature, Adventure, Food, 95%). Compared with Semporna, it shows comparable tourism pressure and strong economic headroom, and has limited direct rail access (last-mile by road/air)."
+    },
+    {
+      "sourceDestination": "Semporna",
+      "destination": "Sandakan",
+      "state": "Sabah",
+      "score": 73.95,
+      "similarity": 97.92,
+      "tourismPressure": 31.89,
+      "lowerPressureScore": 68.11,
+      "economicOpportunity": 63.98,
+      "sustainableMobility": 43.0,
+      "railAccessibility": 5.0,
+      "railCongestion": "",
+      "gatewayStation": "",
+      "matchedInterests": [
+        "Nature",
+        "Adventure",
+        "Food"
+      ],
+      "explanation": "Sandakan closely matches your interests (Nature, Adventure, Food, 98%). Compared with Semporna, it shows comparable tourism pressure and strong economic headroom, and has limited direct rail access (last-mile by road/air)."
+    },
+    {
+      "sourceDestination": "Semporna",
+      "destination": "Pangkor Island",
+      "state": "Perak",
+      "score": 73.6,
+      "similarity": 96.41,
+      "tourismPressure": 32.47,
+      "lowerPressureScore": 67.53,
+      "economicOpportunity": 68.76,
+      "sustainableMobility": 39.01,
+      "railAccessibility": 40.0,
+      "railCongestion": 62.48,
+      "gatewayStation": "Ipoh",
+      "matchedInterests": [
+        "Beach",
+        "Nature",
+        "Adventure"
+      ],
+      "explanation": "Pangkor Island closely matches your interests (Beach, Nature, Adventure, 96%). Compared with Semporna, it shows comparable tourism pressure and strong economic headroom, and is reachable via Ipoh with some last-mile travel."
+    },
+    {
+      "sourceDestination": "Semporna",
+      "destination": "Ipoh",
+      "state": "Perak",
+      "score": 72.98,
+      "similarity": 79.18,
+      "tourismPressure": 32.47,
+      "lowerPressureScore": 67.53,
+      "economicOpportunity": 68.76,
+      "sustainableMobility": 75.01,
+      "railAccessibility": 100.0,
+      "railCongestion": 62.48,
+      "gatewayStation": "Ipoh",
+      "matchedInterests": [
+        "Food",
+        "Culture",
+        "Heritage"
+      ],
+      "explanation": "Ipoh closely matches your interests (Food, Culture, Heritage, 79%). Compared with Semporna, it shows comparable tourism pressure and strong economic headroom, and offers good rail-based access via Ipoh."
+    },
+    {
+      "sourceDestination": "Semporna",
+      "destination": "Kundasang",
+      "state": "Sabah",
+      "score": 71.8,
+      "similarity": 91.77,
+      "tourismPressure": 31.89,
+      "lowerPressureScore": 68.11,
+      "economicOpportunity": 63.98,
+      "sustainableMobility": 43.0,
+      "railAccessibility": 5.0,
+      "railCongestion": "",
+      "gatewayStation": "",
+      "matchedInterests": [
+        "Nature",
+        "Adventure",
+        "Food"
+      ],
+      "explanation": "Kundasang closely matches your interests (Nature, Adventure, Food, 92%). Compared with Semporna, it shows comparable tourism pressure and strong economic headroom, and has limited direct rail access (last-mile by road/air)."
+    },
+    {
+      "sourceDestination": "Semporna",
+      "destination": "Tioman Island",
+      "state": "Pahang",
+      "score": 70.66,
+      "similarity": 98.31,
+      "tourismPressure": 50.95,
+      "lowerPressureScore": 49.05,
+      "economicOpportunity": 70.94,
+      "sustainableMobility": 49.0,
+      "railAccessibility": 15.0,
+      "railCongestion": "",
+      "gatewayStation": "",
+      "matchedInterests": [
+        "Beach",
+        "Nature",
+        "Adventure"
+      ],
+      "explanation": "Tioman Island closely matches your interests (Beach, Nature, Adventure, 98%). Compared with Semporna, it shows higher tourism pressure and strong economic headroom, and has limited direct rail access (last-mile by road/air)."
+    },
+    {
+      "sourceDestination": "Kundasang",
+      "destination": "Taiping",
+      "state": "Perak",
+      "score": 78.74,
+      "similarity": 93.21,
+      "tourismPressure": 32.47,
+      "lowerPressureScore": 67.53,
+      "economicOpportunity": 68.76,
+      "sustainableMobility": 80.72,
+      "railAccessibility": 98.0,
+      "railCongestion": 45.2,
+      "gatewayStation": "Taiping",
+      "matchedInterests": [
+        "Nature",
+        "Heritage",
+        "Culture"
+      ],
+      "explanation": "Taiping closely matches your interests (Nature, Heritage, Culture, 93%). Compared with Kundasang, it shows comparable tourism pressure and strong economic headroom, and offers good rail-based access via Taiping."
+    },
+    {
+      "sourceDestination": "Kundasang",
+      "destination": "Ipoh",
+      "state": "Perak",
+      "score": 75.76,
+      "similarity": 87.15,
+      "tourismPressure": 32.47,
+      "lowerPressureScore": 67.53,
+      "economicOpportunity": 68.76,
+      "sustainableMobility": 75.01,
+      "railAccessibility": 100.0,
+      "railCongestion": 62.48,
+      "gatewayStation": "Ipoh",
+      "matchedInterests": [
+        "Food",
+        "Culture",
+        "Heritage"
+      ],
+      "explanation": "Ipoh closely matches your interests (Food, Culture, Heritage, 87%). Compared with Kundasang, it shows comparable tourism pressure and strong economic headroom, and offers good rail-based access via Ipoh."
+    },
+    {
+      "sourceDestination": "Kundasang",
+      "destination": "Mersing",
+      "state": "Johor",
+      "score": 75.16,
+      "similarity": 89.68,
+      "tourismPressure": 31.74,
+      "lowerPressureScore": 68.26,
+      "economicOpportunity": 78.37,
+      "sustainableMobility": 50.8,
+      "railAccessibility": 18.0,
+      "railCongestion": "",
+      "gatewayStation": "",
+      "matchedInterests": [
+        "Nature",
+        "Adventure",
+        "Beach"
+      ],
+      "explanation": "Mersing closely matches your interests (Nature, Adventure, Beach, 90%). Compared with Kundasang, it shows lower tourism pressure and strong economic headroom, and has limited direct rail access (last-mile by road/air)."
+    },
+    {
+      "sourceDestination": "Kundasang",
+      "destination": "Desaru",
+      "state": "Johor",
+      "score": 73.91,
+      "similarity": 81.75,
+      "tourismPressure": 31.74,
+      "lowerPressureScore": 68.26,
+      "economicOpportunity": 78.37,
+      "sustainableMobility": 61.0,
+      "railAccessibility": 35.0,
+      "railCongestion": "",
+      "gatewayStation": "Johor Bahru Sentral",
+      "matchedInterests": [
+        "Beach",
+        "Adventure",
+        "Nature"
+      ],
+      "explanation": "Desaru closely matches your interests (Beach, Adventure, Nature, 82%). Compared with Kundasang, it shows lower tourism pressure and strong economic headroom, and is reachable via Johor Bahru Sentral with some last-mile travel."
+    },
+    {
+      "sourceDestination": "Kundasang",
+      "destination": "Langkawi",
+      "state": "Kedah",
+      "score": 73.69,
+      "similarity": 85.78,
+      "tourismPressure": 26.16,
+      "lowerPressureScore": 73.84,
+      "economicOpportunity": 61.9,
+      "sustainableMobility": 60.92,
+      "railAccessibility": 65.0,
+      "railCongestion": 45.2,
+      "gatewayStation": "Alor Setar",
+      "matchedInterests": [
+        "Beach",
+        "Nature",
+        "Adventure"
+      ],
+      "explanation": "Langkawi closely matches your interests (Beach, Nature, Adventure, 86%). Compared with Kundasang, it shows lower tourism pressure and strong economic headroom, and is reachable via Alor Setar with some last-mile travel."
+    },
+    {
+      "sourceDestination": "Kundasang",
+      "destination": "Sandakan",
+      "state": "Sabah",
+      "score": 73.45,
+      "similarity": 96.49,
+      "tourismPressure": 31.89,
+      "lowerPressureScore": 68.11,
+      "economicOpportunity": 63.98,
+      "sustainableMobility": 43.0,
+      "railAccessibility": 5.0,
+      "railCongestion": "",
+      "gatewayStation": "",
+      "matchedInterests": [
+        "Nature",
+        "Adventure",
+        "Food"
+      ],
+      "explanation": "Sandakan closely matches your interests (Nature, Adventure, Food, 96%). Compared with Kundasang, it shows comparable tourism pressure and strong economic headroom, and has limited direct rail access (last-mile by road/air)."
+    },
+    {
+      "sourceDestination": "Kundasang",
+      "destination": "Semporna",
+      "state": "Sabah",
+      "score": 72.07,
+      "similarity": 91.77,
+      "tourismPressure": 31.89,
+      "lowerPressureScore": 68.11,
+      "economicOpportunity": 63.98,
+      "sustainableMobility": 44.8,
+      "railAccessibility": 8.0,
+      "railCongestion": "",
+      "gatewayStation": "",
+      "matchedInterests": [
+        "Nature",
+        "Adventure",
+        "Beach"
+      ],
+      "explanation": "Semporna closely matches your interests (Nature, Adventure, Beach, 92%). Compared with Kundasang, it shows comparable tourism pressure and strong economic headroom, and has limited direct rail access (last-mile by road/air)."
+    },
+    {
+      "sourceDestination": "Kundasang",
+      "destination": "Kota Kinabalu",
+      "state": "Sabah",
+      "score": 71.95,
+      "similarity": 89.63,
+      "tourismPressure": 31.89,
+      "lowerPressureScore": 68.11,
+      "economicOpportunity": 63.98,
+      "sustainableMobility": 49.0,
+      "railAccessibility": 15.0,
+      "railCongestion": "",
+      "gatewayStation": "",
+      "matchedInterests": [
+        "Nature",
+        "Adventure",
+        "Food"
+      ],
+      "explanation": "Kota Kinabalu closely matches your interests (Nature, Adventure, Food, 90%). Compared with Kundasang, it shows comparable tourism pressure and strong economic headroom, and has limited direct rail access (last-mile by road/air)."
+    },
+    {
+      "sourceDestination": "Kundasang",
+      "destination": "Taman Negara",
+      "state": "Pahang",
+      "score": 71.53,
+      "similarity": 98.71,
+      "tourismPressure": 50.95,
+      "lowerPressureScore": 49.05,
+      "economicOpportunity": 70.94,
+      "sustainableMobility": 53.87,
+      "railAccessibility": 60.0,
+      "railCongestion": 55.32,
+      "gatewayStation": "Jerantut",
+      "matchedInterests": [
+        "Nature",
+        "Adventure",
+        "Food"
+      ],
+      "explanation": "Taman Negara closely matches your interests (Nature, Adventure, Food, 99%). Compared with Kundasang, it shows higher tourism pressure and strong economic headroom, and is reachable via Jerantut with some last-mile travel."
+    },
+    {
+      "sourceDestination": "Kundasang",
+      "destination": "Kota Bharu",
+      "state": "Kelantan",
+      "score": 70.56,
+      "similarity": 81.5,
+      "tourismPressure": 22.05,
+      "lowerPressureScore": 77.95,
+      "economicOpportunity": 49.64,
+      "sustainableMobility": 58.17,
+      "railAccessibility": 70.0,
+      "railCongestion": 59.56,
+      "gatewayStation": "Wakaf Bharu",
+      "matchedInterests": [
+        "Food",
+        "Culture",
+        "Heritage"
+      ],
+      "explanation": "Kota Bharu closely matches your interests (Food, Culture, Heritage, 82%). Compared with Kundasang, it shows lower tourism pressure and moderate economic headroom, and offers good rail-based access via Wakaf Bharu."
+    },
+    {
+      "sourceDestination": "Desaru",
+      "destination": "Mersing",
+      "state": "Johor",
+      "score": 78.28,
+      "similarity": 98.6,
+      "tourismPressure": 31.74,
+      "lowerPressureScore": 68.26,
+      "economicOpportunity": 78.37,
+      "sustainableMobility": 50.8,
+      "railAccessibility": 18.0,
+      "railCongestion": "",
+      "gatewayStation": "",
+      "matchedInterests": [
+        "Nature",
+        "Adventure",
+        "Beach"
+      ],
+      "explanation": "Mersing closely matches your interests (Nature, Adventure, Beach, 99%). Compared with Desaru, it shows comparable tourism pressure and strong economic headroom, and has limited direct rail access (last-mile by road/air)."
+    },
+    {
+      "sourceDestination": "Desaru",
+      "destination": "Langkawi",
+      "state": "Kedah",
+      "score": 78.2,
+      "similarity": 98.65,
+      "tourismPressure": 26.16,
+      "lowerPressureScore": 73.84,
+      "economicOpportunity": 61.9,
+      "sustainableMobility": 60.92,
+      "railAccessibility": 65.0,
+      "railCongestion": 45.2,
+      "gatewayStation": "Alor Setar",
+      "matchedInterests": [
+        "Beach",
+        "Nature",
+        "Adventure"
+      ],
+      "explanation": "Langkawi closely matches your interests (Beach, Nature, Adventure, 99%). Compared with Desaru, it shows lower tourism pressure and strong economic headroom, and is reachable via Alor Setar with some last-mile travel."
+    },
+    {
+      "sourceDestination": "Desaru",
+      "destination": "Taiping",
+      "state": "Perak",
+      "score": 75.1,
+      "similarity": 82.8,
+      "tourismPressure": 32.47,
+      "lowerPressureScore": 67.53,
+      "economicOpportunity": 68.76,
+      "sustainableMobility": 80.72,
+      "railAccessibility": 98.0,
+      "railCongestion": 45.2,
+      "gatewayStation": "Taiping",
+      "matchedInterests": [
+        "Nature",
+        "Heritage",
+        "Culture"
+      ],
+      "explanation": "Taiping closely matches your interests (Nature, Heritage, Culture, 83%). Compared with Desaru, it shows comparable tourism pressure and strong economic headroom, and offers good rail-based access via Taiping."
+    },
+    {
+      "sourceDestination": "Desaru",
+      "destination": "Pangkor Island",
+      "state": "Perak",
+      "score": 74.79,
+      "similarity": 99.79,
+      "tourismPressure": 32.47,
+      "lowerPressureScore": 67.53,
+      "economicOpportunity": 68.76,
+      "sustainableMobility": 39.01,
+      "railAccessibility": 40.0,
+      "railCongestion": 62.48,
+      "gatewayStation": "Ipoh",
+      "matchedInterests": [
+        "Beach",
+        "Nature",
+        "Adventure"
+      ],
+      "explanation": "Pangkor Island closely matches your interests (Beach, Nature, Adventure, 100%). Compared with Desaru, it shows comparable tourism pressure and strong economic headroom, and is reachable via Ipoh with some last-mile travel."
+    },
+    {
+      "sourceDestination": "Desaru",
+      "destination": "Kota Kinabalu",
+      "state": "Sabah",
+      "score": 74.71,
+      "similarity": 97.51,
+      "tourismPressure": 31.89,
+      "lowerPressureScore": 68.11,
+      "economicOpportunity": 63.98,
+      "sustainableMobility": 49.0,
+      "railAccessibility": 15.0,
+      "railCongestion": "",
+      "gatewayStation": "",
+      "matchedInterests": [
+        "Nature",
+        "Adventure",
+        "Food"
+      ],
+      "explanation": "Kota Kinabalu closely matches your interests (Nature, Adventure, Food, 98%). Compared with Desaru, it shows comparable tourism pressure and strong economic headroom, and has limited direct rail access (last-mile by road/air)."
+    },
+    {
+      "sourceDestination": "Desaru",
+      "destination": "Semporna",
+      "state": "Sabah",
+      "score": 73.51,
+      "similarity": 95.88,
+      "tourismPressure": 31.89,
+      "lowerPressureScore": 68.11,
+      "economicOpportunity": 63.98,
+      "sustainableMobility": 44.8,
+      "railAccessibility": 8.0,
+      "railCongestion": "",
+      "gatewayStation": "",
+      "matchedInterests": [
+        "Nature",
+        "Adventure",
+        "Beach"
+      ],
+      "explanation": "Semporna closely matches your interests (Nature, Adventure, Beach, 96%). Compared with Desaru, it shows comparable tourism pressure and strong economic headroom, and has limited direct rail access (last-mile by road/air)."
+    },
+    {
+      "sourceDestination": "Desaru",
+      "destination": "Ipoh",
+      "state": "Perak",
+      "score": 73.46,
+      "similarity": 80.58,
+      "tourismPressure": 32.47,
+      "lowerPressureScore": 67.53,
+      "economicOpportunity": 68.76,
+      "sustainableMobility": 75.01,
+      "railAccessibility": 100.0,
+      "railCongestion": 62.48,
+      "gatewayStation": "Ipoh",
+      "matchedInterests": [
+        "Food",
+        "Culture",
+        "Heritage"
+      ],
+      "explanation": "Ipoh closely matches your interests (Food, Culture, Heritage, 81%). Compared with Desaru, it shows comparable tourism pressure and strong economic headroom, and offers good rail-based access via Ipoh."
+    },
+    {
+      "sourceDestination": "Desaru",
+      "destination": "Sandakan",
+      "state": "Sabah",
+      "score": 72.47,
+      "similarity": 93.68,
+      "tourismPressure": 31.89,
+      "lowerPressureScore": 68.11,
+      "economicOpportunity": 63.98,
+      "sustainableMobility": 43.0,
+      "railAccessibility": 5.0,
+      "railCongestion": "",
+      "gatewayStation": "",
+      "matchedInterests": [
+        "Nature",
+        "Adventure",
+        "Food"
+      ],
+      "explanation": "Sandakan closely matches your interests (Nature, Adventure, Food, 94%). Compared with Desaru, it shows comparable tourism pressure and strong economic headroom, and has limited direct rail access (last-mile by road/air)."
+    },
+    {
+      "sourceDestination": "Desaru",
+      "destination": "Kota Bharu",
+      "state": "Kelantan",
+      "score": 71.52,
+      "similarity": 84.24,
+      "tourismPressure": 22.05,
+      "lowerPressureScore": 77.95,
+      "economicOpportunity": 49.64,
+      "sustainableMobility": 58.17,
+      "railAccessibility": 70.0,
+      "railCongestion": 59.56,
+      "gatewayStation": "Wakaf Bharu",
+      "matchedInterests": [
+        "Food",
+        "Culture",
+        "Heritage"
+      ],
+      "explanation": "Kota Bharu closely matches your interests (Food, Culture, Heritage, 84%). Compared with Desaru, it shows lower tourism pressure and moderate economic headroom, and offers good rail-based access via Wakaf Bharu."
+    },
+    {
+      "sourceDestination": "Desaru",
+      "destination": "Tioman Island",
+      "state": "Pahang",
+      "score": 70.95,
+      "similarity": 99.15,
+      "tourismPressure": 50.95,
+      "lowerPressureScore": 49.05,
+      "economicOpportunity": 70.94,
+      "sustainableMobility": 49.0,
+      "railAccessibility": 15.0,
+      "railCongestion": "",
+      "gatewayStation": "",
+      "matchedInterests": [
+        "Beach",
+        "Nature",
+        "Adventure"
+      ],
+      "explanation": "Tioman Island closely matches your interests (Beach, Nature, Adventure, 99%). Compared with Desaru, it shows higher tourism pressure and strong economic headroom, and has limited direct rail access (last-mile by road/air)."
+    },
+    {
+      "sourceDestination": "Pangkor Island",
+      "destination": "Desaru",
+      "state": "Johor",
+      "score": 80.23,
+      "similarity": 99.79,
+      "tourismPressure": 31.74,
+      "lowerPressureScore": 68.26,
+      "economicOpportunity": 78.37,
+      "sustainableMobility": 61.0,
+      "railAccessibility": 35.0,
+      "railCongestion": "",
+      "gatewayStation": "Johor Bahru Sentral",
+      "matchedInterests": [
+        "Beach",
+        "Adventure",
+        "Nature"
+      ],
+      "explanation": "Desaru closely matches your interests (Beach, Adventure, Nature, 100%). Compared with Pangkor Island, it shows lower tourism pressure and strong economic headroom, and is reachable via Johor Bahru Sentral with some last-mile travel."
+    },
+    {
+      "sourceDestination": "Pangkor Island",
+      "destination": "Mersing",
+      "state": "Johor",
+      "score": 78.42,
+      "similarity": 99.01,
+      "tourismPressure": 31.74,
+      "lowerPressureScore": 68.26,
+      "economicOpportunity": 78.37,
+      "sustainableMobility": 50.8,
+      "railAccessibility": 18.0,
+      "railCongestion": "",
+      "gatewayStation": "",
+      "matchedInterests": [
+        "Nature",
+        "Adventure",
+        "Beach"
+      ],
+      "explanation": "Mersing closely matches your interests (Nature, Adventure, Beach, 99%). Compared with Pangkor Island, it shows lower tourism pressure and strong economic headroom, and has limited direct rail access (last-mile by road/air)."
+    },
+    {
+      "sourceDestination": "Pangkor Island",
+      "destination": "Langkawi",
+      "state": "Kedah",
+      "score": 78.29,
+      "similarity": 98.91,
+      "tourismPressure": 26.16,
+      "lowerPressureScore": 73.84,
+      "economicOpportunity": 61.9,
+      "sustainableMobility": 60.92,
+      "railAccessibility": 65.0,
+      "railCongestion": 45.2,
+      "gatewayStation": "Alor Setar",
+      "matchedInterests": [
+        "Beach",
+        "Nature",
+        "Adventure"
+      ],
+      "explanation": "Langkawi closely matches your interests (Beach, Nature, Adventure, 99%). Compared with Pangkor Island, it shows lower tourism pressure and strong economic headroom, and is reachable via Alor Setar with some last-mile travel."
+    },
+    {
+      "sourceDestination": "Pangkor Island",
+      "destination": "Taiping",
+      "state": "Perak",
+      "score": 75.79,
+      "similarity": 84.78,
+      "tourismPressure": 32.47,
+      "lowerPressureScore": 67.53,
+      "economicOpportunity": 68.76,
+      "sustainableMobility": 80.72,
+      "railAccessibility": 98.0,
+      "railCongestion": 45.2,
+      "gatewayStation": "Taiping",
+      "matchedInterests": [
+        "Nature",
+        "Heritage",
+        "Culture"
+      ],
+      "explanation": "Taiping closely matches your interests (Nature, Heritage, Culture, 85%). Compared with Pangkor Island, it shows comparable tourism pressure and strong economic headroom, and offers good rail-based access via Taiping."
+    },
+    {
+      "sourceDestination": "Pangkor Island",
+      "destination": "Kota Kinabalu",
+      "state": "Sabah",
+      "score": 74.76,
+      "similarity": 97.66,
+      "tourismPressure": 31.89,
+      "lowerPressureScore": 68.11,
+      "economicOpportunity": 63.98,
+      "sustainableMobility": 49.0,
+      "railAccessibility": 15.0,
+      "railCongestion": "",
+      "gatewayStation": "",
+      "matchedInterests": [
+        "Nature",
+        "Adventure",
+        "Food"
+      ],
+      "explanation": "Kota Kinabalu closely matches your interests (Nature, Adventure, Food, 98%). Compared with Pangkor Island, it shows lower tourism pressure and strong economic headroom, and has limited direct rail access (last-mile by road/air)."
+    },
+    {
+      "sourceDestination": "Pangkor Island",
+      "destination": "Ipoh",
+      "state": "Perak",
+      "score": 73.93,
+      "similarity": 81.91,
+      "tourismPressure": 32.47,
+      "lowerPressureScore": 67.53,
+      "economicOpportunity": 68.76,
+      "sustainableMobility": 75.01,
+      "railAccessibility": 100.0,
+      "railCongestion": 62.48,
+      "gatewayStation": "Ipoh",
+      "matchedInterests": [
+        "Food",
+        "Culture",
+        "Heritage"
+      ],
+      "explanation": "Ipoh closely matches your interests (Food, Culture, Heritage, 82%). Compared with Pangkor Island, it shows comparable tourism pressure and strong economic headroom, and offers good rail-based access via Ipoh."
+    },
+    {
+      "sourceDestination": "Pangkor Island",
+      "destination": "Semporna",
+      "state": "Sabah",
+      "score": 73.69,
+      "similarity": 96.41,
+      "tourismPressure": 31.89,
+      "lowerPressureScore": 68.11,
+      "economicOpportunity": 63.98,
+      "sustainableMobility": 44.8,
+      "railAccessibility": 8.0,
+      "railCongestion": "",
+      "gatewayStation": "",
+      "matchedInterests": [
+        "Nature",
+        "Adventure",
+        "Beach"
+      ],
+      "explanation": "Semporna closely matches your interests (Nature, Adventure, Beach, 96%). Compared with Pangkor Island, it shows lower tourism pressure and strong economic headroom, and has limited direct rail access (last-mile by road/air)."
+    },
+    {
+      "sourceDestination": "Pangkor Island",
+      "destination": "Sandakan",
+      "state": "Sabah",
+      "score": 72.8,
+      "similarity": 94.62,
+      "tourismPressure": 31.89,
+      "lowerPressureScore": 68.11,
+      "economicOpportunity": 63.98,
+      "sustainableMobility": 43.0,
+      "railAccessibility": 5.0,
+      "railCongestion": "",
+      "gatewayStation": "",
+      "matchedInterests": [
+        "Nature",
+        "Adventure",
+        "Food"
+      ],
+      "explanation": "Sandakan closely matches your interests (Nature, Adventure, Food, 95%). Compared with Pangkor Island, it shows lower tourism pressure and strong economic headroom, and has limited direct rail access (last-mile by road/air)."
+    },
+    {
+      "sourceDestination": "Pangkor Island",
+      "destination": "Kota Bharu",
+      "state": "Kelantan",
+      "score": 71.95,
+      "similarity": 85.45,
+      "tourismPressure": 22.05,
+      "lowerPressureScore": 77.95,
+      "economicOpportunity": 49.64,
+      "sustainableMobility": 58.17,
+      "railAccessibility": 70.0,
+      "railCongestion": 59.56,
+      "gatewayStation": "Wakaf Bharu",
+      "matchedInterests": [
+        "Food",
+        "Culture",
+        "Heritage"
+      ],
+      "explanation": "Kota Bharu closely matches your interests (Food, Culture, Heritage, 85%). Compared with Pangkor Island, it shows considerably lower tourism pressure and moderate economic headroom, and offers good rail-based access via Wakaf Bharu."
+    },
+    {
+      "sourceDestination": "Pangkor Island",
+      "destination": "Tioman Island",
+      "state": "Pahang",
+      "score": 71.06,
+      "similarity": 99.45,
+      "tourismPressure": 50.95,
+      "lowerPressureScore": 49.05,
+      "economicOpportunity": 70.94,
+      "sustainableMobility": 49.0,
+      "railAccessibility": 15.0,
+      "railCongestion": "",
+      "gatewayStation": "",
+      "matchedInterests": [
+        "Beach",
+        "Nature",
+        "Adventure"
+      ],
+      "explanation": "Tioman Island closely matches your interests (Beach, Nature, Adventure, 99%). Compared with Pangkor Island, it shows higher tourism pressure and strong economic headroom, and has limited direct rail access (last-mile by road/air)."
+    },
+    {
+      "sourceDestination": "Taiping",
+      "destination": "Ipoh",
+      "state": "Perak",
+      "score": 79.3,
+      "similarity": 97.25,
+      "tourismPressure": 32.47,
+      "lowerPressureScore": 67.53,
+      "economicOpportunity": 68.76,
+      "sustainableMobility": 75.01,
+      "railAccessibility": 100.0,
+      "railCongestion": 62.48,
+      "gatewayStation": "Ipoh",
+      "matchedInterests": [
+        "Food",
+        "Culture",
+        "Heritage"
+      ],
+      "explanation": "Ipoh closely matches your interests (Food, Culture, Heritage, 97%). Compared with Taiping, it shows comparable tourism pressure and strong economic headroom, and offers good rail-based access via Ipoh."
+    },
+    {
+      "sourceDestination": "Taiping",
+      "destination": "Langkawi",
+      "state": "Kedah",
+      "score": 75.26,
+      "similarity": 90.26,
+      "tourismPressure": 26.16,
+      "lowerPressureScore": 73.84,
+      "economicOpportunity": 61.9,
+      "sustainableMobility": 60.92,
+      "railAccessibility": 65.0,
+      "railCongestion": 45.2,
+      "gatewayStation": "Alor Setar",
+      "matchedInterests": [
+        "Beach",
+        "Nature",
+        "Adventure"
+      ],
+      "explanation": "Langkawi closely matches your interests (Beach, Nature, Adventure, 90%). Compared with Taiping, it shows lower tourism pressure and strong economic headroom, and is reachable via Alor Setar with some last-mile travel."
+    },
+    {
+      "sourceDestination": "Taiping",
+      "destination": "Kota Bharu",
+      "state": "Kelantan",
+      "score": 75.25,
+      "similarity": 94.88,
+      "tourismPressure": 22.05,
+      "lowerPressureScore": 77.95,
+      "economicOpportunity": 49.64,
+      "sustainableMobility": 58.17,
+      "railAccessibility": 70.0,
+      "railCongestion": 59.56,
+      "gatewayStation": "Wakaf Bharu",
+      "matchedInterests": [
+        "Food",
+        "Culture",
+        "Heritage"
+      ],
+      "explanation": "Kota Bharu closely matches your interests (Food, Culture, Heritage, 95%). Compared with Taiping, it shows considerably lower tourism pressure and moderate economic headroom, and offers good rail-based access via Wakaf Bharu."
+    },
+    {
+      "sourceDestination": "Taiping",
+      "destination": "Mersing",
+      "state": "Johor",
+      "score": 74.55,
+      "similarity": 87.93,
+      "tourismPressure": 31.74,
+      "lowerPressureScore": 68.26,
+      "economicOpportunity": 78.37,
+      "sustainableMobility": 50.8,
+      "railAccessibility": 18.0,
+      "railCongestion": "",
+      "gatewayStation": "",
+      "matchedInterests": [
+        "Nature",
+        "Adventure",
+        "Beach"
+      ],
+      "explanation": "Mersing closely matches your interests (Nature, Adventure, Beach, 88%). Compared with Taiping, it shows lower tourism pressure and strong economic headroom, and has limited direct rail access (last-mile by road/air)."
+    },
+    {
+      "sourceDestination": "Taiping",
+      "destination": "Desaru",
+      "state": "Johor",
+      "score": 74.28,
+      "similarity": 82.8,
+      "tourismPressure": 31.74,
+      "lowerPressureScore": 68.26,
+      "economicOpportunity": 78.37,
+      "sustainableMobility": 61.0,
+      "railAccessibility": 35.0,
+      "railCongestion": "",
+      "gatewayStation": "Johor Bahru Sentral",
+      "matchedInterests": [
+        "Beach",
+        "Adventure",
+        "Nature"
+      ],
+      "explanation": "Desaru closely matches your interests (Beach, Adventure, Nature, 83%). Compared with Taiping, it shows lower tourism pressure and strong economic headroom, and is reachable via Johor Bahru Sentral with some last-mile travel."
+    },
+    {
+      "sourceDestination": "Taiping",
+      "destination": "Kota Kinabalu",
+      "state": "Sabah",
+      "score": 72.78,
+      "similarity": 91.99,
+      "tourismPressure": 31.89,
+      "lowerPressureScore": 68.11,
+      "economicOpportunity": 63.98,
+      "sustainableMobility": 49.0,
+      "railAccessibility": 15.0,
+      "railCongestion": "",
+      "gatewayStation": "",
+      "matchedInterests": [
+        "Nature",
+        "Adventure",
+        "Food"
+      ],
+      "explanation": "Kota Kinabalu closely matches your interests (Nature, Adventure, Food, 92%). Compared with Taiping, it shows lower tourism pressure and strong economic headroom, and has limited direct rail access (last-mile by road/air)."
+    },
+    {
+      "sourceDestination": "Taiping",
+      "destination": "Sandakan",
+      "state": "Sabah",
+      "score": 72.6,
+      "similarity": 94.05,
+      "tourismPressure": 31.89,
+      "lowerPressureScore": 68.11,
+      "economicOpportunity": 63.98,
+      "sustainableMobility": 43.0,
+      "railAccessibility": 5.0,
+      "railCongestion": "",
+      "gatewayStation": "",
+      "matchedInterests": [
+        "Nature",
+        "Adventure",
+        "Food"
+      ],
+      "explanation": "Sandakan closely matches your interests (Nature, Adventure, Food, 94%). Compared with Taiping, it shows lower tourism pressure and strong economic headroom, and has limited direct rail access (last-mile by road/air)."
+    },
+    {
+      "sourceDestination": "Taiping",
+      "destination": "Kundasang",
+      "state": "Sabah",
+      "score": 72.3,
+      "similarity": 93.21,
+      "tourismPressure": 31.89,
+      "lowerPressureScore": 68.11,
+      "economicOpportunity": 63.98,
+      "sustainableMobility": 43.0,
+      "railAccessibility": 5.0,
+      "railCongestion": "",
+      "gatewayStation": "",
+      "matchedInterests": [
+        "Nature",
+        "Adventure",
+        "Food"
+      ],
+      "explanation": "Kundasang closely matches your interests (Nature, Adventure, Food, 93%). Compared with Taiping, it shows lower tourism pressure and strong economic headroom, and has limited direct rail access (last-mile by road/air)."
+    },
+    {
+      "sourceDestination": "Taiping",
+      "destination": "George Town",
+      "state": "Penang",
+      "score": 71.23,
+      "similarity": 93.63,
+      "tourismPressure": 38.88,
+      "lowerPressureScore": 61.12,
+      "economicOpportunity": 51.63,
+      "sustainableMobility": 65.27,
+      "railAccessibility": 85.0,
+      "railCongestion": 64.31,
+      "gatewayStation": "Butterworth",
+      "matchedInterests": [
+        "Heritage",
+        "Culture",
+        "Food"
+      ],
+      "explanation": "George Town closely matches your interests (Heritage, Culture, Food, 94%). Compared with Taiping, it shows comparable tourism pressure and moderate economic headroom, and offers good rail-based access via Butterworth."
+    },
+    {
+      "sourceDestination": "Taiping",
+      "destination": "Kuching",
+      "state": "Sarawak",
+      "score": 71.02,
+      "similarity": 98.33,
+      "tourismPressure": 40.9,
+      "lowerPressureScore": 59.1,
+      "economicOpportunity": 59.86,
+      "sustainableMobility": 46.0,
+      "railAccessibility": 10.0,
+      "railCongestion": "",
+      "gatewayStation": "",
+      "matchedInterests": [
+        "Nature",
+        "Culture",
+        "Food"
+      ],
+      "explanation": "Kuching closely matches your interests (Nature, Culture, Food, 98%). Compared with Taiping, it shows comparable tourism pressure and moderate economic headroom, and has limited direct rail access (last-mile by road/air)."
+    },
+    {
+      "sourceDestination": "Ipoh",
+      "destination": "Taiping",
+      "state": "Perak",
+      "score": 80.16,
+      "similarity": 97.25,
+      "tourismPressure": 32.47,
+      "lowerPressureScore": 67.53,
+      "economicOpportunity": 68.76,
+      "sustainableMobility": 80.72,
+      "railAccessibility": 98.0,
+      "railCongestion": 45.2,
+      "gatewayStation": "Taiping",
+      "matchedInterests": [
+        "Nature",
+        "Heritage",
+        "Culture"
+      ],
+      "explanation": "Taiping closely matches your interests (Nature, Heritage, Culture, 97%). Compared with Ipoh, it shows comparable tourism pressure and strong economic headroom, and offers good rail-based access via Taiping."
+    },
+    {
+      "sourceDestination": "Ipoh",
+      "destination": "Kota Bharu",
+      "state": "Kelantan",
+      "score": 76.54,
+      "similarity": 98.56,
+      "tourismPressure": 22.05,
+      "lowerPressureScore": 77.95,
+      "economicOpportunity": 49.64,
+      "sustainableMobility": 58.17,
+      "railAccessibility": 70.0,
+      "railCongestion": 59.56,
+      "gatewayStation": "Wakaf Bharu",
+      "matchedInterests": [
+        "Food",
+        "Culture",
+        "Heritage"
+      ],
+      "explanation": "Kota Bharu closely matches your interests (Food, Culture, Heritage, 99%). Compared with Ipoh, it shows considerably lower tourism pressure and moderate economic headroom, and offers good rail-based access via Wakaf Bharu."
+    },
+    {
+      "sourceDestination": "Ipoh",
+      "destination": "Langkawi",
+      "state": "Kedah",
+      "score": 74.64,
+      "similarity": 88.48,
+      "tourismPressure": 26.16,
+      "lowerPressureScore": 73.84,
+      "economicOpportunity": 61.9,
+      "sustainableMobility": 60.92,
+      "railAccessibility": 65.0,
+      "railCongestion": 45.2,
+      "gatewayStation": "Alor Setar",
+      "matchedInterests": [
+        "Beach",
+        "Nature",
+        "Adventure"
+      ],
+      "explanation": "Langkawi closely matches your interests (Beach, Nature, Adventure, 88%). Compared with Ipoh, it shows lower tourism pressure and strong economic headroom, and is reachable via Alor Setar with some last-mile travel."
+    },
+    {
+      "sourceDestination": "Ipoh",
+      "destination": "Desaru",
+      "state": "Johor",
+      "score": 73.5,
+      "similarity": 80.58,
+      "tourismPressure": 31.74,
+      "lowerPressureScore": 68.26,
+      "economicOpportunity": 78.37,
+      "sustainableMobility": 61.0,
+      "railAccessibility": 35.0,
+      "railCongestion": "",
+      "gatewayStation": "Johor Bahru Sentral",
+      "matchedInterests": [
+        "Beach",
+        "Adventure",
+        "Nature"
+      ],
+      "explanation": "Desaru closely matches your interests (Beach, Adventure, Nature, 81%). Compared with Ipoh, it shows lower tourism pressure and strong economic headroom, and is reachable via Johor Bahru Sentral with some last-mile travel."
+    },
+    {
+      "sourceDestination": "Ipoh",
+      "destination": "Mersing",
+      "state": "Johor",
+      "score": 73.24,
+      "similarity": 84.2,
+      "tourismPressure": 31.74,
+      "lowerPressureScore": 68.26,
+      "economicOpportunity": 78.37,
+      "sustainableMobility": 50.8,
+      "railAccessibility": 18.0,
+      "railCongestion": "",
+      "gatewayStation": "",
+      "matchedInterests": [
+        "Nature",
+        "Adventure",
+        "Beach"
+      ],
+      "explanation": "Mersing closely matches your interests (Nature, Adventure, Beach, 84%). Compared with Ipoh, it shows lower tourism pressure and strong economic headroom, and has limited direct rail access (last-mile by road/air)."
+    },
+    {
+      "sourceDestination": "Ipoh",
+      "destination": "George Town",
+      "state": "Penang",
+      "score": 72.64,
+      "similarity": 97.69,
+      "tourismPressure": 38.88,
+      "lowerPressureScore": 61.12,
+      "economicOpportunity": 51.63,
+      "sustainableMobility": 65.27,
+      "railAccessibility": 85.0,
+      "railCongestion": 64.31,
+      "gatewayStation": "Butterworth",
+      "matchedInterests": [
+        "Heritage",
+        "Culture",
+        "Food"
+      ],
+      "explanation": "George Town closely matches your interests (Heritage, Culture, Food, 98%). Compared with Ipoh, it shows comparable tourism pressure and moderate economic headroom, and offers good rail-based access via Butterworth."
+    },
+    {
+      "sourceDestination": "Ipoh",
+      "destination": "Kota Kinabalu",
+      "state": "Sabah",
+      "score": 72.39,
+      "similarity": 90.9,
+      "tourismPressure": 31.89,
+      "lowerPressureScore": 68.11,
+      "economicOpportunity": 63.98,
+      "sustainableMobility": 49.0,
+      "railAccessibility": 15.0,
+      "railCongestion": "",
+      "gatewayStation": "",
+      "matchedInterests": [
+        "Nature",
+        "Adventure",
+        "Food"
+      ],
+      "explanation": "Kota Kinabalu closely matches your interests (Nature, Adventure, Food, 91%). Compared with Ipoh, it shows lower tourism pressure and strong economic headroom, and has limited direct rail access (last-mile by road/air)."
+    },
+    {
+      "sourceDestination": "Ipoh",
+      "destination": "Sandakan",
+      "state": "Sabah",
+      "score": 70.87,
+      "similarity": 89.12,
+      "tourismPressure": 31.89,
+      "lowerPressureScore": 68.11,
+      "economicOpportunity": 63.98,
+      "sustainableMobility": 43.0,
+      "railAccessibility": 5.0,
+      "railCongestion": "",
+      "gatewayStation": "",
+      "matchedInterests": [
+        "Nature",
+        "Adventure",
+        "Food"
+      ],
+      "explanation": "Sandakan closely matches your interests (Nature, Adventure, Food, 89%). Compared with Ipoh, it shows lower tourism pressure and strong economic headroom, and has limited direct rail access (last-mile by road/air)."
+    },
+    {
+      "sourceDestination": "Ipoh",
+      "destination": "Kuching",
+      "state": "Sarawak",
+      "score": 70.43,
+      "similarity": 96.66,
+      "tourismPressure": 40.9,
+      "lowerPressureScore": 59.1,
+      "economicOpportunity": 59.86,
+      "sustainableMobility": 46.0,
+      "railAccessibility": 10.0,
+      "railCongestion": "",
+      "gatewayStation": "",
+      "matchedInterests": [
+        "Nature",
+        "Culture",
+        "Food"
+      ],
+      "explanation": "Kuching closely matches your interests (Nature, Culture, Food, 97%). Compared with Ipoh, it shows comparable tourism pressure and moderate economic headroom, and has limited direct rail access (last-mile by road/air)."
+    },
+    {
+      "sourceDestination": "Ipoh",
+      "destination": "Kundasang",
+      "state": "Sabah",
+      "score": 70.18,
+      "similarity": 87.15,
+      "tourismPressure": 31.89,
+      "lowerPressureScore": 68.11,
+      "economicOpportunity": 63.98,
+      "sustainableMobility": 43.0,
+      "railAccessibility": 5.0,
+      "railCongestion": "",
+      "gatewayStation": "",
+      "matchedInterests": [
+        "Nature",
+        "Adventure",
+        "Food"
+      ],
+      "explanation": "Kundasang closely matches your interests (Nature, Adventure, Food, 87%). Compared with Ipoh, it shows lower tourism pressure and strong economic headroom, and has limited direct rail access (last-mile by road/air)."
+    },
+    {
+      "sourceDestination": "Taman Negara",
+      "destination": "Taiping",
+      "state": "Perak",
+      "score": 78.1,
+      "similarity": 91.38,
+      "tourismPressure": 32.47,
+      "lowerPressureScore": 67.53,
+      "economicOpportunity": 68.76,
+      "sustainableMobility": 80.72,
+      "railAccessibility": 98.0,
+      "railCongestion": 45.2,
+      "gatewayStation": "Taiping",
+      "matchedInterests": [
+        "Nature",
+        "Heritage",
+        "Culture"
+      ],
+      "explanation": "Taiping closely matches your interests (Nature, Heritage, Culture, 91%). Compared with Taman Negara, it shows considerably lower tourism pressure and strong economic headroom, and offers good rail-based access via Taiping."
+    },
+    {
+      "sourceDestination": "Taman Negara",
+      "destination": "Mersing",
+      "state": "Johor",
+      "score": 75.26,
+      "similarity": 89.98,
+      "tourismPressure": 31.74,
+      "lowerPressureScore": 68.26,
+      "economicOpportunity": 78.37,
+      "sustainableMobility": 50.8,
+      "railAccessibility": 18.0,
+      "railCongestion": "",
+      "gatewayStation": "",
+      "matchedInterests": [
+        "Nature",
+        "Adventure",
+        "Beach"
+      ],
+      "explanation": "Mersing closely matches your interests (Nature, Adventure, Beach, 90%). Compared with Taman Negara, it shows considerably lower tourism pressure and strong economic headroom, and has limited direct rail access (last-mile by road/air)."
+    },
+    {
+      "sourceDestination": "Taman Negara",
+      "destination": "Ipoh",
+      "state": "Perak",
+      "score": 74.67,
+      "similarity": 84.03,
+      "tourismPressure": 32.47,
+      "lowerPressureScore": 67.53,
+      "economicOpportunity": 68.76,
+      "sustainableMobility": 75.01,
+      "railAccessibility": 100.0,
+      "railCongestion": 62.48,
+      "gatewayStation": "Ipoh",
+      "matchedInterests": [
+        "Food",
+        "Culture",
+        "Heritage"
+      ],
+      "explanation": "Ipoh closely matches your interests (Food, Culture, Heritage, 84%). Compared with Taman Negara, it shows considerably lower tourism pressure and strong economic headroom, and offers good rail-based access via Ipoh."
+    },
+    {
+      "sourceDestination": "Taman Negara",
+      "destination": "Kundasang",
+      "state": "Sabah",
+      "score": 74.23,
+      "similarity": 98.71,
+      "tourismPressure": 31.89,
+      "lowerPressureScore": 68.11,
+      "economicOpportunity": 63.98,
+      "sustainableMobility": 43.0,
+      "railAccessibility": 5.0,
+      "railCongestion": "",
+      "gatewayStation": "",
+      "matchedInterests": [
+        "Nature",
+        "Adventure",
+        "Food"
+      ],
+      "explanation": "Kundasang closely matches your interests (Nature, Adventure, Food, 99%). Compared with Taman Negara, it shows considerably lower tourism pressure and strong economic headroom, and has limited direct rail access (last-mile by road/air)."
+    },
+    {
+      "sourceDestination": "Taman Negara",
+      "destination": "Desaru",
+      "state": "Johor",
+      "score": 73.97,
+      "similarity": 81.9,
+      "tourismPressure": 31.74,
+      "lowerPressureScore": 68.26,
+      "economicOpportunity": 78.37,
+      "sustainableMobility": 61.0,
+      "railAccessibility": 35.0,
+      "railCongestion": "",
+      "gatewayStation": "Johor Bahru Sentral",
+      "matchedInterests": [
+        "Beach",
+        "Adventure",
+        "Nature"
+      ],
+      "explanation": "Desaru closely matches your interests (Beach, Adventure, Nature, 82%). Compared with Taman Negara, it shows considerably lower tourism pressure and strong economic headroom, and is reachable via Johor Bahru Sentral with some last-mile travel."
+    },
+    {
+      "sourceDestination": "Taman Negara",
+      "destination": "Langkawi",
+      "state": "Kedah",
+      "score": 73.48,
+      "similarity": 85.18,
+      "tourismPressure": 26.16,
+      "lowerPressureScore": 73.84,
+      "economicOpportunity": 61.9,
+      "sustainableMobility": 60.92,
+      "railAccessibility": 65.0,
+      "railCongestion": 45.2,
+      "gatewayStation": "Alor Setar",
+      "matchedInterests": [
+        "Beach",
+        "Nature",
+        "Adventure"
+      ],
+      "explanation": "Langkawi closely matches your interests (Beach, Nature, Adventure, 85%). Compared with Taman Negara, it shows considerably lower tourism pressure and strong economic headroom, and is reachable via Alor Setar with some last-mile travel."
+    },
+    {
+      "sourceDestination": "Taman Negara",
+      "destination": "Sandakan",
+      "state": "Sabah",
+      "score": 73.37,
+      "similarity": 96.27,
+      "tourismPressure": 31.89,
+      "lowerPressureScore": 68.11,
+      "economicOpportunity": 63.98,
+      "sustainableMobility": 43.0,
+      "railAccessibility": 5.0,
+      "railCongestion": "",
+      "gatewayStation": "",
+      "matchedInterests": [
+        "Nature",
+        "Adventure",
+        "Food"
+      ],
+      "explanation": "Sandakan closely matches your interests (Nature, Adventure, Food, 96%). Compared with Taman Negara, it shows considerably lower tourism pressure and strong economic headroom, and has limited direct rail access (last-mile by road/air)."
+    },
+    {
+      "sourceDestination": "Taman Negara",
+      "destination": "Semporna",
+      "state": "Sabah",
+      "score": 72.56,
+      "similarity": 93.18,
+      "tourismPressure": 31.89,
+      "lowerPressureScore": 68.11,
+      "economicOpportunity": 63.98,
+      "sustainableMobility": 44.8,
+      "railAccessibility": 8.0,
+      "railCongestion": "",
+      "gatewayStation": "",
+      "matchedInterests": [
+        "Nature",
+        "Adventure",
+        "Beach"
+      ],
+      "explanation": "Semporna closely matches your interests (Nature, Adventure, Beach, 93%). Compared with Taman Negara, it shows considerably lower tourism pressure and strong economic headroom, and has limited direct rail access (last-mile by road/air)."
+    },
+    {
+      "sourceDestination": "Taman Negara",
+      "destination": "Kota Kinabalu",
+      "state": "Sabah",
+      "score": 71.54,
+      "similarity": 88.46,
+      "tourismPressure": 31.89,
+      "lowerPressureScore": 68.11,
+      "economicOpportunity": 63.98,
+      "sustainableMobility": 49.0,
+      "railAccessibility": 15.0,
+      "railCongestion": "",
+      "gatewayStation": "",
+      "matchedInterests": [
+        "Nature",
+        "Adventure",
+        "Food"
+      ],
+      "explanation": "Kota Kinabalu closely matches your interests (Nature, Adventure, Food, 88%). Compared with Taman Negara, it shows considerably lower tourism pressure and strong economic headroom, and has limited direct rail access (last-mile by road/air)."
+    },
+    {
+      "sourceDestination": "Taman Negara",
+      "destination": "Cameron Highlands",
+      "state": "Pahang",
+      "score": 69.71,
+      "similarity": 96.63,
+      "tourismPressure": 50.95,
+      "lowerPressureScore": 49.05,
+      "economicOpportunity": 70.94,
+      "sustainableMobility": 46.57,
+      "railAccessibility": 35.0,
+      "railCongestion": 36.08,
+      "gatewayStation": "Tapah Road",
+      "matchedInterests": [
+        "Nature",
+        "Food",
+        "Adventure"
+      ],
+      "explanation": "Cameron Highlands closely matches your interests (Nature, Food, Adventure, 97%). Compared with Taman Negara, it shows comparable tourism pressure and strong economic headroom, and is reachable via Tapah Road with some last-mile travel."
+    },
+    {
+      "sourceDestination": "Mersing",
+      "destination": "Desaru",
+      "state": "Johor",
+      "score": 79.81,
+      "similarity": 98.6,
+      "tourismPressure": 31.74,
+      "lowerPressureScore": 68.26,
+      "economicOpportunity": 78.37,
+      "sustainableMobility": 61.0,
+      "railAccessibility": 35.0,
+      "railCongestion": "",
+      "gatewayStation": "Johor Bahru Sentral",
+      "matchedInterests": [
+        "Beach",
+        "Adventure",
+        "Nature"
+      ],
+      "explanation": "Desaru closely matches your interests (Beach, Adventure, Nature, 99%). Compared with Mersing, it shows comparable tourism pressure and strong economic headroom, and is reachable via Johor Bahru Sentral with some last-mile travel."
+    },
+    {
+      "sourceDestination": "Mersing",
+      "destination": "Langkawi",
+      "state": "Kedah",
+      "score": 78.07,
+      "similarity": 98.28,
+      "tourismPressure": 26.16,
+      "lowerPressureScore": 73.84,
+      "economicOpportunity": 61.9,
+      "sustainableMobility": 60.92,
+      "railAccessibility": 65.0,
+      "railCongestion": 45.2,
+      "gatewayStation": "Alor Setar",
+      "matchedInterests": [
+        "Beach",
+        "Nature",
+        "Adventure"
+      ],
+      "explanation": "Langkawi closely matches your interests (Beach, Nature, Adventure, 98%). Compared with Mersing, it shows lower tourism pressure and strong economic headroom, and is reachable via Alor Setar with some last-mile travel."
+    },
+    {
+      "sourceDestination": "Mersing",
+      "destination": "Taiping",
+      "state": "Perak",
+      "score": 76.89,
+      "similarity": 87.93,
+      "tourismPressure": 32.47,
+      "lowerPressureScore": 67.53,
+      "economicOpportunity": 68.76,
+      "sustainableMobility": 80.72,
+      "railAccessibility": 98.0,
+      "railCongestion": 45.2,
+      "gatewayStation": "Taiping",
+      "matchedInterests": [
+        "Nature",
+        "Heritage",
+        "Culture"
+      ],
+      "explanation": "Taiping closely matches your interests (Nature, Heritage, Culture, 88%). Compared with Mersing, it shows comparable tourism pressure and strong economic headroom, and offers good rail-based access via Taiping."
+    },
+    {
+      "sourceDestination": "Mersing",
+      "destination": "Kota Kinabalu",
+      "state": "Sabah",
+      "score": 75.0,
+      "similarity": 98.34,
+      "tourismPressure": 31.89,
+      "lowerPressureScore": 68.11,
+      "economicOpportunity": 63.98,
+      "sustainableMobility": 49.0,
+      "railAccessibility": 15.0,
+      "railCongestion": "",
+      "gatewayStation": "",
+      "matchedInterests": [
+        "Nature",
+        "Adventure",
+        "Food"
+      ],
+      "explanation": "Kota Kinabalu closely matches your interests (Nature, Adventure, Food, 98%). Compared with Mersing, it shows comparable tourism pressure and strong economic headroom, and has limited direct rail access (last-mile by road/air)."
+    },
+    {
+      "sourceDestination": "Mersing",
+      "destination": "Ipoh",
+      "state": "Perak",
+      "score": 74.73,
+      "similarity": 84.2,
+      "tourismPressure": 32.47,
+      "lowerPressureScore": 67.53,
+      "economicOpportunity": 68.76,
+      "sustainableMobility": 75.01,
+      "railAccessibility": 100.0,
+      "railCongestion": 62.48,
+      "gatewayStation": "Ipoh",
+      "matchedInterests": [
+        "Food",
+        "Culture",
+        "Heritage"
+      ],
+      "explanation": "Ipoh closely matches your interests (Food, Culture, Heritage, 84%). Compared with Mersing, it shows comparable tourism pressure and strong economic headroom, and offers good rail-based access via Ipoh."
+    },
+    {
+      "sourceDestination": "Mersing",
+      "destination": "Pangkor Island",
+      "state": "Perak",
+      "score": 74.51,
+      "similarity": 99.01,
+      "tourismPressure": 32.47,
+      "lowerPressureScore": 67.53,
+      "economicOpportunity": 68.76,
+      "sustainableMobility": 39.01,
+      "railAccessibility": 40.0,
+      "railCongestion": 62.48,
+      "gatewayStation": "Ipoh",
+      "matchedInterests": [
+        "Beach",
+        "Nature",
+        "Adventure"
+      ],
+      "explanation": "Pangkor Island closely matches your interests (Beach, Nature, Adventure, 99%). Compared with Mersing, it shows comparable tourism pressure and strong economic headroom, and is reachable via Ipoh with some last-mile travel."
+    },
+    {
+      "sourceDestination": "Mersing",
+      "destination": "Semporna",
+      "state": "Sabah",
+      "score": 74.51,
+      "similarity": 98.74,
+      "tourismPressure": 31.89,
+      "lowerPressureScore": 68.11,
+      "economicOpportunity": 63.98,
+      "sustainableMobility": 44.8,
+      "railAccessibility": 8.0,
+      "railCongestion": "",
+      "gatewayStation": "",
+      "matchedInterests": [
+        "Nature",
+        "Adventure",
+        "Beach"
+      ],
+      "explanation": "Semporna closely matches your interests (Nature, Adventure, Beach, 99%). Compared with Mersing, it shows comparable tourism pressure and strong economic headroom, and has limited direct rail access (last-mile by road/air)."
+    },
+    {
+      "sourceDestination": "Mersing",
+      "destination": "Sandakan",
+      "state": "Sabah",
+      "score": 73.91,
+      "similarity": 97.79,
+      "tourismPressure": 31.89,
+      "lowerPressureScore": 68.11,
+      "economicOpportunity": 63.98,
+      "sustainableMobility": 43.0,
+      "railAccessibility": 5.0,
+      "railCongestion": "",
+      "gatewayStation": "",
+      "matchedInterests": [
+        "Nature",
+        "Adventure",
+        "Food"
+      ],
+      "explanation": "Sandakan closely matches your interests (Nature, Adventure, Food, 98%). Compared with Mersing, it shows comparable tourism pressure and strong economic headroom, and has limited direct rail access (last-mile by road/air)."
+    },
+    {
+      "sourceDestination": "Mersing",
+      "destination": "Kota Bharu",
+      "state": "Kelantan",
+      "score": 72.01,
+      "similarity": 85.64,
+      "tourismPressure": 22.05,
+      "lowerPressureScore": 77.95,
+      "economicOpportunity": 49.64,
+      "sustainableMobility": 58.17,
+      "railAccessibility": 70.0,
+      "railCongestion": 59.56,
+      "gatewayStation": "Wakaf Bharu",
+      "matchedInterests": [
+        "Food",
+        "Culture",
+        "Heritage"
+      ],
+      "explanation": "Kota Bharu closely matches your interests (Food, Culture, Heritage, 86%). Compared with Mersing, it shows lower tourism pressure and moderate economic headroom, and offers good rail-based access via Wakaf Bharu."
+    },
+    {
+      "sourceDestination": "Mersing",
+      "destination": "Kundasang",
+      "state": "Sabah",
+      "score": 71.07,
+      "similarity": 89.68,
+      "tourismPressure": 31.89,
+      "lowerPressureScore": 68.11,
+      "economicOpportunity": 63.98,
+      "sustainableMobility": 43.0,
+      "railAccessibility": 5.0,
+      "railCongestion": "",
+      "gatewayStation": "",
+      "matchedInterests": [
+        "Nature",
+        "Adventure",
+        "Food"
+      ],
+      "explanation": "Kundasang closely matches your interests (Nature, Adventure, Food, 90%). Compared with Mersing, it shows comparable tourism pressure and strong economic headroom, and has limited direct rail access (last-mile by road/air)."
+    },
+    {
+      "sourceDestination": "Port Dickson",
+      "destination": "Desaru",
+      "state": "Johor",
+      "score": 79.94,
+      "similarity": 98.97,
+      "tourismPressure": 31.74,
+      "lowerPressureScore": 68.26,
+      "economicOpportunity": 78.37,
+      "sustainableMobility": 61.0,
+      "railAccessibility": 35.0,
+      "railCongestion": "",
+      "gatewayStation": "Johor Bahru Sentral",
+      "matchedInterests": [
+        "Beach",
+        "Adventure",
+        "Nature"
+      ],
+      "explanation": "Desaru closely matches your interests (Beach, Adventure, Nature, 99%). Compared with Port Dickson, it shows considerably lower tourism pressure and strong economic headroom, and is reachable via Johor Bahru Sentral with some last-mile travel."
+    },
+    {
+      "sourceDestination": "Port Dickson",
+      "destination": "Langkawi",
+      "state": "Kedah",
+      "score": 78.3,
+      "similarity": 98.93,
+      "tourismPressure": 26.16,
+      "lowerPressureScore": 73.84,
+      "economicOpportunity": 61.9,
+      "sustainableMobility": 60.92,
+      "railAccessibility": 65.0,
+      "railCongestion": 45.2,
+      "gatewayStation": "Alor Setar",
+      "matchedInterests": [
+        "Beach",
+        "Nature",
+        "Adventure"
+      ],
+      "explanation": "Langkawi closely matches your interests (Beach, Nature, Adventure, 99%). Compared with Port Dickson, it shows considerably lower tourism pressure and strong economic headroom, and is reachable via Alor Setar with some last-mile travel."
+    },
+    {
+      "sourceDestination": "Port Dickson",
+      "destination": "Mersing",
+      "state": "Johor",
+      "score": 77.81,
+      "similarity": 97.24,
+      "tourismPressure": 31.74,
+      "lowerPressureScore": 68.26,
+      "economicOpportunity": 78.37,
+      "sustainableMobility": 50.8,
+      "railAccessibility": 18.0,
+      "railCongestion": "",
+      "gatewayStation": "",
+      "matchedInterests": [
+        "Nature",
+        "Adventure",
+        "Beach"
+      ],
+      "explanation": "Mersing closely matches your interests (Nature, Adventure, Beach, 97%). Compared with Port Dickson, it shows considerably lower tourism pressure and strong economic headroom, and has limited direct rail access (last-mile by road/air)."
+    },
+    {
+      "sourceDestination": "Port Dickson",
+      "destination": "Taiping",
+      "state": "Perak",
+      "score": 75.86,
+      "similarity": 84.97,
+      "tourismPressure": 32.47,
+      "lowerPressureScore": 67.53,
+      "economicOpportunity": 68.76,
+      "sustainableMobility": 80.72,
+      "railAccessibility": 98.0,
+      "railCongestion": 45.2,
+      "gatewayStation": "Taiping",
+      "matchedInterests": [
+        "Nature",
+        "Heritage",
+        "Culture"
+      ],
+      "explanation": "Taiping closely matches your interests (Nature, Heritage, Culture, 85%). Compared with Port Dickson, it shows considerably lower tourism pressure and strong economic headroom, and offers good rail-based access via Taiping."
+    },
+    {
+      "sourceDestination": "Port Dickson",
+      "destination": "Ipoh",
+      "state": "Perak",
+      "score": 75.21,
+      "similarity": 85.57,
+      "tourismPressure": 32.47,
+      "lowerPressureScore": 67.53,
+      "economicOpportunity": 68.76,
+      "sustainableMobility": 75.01,
+      "railAccessibility": 100.0,
+      "railCongestion": 62.48,
+      "gatewayStation": "Ipoh",
+      "matchedInterests": [
+        "Food",
+        "Culture",
+        "Heritage"
+      ],
+      "explanation": "Ipoh closely matches your interests (Food, Culture, Heritage, 86%). Compared with Port Dickson, it shows considerably lower tourism pressure and strong economic headroom, and offers good rail-based access via Ipoh."
+    },
+    {
+      "sourceDestination": "Port Dickson",
+      "destination": "Kota Kinabalu",
+      "state": "Sabah",
+      "score": 75.04,
+      "similarity": 98.47,
+      "tourismPressure": 31.89,
+      "lowerPressureScore": 68.11,
+      "economicOpportunity": 63.98,
+      "sustainableMobility": 49.0,
+      "railAccessibility": 15.0,
+      "railCongestion": "",
+      "gatewayStation": "",
+      "matchedInterests": [
+        "Nature",
+        "Adventure",
+        "Food"
+      ],
+      "explanation": "Kota Kinabalu closely matches your interests (Nature, Adventure, Food, 98%). Compared with Port Dickson, it shows considerably lower tourism pressure and strong economic headroom, and has limited direct rail access (last-mile by road/air)."
+    },
+    {
+      "sourceDestination": "Port Dickson",
+      "destination": "Pangkor Island",
+      "state": "Perak",
+      "score": 74.36,
+      "similarity": 98.56,
+      "tourismPressure": 32.47,
+      "lowerPressureScore": 67.53,
+      "economicOpportunity": 68.76,
+      "sustainableMobility": 39.01,
+      "railAccessibility": 40.0,
+      "railCongestion": 62.48,
+      "gatewayStation": "Ipoh",
+      "matchedInterests": [
+        "Beach",
+        "Nature",
+        "Adventure"
+      ],
+      "explanation": "Pangkor Island closely matches your interests (Beach, Nature, Adventure, 99%). Compared with Port Dickson, it shows considerably lower tourism pressure and strong economic headroom, and is reachable via Ipoh with some last-mile travel."
+    },
+    {
+      "sourceDestination": "Port Dickson",
+      "destination": "Kota Bharu",
+      "state": "Kelantan",
+      "score": 73.22,
+      "similarity": 89.09,
+      "tourismPressure": 22.05,
+      "lowerPressureScore": 77.95,
+      "economicOpportunity": 49.64,
+      "sustainableMobility": 58.17,
+      "railAccessibility": 70.0,
+      "railCongestion": 59.56,
+      "gatewayStation": "Wakaf Bharu",
+      "matchedInterests": [
+        "Food",
+        "Culture",
+        "Heritage"
+      ],
+      "explanation": "Kota Bharu closely matches your interests (Food, Culture, Heritage, 89%). Compared with Port Dickson, it shows considerably lower tourism pressure and moderate economic headroom, and offers good rail-based access via Wakaf Bharu."
+    },
+    {
+      "sourceDestination": "Port Dickson",
+      "destination": "Semporna",
+      "state": "Sabah",
+      "score": 72.44,
+      "similarity": 92.84,
+      "tourismPressure": 31.89,
+      "lowerPressureScore": 68.11,
+      "economicOpportunity": 63.98,
+      "sustainableMobility": 44.8,
+      "railAccessibility": 8.0,
+      "railCongestion": "",
+      "gatewayStation": "",
+      "matchedInterests": [
+        "Nature",
+        "Adventure",
+        "Beach"
+      ],
+      "explanation": "Semporna closely matches your interests (Nature, Adventure, Beach, 93%). Compared with Port Dickson, it shows considerably lower tourism pressure and strong economic headroom, and has limited direct rail access (last-mile by road/air)."
+    },
+    {
+      "sourceDestination": "Port Dickson",
+      "destination": "Sandakan",
+      "state": "Sabah",
+      "score": 72.18,
+      "similarity": 92.86,
+      "tourismPressure": 31.89,
+      "lowerPressureScore": 68.11,
+      "economicOpportunity": 63.98,
+      "sustainableMobility": 43.0,
+      "railAccessibility": 5.0,
+      "railCongestion": "",
+      "gatewayStation": "",
+      "matchedInterests": [
+        "Nature",
+        "Adventure",
+        "Food"
+      ],
+      "explanation": "Sandakan closely matches your interests (Nature, Adventure, Food, 93%). Compared with Port Dickson, it shows considerably lower tourism pressure and strong economic headroom, and has limited direct rail access (last-mile by road/air)."
+    },
+    {
+      "sourceDestination": "Putrajaya",
+      "destination": "Taiping",
+      "state": "Perak",
+      "score": 79.79,
+      "similarity": 96.2,
+      "tourismPressure": 32.47,
+      "lowerPressureScore": 67.53,
+      "economicOpportunity": 68.76,
+      "sustainableMobility": 80.72,
+      "railAccessibility": 98.0,
+      "railCongestion": 45.2,
+      "gatewayStation": "Taiping",
+      "matchedInterests": [
+        "Nature",
+        "Heritage",
+        "Culture"
+      ],
+      "explanation": "Taiping closely matches your interests (Nature, Heritage, Culture, 96%). Compared with Putrajaya, it shows considerably lower tourism pressure and strong economic headroom, and offers good rail-based access via Taiping."
+    },
+    {
+      "sourceDestination": "Putrajaya",
+      "destination": "Ipoh",
+      "state": "Perak",
+      "score": 79.74,
+      "similarity": 98.52,
+      "tourismPressure": 32.47,
+      "lowerPressureScore": 67.53,
+      "economicOpportunity": 68.76,
+      "sustainableMobility": 75.01,
+      "railAccessibility": 100.0,
+      "railCongestion": 62.48,
+      "gatewayStation": "Ipoh",
+      "matchedInterests": [
+        "Food",
+        "Culture",
+        "Heritage"
+      ],
+      "explanation": "Ipoh closely matches your interests (Food, Culture, Heritage, 99%). Compared with Putrajaya, it shows considerably lower tourism pressure and strong economic headroom, and offers good rail-based access via Ipoh."
+    },
+    {
+      "sourceDestination": "Putrajaya",
+      "destination": "Kota Bharu",
+      "state": "Kelantan",
+      "score": 75.75,
+      "similarity": 96.31,
+      "tourismPressure": 22.05,
+      "lowerPressureScore": 77.95,
+      "economicOpportunity": 49.64,
+      "sustainableMobility": 58.17,
+      "railAccessibility": 70.0,
+      "railCongestion": 59.56,
+      "gatewayStation": "Wakaf Bharu",
+      "matchedInterests": [
+        "Food",
+        "Culture",
+        "Heritage"
+      ],
+      "explanation": "Kota Bharu closely matches your interests (Food, Culture, Heritage, 96%). Compared with Putrajaya, it shows considerably lower tourism pressure and moderate economic headroom, and offers good rail-based access via Wakaf Bharu."
+    },
+    {
+      "sourceDestination": "Putrajaya",
+      "destination": "Langkawi",
+      "state": "Kedah",
+      "score": 73.86,
+      "similarity": 86.25,
+      "tourismPressure": 26.16,
+      "lowerPressureScore": 73.84,
+      "economicOpportunity": 61.9,
+      "sustainableMobility": 60.92,
+      "railAccessibility": 65.0,
+      "railCongestion": 45.2,
+      "gatewayStation": "Alor Setar",
+      "matchedInterests": [
+        "Beach",
+        "Nature",
+        "Adventure"
+      ],
+      "explanation": "Langkawi closely matches your interests (Beach, Nature, Adventure, 86%). Compared with Putrajaya, it shows considerably lower tourism pressure and strong economic headroom, and is reachable via Alor Setar with some last-mile travel."
+    },
+    {
+      "sourceDestination": "Putrajaya",
+      "destination": "Desaru",
+      "state": "Johor",
+      "score": 72.4,
+      "similarity": 77.43,
+      "tourismPressure": 31.74,
+      "lowerPressureScore": 68.26,
+      "economicOpportunity": 78.37,
+      "sustainableMobility": 61.0,
+      "railAccessibility": 35.0,
+      "railCongestion": "",
+      "gatewayStation": "Johor Bahru Sentral",
+      "matchedInterests": [
+        "Beach",
+        "Adventure",
+        "Nature"
+      ],
+      "explanation": "Desaru closely matches your interests (Beach, Adventure, Nature, 77%). Compared with Putrajaya, it shows considerably lower tourism pressure and strong economic headroom, and is reachable via Johor Bahru Sentral with some last-mile travel."
+    },
+    {
+      "sourceDestination": "Putrajaya",
+      "destination": "George Town",
+      "state": "Penang",
+      "score": 72.21,
+      "similarity": 96.44,
+      "tourismPressure": 38.88,
+      "lowerPressureScore": 61.12,
+      "economicOpportunity": 51.63,
+      "sustainableMobility": 65.27,
+      "railAccessibility": 85.0,
+      "railCongestion": 64.31,
+      "gatewayStation": "Butterworth",
+      "matchedInterests": [
+        "Heritage",
+        "Culture",
+        "Food"
+      ],
+      "explanation": "George Town closely matches your interests (Heritage, Culture, Food, 96%). Compared with Putrajaya, it shows considerably lower tourism pressure and moderate economic headroom, and offers good rail-based access via Butterworth."
+    },
+    {
+      "sourceDestination": "Putrajaya",
+      "destination": "Mersing",
+      "state": "Johor",
+      "score": 72.02,
+      "similarity": 80.71,
+      "tourismPressure": 31.74,
+      "lowerPressureScore": 68.26,
+      "economicOpportunity": 78.37,
+      "sustainableMobility": 50.8,
+      "railAccessibility": 18.0,
+      "railCongestion": "",
+      "gatewayStation": "",
+      "matchedInterests": [
+        "Nature",
+        "Adventure",
+        "Beach"
+      ],
+      "explanation": "Mersing closely matches your interests (Nature, Adventure, Beach, 81%). Compared with Putrajaya, it shows considerably lower tourism pressure and strong economic headroom, and has limited direct rail access (last-mile by road/air)."
+    },
+    {
+      "sourceDestination": "Putrajaya",
+      "destination": "Kota Kinabalu",
+      "state": "Sabah",
+      "score": 71.69,
+      "similarity": 88.9,
+      "tourismPressure": 31.89,
+      "lowerPressureScore": 68.11,
+      "economicOpportunity": 63.98,
+      "sustainableMobility": 49.0,
+      "railAccessibility": 15.0,
+      "railCongestion": "",
+      "gatewayStation": "",
+      "matchedInterests": [
+        "Nature",
+        "Adventure",
+        "Food"
+      ],
+      "explanation": "Kota Kinabalu closely matches your interests (Nature, Adventure, Food, 89%). Compared with Putrajaya, it shows considerably lower tourism pressure and strong economic headroom, and has limited direct rail access (last-mile by road/air)."
+    },
+    {
+      "sourceDestination": "Putrajaya",
+      "destination": "Sandakan",
+      "state": "Sabah",
+      "score": 70.06,
+      "similarity": 86.81,
+      "tourismPressure": 31.89,
+      "lowerPressureScore": 68.11,
+      "economicOpportunity": 63.98,
+      "sustainableMobility": 43.0,
+      "railAccessibility": 5.0,
+      "railCongestion": "",
+      "gatewayStation": "",
+      "matchedInterests": [
+        "Nature",
+        "Adventure",
+        "Food"
+      ],
+      "explanation": "Sandakan closely matches your interests (Nature, Adventure, Food, 87%). Compared with Putrajaya, it shows considerably lower tourism pressure and strong economic headroom, and has limited direct rail access (last-mile by road/air)."
+    },
+    {
+      "sourceDestination": "Putrajaya",
+      "destination": "Kuching",
+      "state": "Sarawak",
+      "score": 69.84,
+      "similarity": 94.98,
+      "tourismPressure": 40.9,
+      "lowerPressureScore": 59.1,
+      "economicOpportunity": 59.86,
+      "sustainableMobility": 46.0,
+      "railAccessibility": 10.0,
+      "railCongestion": "",
+      "gatewayStation": "",
+      "matchedInterests": [
+        "Nature",
+        "Culture",
+        "Food"
+      ],
+      "explanation": "Kuching closely matches your interests (Nature, Culture, Food, 95%). Compared with Putrajaya, it shows considerably lower tourism pressure and moderate economic headroom, and has limited direct rail access (last-mile by road/air)."
+    },
+    {
+      "sourceDestination": "Sandakan",
+      "destination": "Taiping",
+      "state": "Perak",
+      "score": 79.03,
+      "similarity": 94.05,
+      "tourismPressure": 32.47,
+      "lowerPressureScore": 67.53,
+      "economicOpportunity": 68.76,
+      "sustainableMobility": 80.72,
+      "railAccessibility": 98.0,
+      "railCongestion": 45.2,
+      "gatewayStation": "Taiping",
+      "matchedInterests": [
+        "Nature",
+        "Heritage",
+        "Culture"
+      ],
+      "explanation": "Taiping closely matches your interests (Nature, Heritage, Culture, 94%). Compared with Sandakan, it shows comparable tourism pressure and strong economic headroom, and offers good rail-based access via Taiping."
+    },
+    {
+      "sourceDestination": "Sandakan",
+      "destination": "Desaru",
+      "state": "Johor",
+      "score": 78.09,
+      "similarity": 93.68,
+      "tourismPressure": 31.74,
+      "lowerPressureScore": 68.26,
+      "economicOpportunity": 78.37,
+      "sustainableMobility": 61.0,
+      "railAccessibility": 35.0,
+      "railCongestion": "",
+      "gatewayStation": "Johor Bahru Sentral",
+      "matchedInterests": [
+        "Beach",
+        "Adventure",
+        "Nature"
+      ],
+      "explanation": "Desaru closely matches your interests (Beach, Adventure, Nature, 94%). Compared with Sandakan, it shows lower tourism pressure and strong economic headroom, and is reachable via Johor Bahru Sentral with some last-mile travel."
+    },
+    {
+      "sourceDestination": "Sandakan",
+      "destination": "Mersing",
+      "state": "Johor",
+      "score": 78.0,
+      "similarity": 97.79,
+      "tourismPressure": 31.74,
+      "lowerPressureScore": 68.26,
+      "economicOpportunity": 78.37,
+      "sustainableMobility": 50.8,
+      "railAccessibility": 18.0,
+      "railCongestion": "",
+      "gatewayStation": "",
+      "matchedInterests": [
+        "Nature",
+        "Adventure",
+        "Beach"
+      ],
+      "explanation": "Mersing closely matches your interests (Nature, Adventure, Beach, 98%). Compared with Sandakan, it shows lower tourism pressure and strong economic headroom, and has limited direct rail access (last-mile by road/air)."
+    },
+    {
+      "sourceDestination": "Sandakan",
+      "destination": "Langkawi",
+      "state": "Kedah",
+      "score": 77.25,
+      "similarity": 95.93,
+      "tourismPressure": 26.16,
+      "lowerPressureScore": 73.84,
+      "economicOpportunity": 61.9,
+      "sustainableMobility": 60.92,
+      "railAccessibility": 65.0,
+      "railCongestion": 45.2,
+      "gatewayStation": "Alor Setar",
+      "matchedInterests": [
+        "Beach",
+        "Nature",
+        "Adventure"
+      ],
+      "explanation": "Langkawi closely matches your interests (Beach, Nature, Adventure, 96%). Compared with Sandakan, it shows lower tourism pressure and strong economic headroom, and is reachable via Alor Setar with some last-mile travel."
+    },
+    {
+      "sourceDestination": "Sandakan",
+      "destination": "Ipoh",
+      "state": "Perak",
+      "score": 76.45,
+      "similarity": 89.12,
+      "tourismPressure": 32.47,
+      "lowerPressureScore": 67.53,
+      "economicOpportunity": 68.76,
+      "sustainableMobility": 75.01,
+      "railAccessibility": 100.0,
+      "railCongestion": 62.48,
+      "gatewayStation": "Ipoh",
+      "matchedInterests": [
+        "Food",
+        "Culture",
+        "Heritage"
+      ],
+      "explanation": "Ipoh closely matches your interests (Food, Culture, Heritage, 89%). Compared with Sandakan, it shows comparable tourism pressure and strong economic headroom, and offers good rail-based access via Ipoh."
+    },
+    {
+      "sourceDestination": "Sandakan",
+      "destination": "Kota Kinabalu",
+      "state": "Sabah",
+      "score": 74.7,
+      "similarity": 97.49,
+      "tourismPressure": 31.89,
+      "lowerPressureScore": 68.11,
+      "economicOpportunity": 63.98,
+      "sustainableMobility": 49.0,
+      "railAccessibility": 15.0,
+      "railCongestion": "",
+      "gatewayStation": "",
+      "matchedInterests": [
+        "Nature",
+        "Adventure",
+        "Food"
+      ],
+      "explanation": "Kota Kinabalu closely matches your interests (Nature, Adventure, Food, 97%). Compared with Sandakan, it shows comparable tourism pressure and strong economic headroom, and has limited direct rail access (last-mile by road/air)."
+    },
+    {
+      "sourceDestination": "Sandakan",
+      "destination": "Semporna",
+      "state": "Sabah",
+      "score": 74.22,
+      "similarity": 97.92,
+      "tourismPressure": 31.89,
+      "lowerPressureScore": 68.11,
+      "economicOpportunity": 63.98,
+      "sustainableMobility": 44.8,
+      "railAccessibility": 8.0,
+      "railCongestion": "",
+      "gatewayStation": "",
+      "matchedInterests": [
+        "Nature",
+        "Adventure",
+        "Beach"
+      ],
+      "explanation": "Semporna closely matches your interests (Nature, Adventure, Beach, 98%). Compared with Sandakan, it shows comparable tourism pressure and strong economic headroom, and has limited direct rail access (last-mile by road/air)."
+    },
+    {
+      "sourceDestination": "Sandakan",
+      "destination": "Kundasang",
+      "state": "Sabah",
+      "score": 73.45,
+      "similarity": 96.49,
+      "tourismPressure": 31.89,
+      "lowerPressureScore": 68.11,
+      "economicOpportunity": 63.98,
+      "sustainableMobility": 43.0,
+      "railAccessibility": 5.0,
+      "railCongestion": "",
+      "gatewayStation": "",
+      "matchedInterests": [
+        "Nature",
+        "Adventure",
+        "Food"
+      ],
+      "explanation": "Kundasang closely matches your interests (Nature, Adventure, Food, 96%). Compared with Sandakan, it shows comparable tourism pressure and strong economic headroom, and has limited direct rail access (last-mile by road/air)."
+    },
+    {
+      "sourceDestination": "Sandakan",
+      "destination": "Pangkor Island",
+      "state": "Perak",
+      "score": 72.98,
+      "similarity": 94.62,
+      "tourismPressure": 32.47,
+      "lowerPressureScore": 67.53,
+      "economicOpportunity": 68.76,
+      "sustainableMobility": 39.01,
+      "railAccessibility": 40.0,
+      "railCongestion": 62.48,
+      "gatewayStation": "Ipoh",
+      "matchedInterests": [
+        "Beach",
+        "Nature",
+        "Adventure"
+      ],
+      "explanation": "Pangkor Island closely matches your interests (Beach, Nature, Adventure, 95%). Compared with Sandakan, it shows comparable tourism pressure and strong economic headroom, and is reachable via Ipoh with some last-mile travel."
+    },
+    {
+      "sourceDestination": "Sandakan",
+      "destination": "Kota Bharu",
+      "state": "Kelantan",
+      "score": 72.65,
+      "similarity": 87.45,
+      "tourismPressure": 22.05,
+      "lowerPressureScore": 77.95,
+      "economicOpportunity": 49.64,
+      "sustainableMobility": 58.17,
+      "railAccessibility": 70.0,
+      "railCongestion": 59.56,
+      "gatewayStation": "Wakaf Bharu",
+      "matchedInterests": [
+        "Food",
+        "Culture",
+        "Heritage"
+      ],
+      "explanation": "Kota Bharu closely matches your interests (Food, Culture, Heritage, 87%). Compared with Sandakan, it shows lower tourism pressure and moderate economic headroom, and offers good rail-based access via Wakaf Bharu."
+    },
+    {
+      "sourceDestination": "Bako National Park",
+      "destination": "Mersing",
+      "state": "Johor",
+      "score": 76.97,
+      "similarity": 94.86,
+      "tourismPressure": 31.74,
+      "lowerPressureScore": 68.26,
+      "economicOpportunity": 78.37,
+      "sustainableMobility": 50.8,
+      "railAccessibility": 18.0,
+      "railCongestion": "",
+      "gatewayStation": "",
+      "matchedInterests": [
+        "Nature",
+        "Adventure",
+        "Beach"
+      ],
+      "explanation": "Mersing closely matches your interests (Nature, Adventure, Beach, 95%). Compared with Bako National Park, it shows lower tourism pressure and strong economic headroom, and has limited direct rail access (last-mile by road/air)."
+    },
+    {
+      "sourceDestination": "Bako National Park",
+      "destination": "Desaru",
+      "state": "Johor",
+      "score": 76.79,
+      "similarity": 89.97,
+      "tourismPressure": 31.74,
+      "lowerPressureScore": 68.26,
+      "economicOpportunity": 78.37,
+      "sustainableMobility": 61.0,
+      "railAccessibility": 35.0,
+      "railCongestion": "",
+      "gatewayStation": "Johor Bahru Sentral",
+      "matchedInterests": [
+        "Beach",
+        "Adventure",
+        "Nature"
+      ],
+      "explanation": "Desaru closely matches your interests (Beach, Adventure, Nature, 90%). Compared with Bako National Park, it shows lower tourism pressure and strong economic headroom, and is reachable via Johor Bahru Sentral with some last-mile travel."
+    },
+    {
+      "sourceDestination": "Bako National Park",
+      "destination": "Taiping",
+      "state": "Perak",
+      "score": 75.28,
+      "similarity": 83.32,
+      "tourismPressure": 32.47,
+      "lowerPressureScore": 67.53,
+      "economicOpportunity": 68.76,
+      "sustainableMobility": 80.72,
+      "railAccessibility": 98.0,
+      "railCongestion": 45.2,
+      "gatewayStation": "Taiping",
+      "matchedInterests": [
+        "Nature",
+        "Heritage",
+        "Culture"
+      ],
+      "explanation": "Taiping closely matches your interests (Nature, Heritage, Culture, 83%). Compared with Bako National Park, it shows lower tourism pressure and strong economic headroom, and offers good rail-based access via Taiping."
+    },
+    {
+      "sourceDestination": "Bako National Park",
+      "destination": "Langkawi",
+      "state": "Kedah",
+      "score": 74.86,
+      "similarity": 89.11,
+      "tourismPressure": 26.16,
+      "lowerPressureScore": 73.84,
+      "economicOpportunity": 61.9,
+      "sustainableMobility": 60.92,
+      "railAccessibility": 65.0,
+      "railCongestion": 45.2,
+      "gatewayStation": "Alor Setar",
+      "matchedInterests": [
+        "Beach",
+        "Nature",
+        "Adventure"
+      ],
+      "explanation": "Langkawi closely matches your interests (Beach, Nature, Adventure, 89%). Compared with Bako National Park, it shows considerably lower tourism pressure and strong economic headroom, and is reachable via Alor Setar with some last-mile travel."
+    },
+    {
+      "sourceDestination": "Bako National Park",
+      "destination": "Semporna",
+      "state": "Sabah",
+      "score": 74.46,
+      "similarity": 98.59,
+      "tourismPressure": 31.89,
+      "lowerPressureScore": 68.11,
+      "economicOpportunity": 63.98,
+      "sustainableMobility": 44.8,
+      "railAccessibility": 8.0,
+      "railCongestion": "",
+      "gatewayStation": "",
+      "matchedInterests": [
+        "Nature",
+        "Adventure",
+        "Beach"
+      ],
+      "explanation": "Semporna closely matches your interests (Nature, Adventure, Beach, 99%). Compared with Bako National Park, it shows lower tourism pressure and strong economic headroom, and has limited direct rail access (last-mile by road/air)."
+    },
+    {
+      "sourceDestination": "Bako National Park",
+      "destination": "Sandakan",
+      "state": "Sabah",
+      "score": 73.3,
+      "similarity": 96.06,
+      "tourismPressure": 31.89,
+      "lowerPressureScore": 68.11,
+      "economicOpportunity": 63.98,
+      "sustainableMobility": 43.0,
+      "railAccessibility": 5.0,
+      "railCongestion": "",
+      "gatewayStation": "",
+      "matchedInterests": [
+        "Nature",
+        "Adventure",
+        "Food"
+      ],
+      "explanation": "Sandakan closely matches your interests (Nature, Adventure, Food, 96%). Compared with Bako National Park, it shows lower tourism pressure and strong economic headroom, and has limited direct rail access (last-mile by road/air)."
+    },
+    {
+      "sourceDestination": "Bako National Park",
+      "destination": "Kundasang",
+      "state": "Sabah",
+      "score": 72.17,
+      "similarity": 92.84,
+      "tourismPressure": 31.89,
+      "lowerPressureScore": 68.11,
+      "economicOpportunity": 63.98,
+      "sustainableMobility": 43.0,
+      "railAccessibility": 5.0,
+      "railCongestion": "",
+      "gatewayStation": "",
+      "matchedInterests": [
+        "Nature",
+        "Adventure",
+        "Food"
+      ],
+      "explanation": "Kundasang closely matches your interests (Nature, Adventure, Food, 93%). Compared with Bako National Park, it shows lower tourism pressure and strong economic headroom, and has limited direct rail access (last-mile by road/air)."
+    },
+    {
+      "sourceDestination": "Bako National Park",
+      "destination": "Kota Kinabalu",
+      "state": "Sabah",
+      "score": 72.08,
+      "similarity": 89.99,
+      "tourismPressure": 31.89,
+      "lowerPressureScore": 68.11,
+      "economicOpportunity": 63.98,
+      "sustainableMobility": 49.0,
+      "railAccessibility": 15.0,
+      "railCongestion": "",
+      "gatewayStation": "",
+      "matchedInterests": [
+        "Nature",
+        "Adventure",
+        "Food"
+      ],
+      "explanation": "Kota Kinabalu closely matches your interests (Nature, Adventure, Food, 90%). Compared with Bako National Park, it shows lower tourism pressure and strong economic headroom, and has limited direct rail access (last-mile by road/air)."
+    },
+    {
+      "sourceDestination": "Bako National Park",
+      "destination": "Pangkor Island",
+      "state": "Perak",
+      "score": 71.69,
+      "similarity": 90.95,
+      "tourismPressure": 32.47,
+      "lowerPressureScore": 67.53,
+      "economicOpportunity": 68.76,
+      "sustainableMobility": 39.01,
+      "railAccessibility": 40.0,
+      "railCongestion": 62.48,
+      "gatewayStation": "Ipoh",
+      "matchedInterests": [
+        "Beach",
+        "Nature",
+        "Adventure"
+      ],
+      "explanation": "Pangkor Island closely matches your interests (Beach, Nature, Adventure, 91%). Compared with Bako National Park, it shows lower tourism pressure and strong economic headroom, and is reachable via Ipoh with some last-mile travel."
+    },
+    {
+      "sourceDestination": "Bako National Park",
+      "destination": "Ipoh",
+      "state": "Perak",
+      "score": 71.02,
+      "similarity": 73.59,
+      "tourismPressure": 32.47,
+      "lowerPressureScore": 67.53,
+      "economicOpportunity": 68.76,
+      "sustainableMobility": 75.01,
+      "railAccessibility": 100.0,
+      "railCongestion": 62.48,
+      "gatewayStation": "Ipoh",
+      "matchedInterests": [
+        "Food",
+        "Culture",
+        "Heritage"
+      ],
+      "explanation": "Ipoh closely matches your interests (Food, Culture, Heritage, 74%). Compared with Bako National Park, it shows lower tourism pressure and strong economic headroom, and offers good rail-based access via Ipoh."
+    }
+  ]
+}

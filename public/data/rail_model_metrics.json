@@ -1,0 +1,67 @@
+{
+  "model": "HistGradientBoostingRegressor (scikit-learn 1.6)",
+  "analytical_category": "supervised regression prototype, strict time-based split, no random split",
+  "train_period": [
+    "2026-01-01",
+    "2026-08-31"
+  ],
+  "test_period": [
+    "2026-09-01",
+    "2026-09-19"
+  ],
+  "train_rows": 1914208,
+  "test_rows": 129464,
+  "features": [
+    "service",
+    "origin_station",
+    "destination_station",
+    "hour",
+    "day_of_week",
+    "month",
+    "weekend",
+    "peak_hour",
+    "route_load",
+    "origin_load",
+    "destination_load"
+  ],
+  "metrics": {
+    "mae": 2.8559,
+    "rmse": 6.4296,
+    "r2": 0.7976
+  },
+  "baseline": {
+    "name": "historical route-hour average",
+    "mae": 2.9023
+  },
+  "mae_improvement": {
+    "absolute": 0.0464,
+    "percent": 1.5973
+  },
+  "retention_rule": {
+    "description": "model retained when MAE improvement over baseline >= min_improvement_percent",
+    "min_improvement_percent": 0.0
+  },
+  "model_retained_against_baseline": true,
+  "congestion_bands": {
+    "note": "service-specific percentiles of PREDICTED ridership; analytical prototype categories only, not official KTMB classifications",
+    "classification": "predicted <= p60_threshold -> LOW; p60_threshold < predicted <= p85_threshold -> MODERATE; predicted > p85_threshold -> HIGH",
+    "thresholds_by_service": {
+      "ets": {
+        "p60_threshold": 3.866,
+        "p85_threshold": 9.948,
+        "maximum_predicted_ridership": 248.54
+      },
+      "intercity": {
+        "p60_threshold": 4.541,
+        "p85_threshold": 8.302,
+        "maximum_predicted_ridership": 243.681
+      },
+      "komuter": {
+        "p60_threshold": 3.118,
+        "p85_threshold": 7.253,
+        "maximum_predicted_ridership": 139.154
+      }
+    }
+  },
+  "public_holiday_feature": "unavailable: no reliable official Malaysian 2026 holiday calendar was supplied"
+}
