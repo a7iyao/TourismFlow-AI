@@ -33,3 +33,8 @@ dist/
 # Large generated ML files
 ml/output/rail_features.csv
 ml/output/rail_od_unified.csv
+
+# Python cache
+__pycache__/
+*.pyc
+*.pyo
