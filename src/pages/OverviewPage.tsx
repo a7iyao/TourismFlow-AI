@@ -1,228 +1,384 @@
+import { useState } from 'react'
+import { useNavigate } from 'react-router-dom'
 import {
-  ArrowLeftRight,
-  ChartColumn,
-  Compass,
-  Database,
+  ArrowRight,
+  ChartScatter,
   Gauge,
-  LayoutGrid,
   Lightbulb,
-  Map,
+  Map as MapIcon,
   Search,
+  Sparkles,
   Sprout,
-  TrendingUp,
+  TrainFront,
   TriangleAlert,
   Wallet,
 } from 'lucide-react'
 import { KpiCard } from '../components/cards/KpiCard'
 import { DataDisclaimer } from '../components/common/DataDisclaimer'
-import { PageHeader } from '../components/common/PageHeader'
 import { Panel } from '../components/common/Panel'
 import { LoadingState, ErrorState } from '../components/common/LoadingState'
-import { RailModelPanel } from '../components/recommendations/RailModelPanel'
-import { useAnalytics } from '../hooks/useAnalytics'
+import { PrototypeBadge } from '../components/common/PrototypeBadge'
+import { TourismConcentrationMap } from '../components/map/TourismConcentrationMap'
+import { PressureEconomicScatter } from '../components/charts/PressureEconomicScatter'
 import { destinations } from '../data'
-import { ScoreBar } from '../components/recommendations/ScoreBar'
+import { useAnalytics } from '../hooks/useAnalytics'
+import {
+  CROWDING_PREFERENCES,
+  TOURIST_INTERESTS,
+  rankSustainableRecommendations,
+} from '../engine/sustainableRanking'
+import type {
+  CrowdingPreference,
+  TouristInterest,
+} from '../engine/sustainableRanking'
+import { cn } from '../utils/cn'
 
 const average = (values: number[]) =>
   values.reduce((sum, value) => sum + value, 0) / values.length
 
-const capabilities = [
+const pillars = [
   {
-    icon: Search,
-    title: 'Find Alternative Destination',
-    text: 'Ranked similar destinations with lower tourism pressure and economic headroom.',
+    icon: TriangleAlert,
+    tagClass: 'sd-hero-tag--problem',
+    tag: 'The Problem',
+    title: 'Tourism concentrates in a few popular destinations.',
+    text: 'Most visitor flow lands in a handful of places, driving overcrowding, environmental strain and uneven economic benefit.',
   },
   {
-    icon: ArrowLeftRight,
-    title: 'Destination Comparison',
-    text: 'Compare destinations across pressure, demand, economic potential and interests.',
+    icon: Lightbulb,
+    tagClass: 'sd-hero-tag--solution',
+    tag: 'The Solution',
+    title: 'SMART DESTINATION AI redirects demand.',
+    text: 'It recommends similar destinations with lower tourism pressure, economic headroom and better rail-based access — so travellers keep the experience without the crowd.',
   },
   {
-    icon: Map,
-    title: 'Tourism Concentration Map',
-    text: 'Explore Malaysian destinations with markers colored by tourism pressure.',
-  },
-  {
-    icon: TrendingUp,
-    title: 'Economic Potential vs Tourism Pressure',
-    text: 'Position destinations in strategic categories to spot opportunity and risk.',
+    icon: Sprout,
+    tagClass: 'sd-hero-tag--impact',
+    tag: 'The Impact',
+    title: 'Balanced distribution and new opportunity.',
+    text: 'More balanced tourism distribution, plus new economic opportunities for alternative and emerging destinations.',
   },
 ]
 
 export function OverviewPage() {
-  const { diversion, railMetrics, tourismPressure, loading, error } = useAnalytics()
+  const navigate = useNavigate()
+  const { diversion, tourismPressure, loading, error } = useAnalytics()
 
-  const latestRows = (tourismPressure ?? []).filter((row) => row.year === 2023)
-  const meanPressureIndex = latestRows.length
-    ? average(latestRows.map((row) => row.tourism_pressure_index))
-    : null
-  const topPressureStates = [...latestRows]
-    .sort((a, b) => b.tourism_pressure_index - a.tourism_pressure_index)
-    .slice(0, 5)
+  const [currentId, setCurrentId] = useState('langkawi')
+  const [selectedInterests, setSelectedInterests] = useState<TouristInterest[]>([
+    'Beach',
+    'Nature',
+    'Culture',
+  ])
+  const [preference, setPreference] = useState<CrowdingPreference>('Low Crowding')
 
-  const highCrowdingShare = destinations.filter(
-    (destination) => destination.crowdingLevel === 'High',
-  ).length
-  const eligibleCount = destinations.filter(
-    (destination) => destination.recommendationEligibility,
-  ).length
+  const current = destinations.find((destination) => destination.id === currentId)
+  const currentName = current?.destination ?? ''
 
-  const kpis = [
+  const toggleInterest = (interest: TouristInterest) => {
+    setSelectedInterests((currentValue) =>
+      currentValue.includes(interest)
+        ? currentValue.filter((item) => item !== interest)
+        : [...currentValue, interest],
+    )
+  }
+
+  const ranked = (() => {
+    if (!diversion) return []
+    const destination = destinations.find(
+      (item) => item.id === currentId,
+    )
+    if (!destination) return []
+    return rankSustainableRecommendations(
+      diversion.recommendations,
+      destination.destination,
+      selectedInterests,
+      preference,
+    )
+  })()
+
+  const topThree = ranked.slice(0, 3)
+
+  const mapHighlightIds = [
+    current?.id,
+    ...topThree.map(
+      (recommendation) =>
+        destinations.find(
+          (destination) => destination.destination === recommendation.destination,
+        )?.id,
+    ),
+  ].filter((value): value is string => Boolean(value))
+
+  const scatterHighlightIds = [currentName, ...topThree.map((item) => item.destination)]
+
+  const mobilityFor = (name: string): number | null => {
+    const rows = (diversion?.recommendations ?? []).filter(
+      (recommendation) => recommendation.destination === name,
+    )
+    if (rows.length === 0) return null
+    return Math.round(average(rows.map((row) => row.sustainableMobility)))
+  }
+
+  const snapshot = current
+    ? [
+        {
+          id: 'demand',
+          label: 'Tourism Demand',
+          value: `${current.tourismDemand} / 100`,
+          caption: `Demand for ${currentName} in the demonstration dataset.`,
+          tone: 'concentration' as const,
+          pending: false,
+        },
+        {
+          id: 'pressure',
+          label: 'Tourism Pressure',
+          value: `${current.tourismPressure} / 100`,
+          caption: `${current.crowdingLevel} crowding — demand concentrates where pressure is highest.`,
+          tone: 'pressure' as const,
+          pending: false,
+        },
+        {
+          id: 'economic',
+          label: 'Economic Potential',
+          value: `${current.economicPotential} / 100`,
+          caption: `Economic headroom that redistributing demand could unlock.`,
+          tone: 'economic' as const,
+          pending: false,
+        },
+        {
+          id: 'mobility',
+          label: 'Sustainable Mobility',
+          value: mobilityFor(currentName) === null ? '—' : `${mobilityFor(currentName)} / 100`,
+          caption:
+            mobilityFor(currentName) === null
+              ? `No precomputed diversion targets offer ${currentName}.`
+              : `Mean mobility score across alternatives that offer ${currentName}.`,
+          tone: 'alternative' as const,
+          pending: false,
+        },
+      ]
+    : []
+
+  const highCrowdingShare = Math.round(
+    (destinations.filter((d) => d.crowdingLevel === 'High').length /
+      destinations.length) *
+      100,
+  )
+
+  const heroStats = [
+    { label: 'Destinations', value: `${destinations.length}` },
+    { label: 'High crowding destinations', value: `${highCrowdingShare}%` },
     {
-      id: 'pressure',
-      label: 'State Tourism Pressure',
-      value: meanPressureIndex === null ? '—' : `${Math.round(meanPressureIndex)} / 100`,
-      caption:
-        'Mean state-level tourism pressure index, latest year (2023) from the state tourism ingredient file.',
-      tone: 'pressure' as const,
-      pending: meanPressureIndex === null,
+      label: 'Mean economic potential',
+      value: `${Math.round(average(destinations.map((d) => d.economicPotential)))}/100`,
     },
     {
-      id: 'concentration',
-      label: 'Demand Concentration',
-      value: `${Math.round((highCrowdingShare / destinations.length) * 100)}%`,
-      caption:
-        'Share of destinations running at a high crowding level — where demand concentrates most.',
-      tone: 'concentration' as const,
-      pending: false,
-    },
-    {
-      id: 'economic',
-      label: 'Mean Economic Potential',
-      value: `${Math.round(average(destinations.map((d) => d.economicPotential)))} / 100`,
-      caption:
-        'Mean economic potential across all destinations in the demonstration dataset.',
-      tone: 'economic' as const,
-      pending: false,
-    },
-    {
-      id: 'alternatives',
-      label: 'Diversion Pairs Computed',
-      value: diversion
-        ? `${diversion.recommendations.length}`
-        : '—',
-      caption:
-        'Precomputed sustainable alternative recommendations across all source destinations.',
-      tone: 'alternative' as const,
-      pending: diversion === null,
+      label: 'Diversion pairs computed',
+      value: diversion ? `${diversion.recommendations.length}` : '—',
     },
   ]
 
   return (
     <div className="page-stack">
-      <PageHeader
-        eyebrow="Command Center"
-        title="Overview"
-        description="Redirect tourism demand. Discover sustainable alternatives driven by precomputed analytics."
-      />
+      <section className="sd-hero-band">
+        <div className="sd-hero-band-main">
+          <div className="sd-hero-band-top">
+            <span className="sd-hero-band-eyebrow">Malaysia Sustainable Tourism Intelligence</span>
+            <PrototypeBadge />
+          </div>
+          <h1>
+            Redirect tourism demand.
+            <br />
+            Discover less crowded destinations.
+          </h1>
+          <p>
+            SMART DESTINATION AI is an AI-powered recommender that helps
+            travellers find similar destinations with lower tourism pressure,
+            economic headroom and better rail-based access — balancing tourism
+            distribution across Malaysia.
+          </p>
+          <div className="sd-hero-band-ctas">
+            <button
+              type="button"
+              className="sd-btn sd-btn--light"
+              onClick={() => navigate('/find-alternative')}
+            >
+              <Sparkles size={16} />
+              Find Alternative Destination
+              <ArrowRight size={16} />
+            </button>
+            <button
+              type="button"
+              className="sd-btn sd-btn--light-ghost"
+              onClick={() => navigate('/map')}
+            >
+              <MapIcon size={16} />
+              Explore the Tourism Map
+            </button>
+          </div>
+        </div>
+        <div className="sd-hero-band-stats">
+          {heroStats.map((stat) => (
+            <div className="sd-hero-band-stat" key={stat.label}>
+              <span className="sd-hero-band-stat-value">{stat.value}</span>
+              <span className="sd-hero-band-stat-label">{stat.label}</span>
+            </div>
+          ))}
+        </div>
+      </section>
 
-      <div className="sd-hero">
-        <div className="sd-hero-col">
-          <span className="sd-hero-tag sd-hero-tag--problem">
-            <TriangleAlert size={14} />
-            The Problem
-          </span>
-          <h2>Tourism concentrates heavily in popular destinations.</h2>
-          <p>
-            A few destinations absorb most visitor flow, driving overcrowding,
-            environmental strain and uneven economic benefit across the country.
-          </p>
-        </div>
-        <div className="sd-hero-col">
-          <span className="sd-hero-tag sd-hero-tag--solution">
-            <Lightbulb size={14} />
-            The Solution
-          </span>
-          <h2>SMART DESTINATION AI redirects demand.</h2>
-          <p>
-            The platform recommends similar destinations with lower tourism
-            pressure, economic headroom and better rail-based access — so
-            travellers keep the experience without the crowd.
-          </p>
-        </div>
-        <div className="sd-hero-col">
-          <span className="sd-hero-tag sd-hero-tag--impact">
-            <Sprout size={14} />
-            The Impact
-          </span>
-          <h2>Balanced distribution and new opportunities.</h2>
-          <p>
-            More balanced tourism distribution plus new economic opportunities
-            for alternative and emerging destinations.
-          </p>
-        </div>
-      </div>
-
-      <div className="sd-kpi-grid">
-        {kpis.map((kpi, index) => (
-          <KpiCard
-            key={kpi.id}
-            data={kpi}
-            icon={[Gauge, ChartColumn, Wallet, Compass][index]}
-          />
-        ))}
-      </div>
+      <DataDisclaimer />
 
       <Panel
-        title="Tourism Pressure by State"
-        icon={Gauge}
-        description="Latest-year state-level tourism pressure index from the state ingredient file. Higher means more visitors per resident capacity."
-        note="State-level analytical index from the provided tourism ingredient dataset, not an official classification."
+        title="Try the recommender"
+        icon={Search}
+        description="Pick a current destination, your interests and a crowding preference. The KPIs, map and matrix below update live."
+        note="This is a live demo of the same Sustainable Diversion engine used in Find Alternative. Nothing is sent anywhere — everything runs in your browser."
       >
         <LoadingState loading={loading} />
         <ErrorState message={error ?? ''} />
-        {topPressureStates.map((row) => (
-          <ScoreBar
-            key={row.state}
-            label={row.state}
-            value={row.tourism_pressure_index}
-            hint={`${row.pressure_band}`}
-            highlighted={row.pressure_band === 'MODERATE'}
-          />
-        ))}
+
+        <div className="sd-request-grid">
+          <div className="sd-field">
+            <label className="sd-field-label" htmlFor="overview-destination">
+              Current destination
+            </label>
+            <select
+              id="overview-destination"
+              className="sd-select"
+              value={currentId}
+              onChange={(event) => setCurrentId(event.target.value)}
+            >
+              {destinations.map((destination) => (
+                <option key={destination.id} value={destination.id}>
+                  {destination.destination} — {destination.state}
+                </option>
+              ))}
+            </select>
+          </div>
+
+          <div className="sd-field">
+            <span className="sd-field-label">Tourist interests</span>
+            <div className="sd-opt-grid">
+              {TOURIST_INTERESTS.map((interest) => (
+                <button
+                  type="button"
+                  key={interest}
+                  className={cn(
+                    'sd-opt',
+                    selectedInterests.includes(interest) && 'is-on',
+                  )}
+                  onClick={() => toggleInterest(interest)}
+                  aria-pressed={selectedInterests.includes(interest)}
+                >
+                  {interest}
+                </button>
+              ))}
+            </div>
+          </div>
+
+          <div className="sd-field">
+            <span className="sd-field-label">Crowding preference</span>
+            <div className="sd-opt-row">
+              {CROWDING_PREFERENCES.map((option) => (
+                <button
+                  type="button"
+                  key={option}
+                  className={cn(
+                    'sd-opt',
+                    preference === option && 'is-on',
+                  )}
+                  onClick={() => setPreference(option)}
+                  aria-pressed={preference === option}
+                >
+                  {option}
+                </button>
+              ))}
+            </div>
+          </div>
+        </div>
       </Panel>
 
       <Panel
-        title="Competition Capabilities"
-        icon={LayoutGrid}
-        description="The four required capabilities this dashboard demonstrates."
+        title={`Destination snapshot — ${current?.destination ?? 'Not found'}`}
+        icon={Gauge}
+        description={`Key indicators for ${currentName}, updated live from your selections.`}
       >
-        <div className="sd-capability-grid sd-check-list">
-          {capabilities.map((item) => (
-            <div className="sd-check-item" key={item.title}>
-              <span className="sd-check-icon">
-                <item.icon size={15} strokeWidth={2.2} />
-              </span>
-              <div>
-                <h4>{item.title}</h4>
-                <p>{item.text}</p>
-              </div>
-            </div>
+        <div className="sd-kpi-grid">
+          {snapshot.map((kpi, index) => (
+            <KpiCard
+              key={kpi.id}
+              data={kpi}
+              icon={[Gauge, TriangleAlert, Wallet, TrainFront][index]}
+            />
           ))}
         </div>
       </Panel>
 
-      {railMetrics ? <RailModelPanel metrics={railMetrics} /> : null}
+      <div className="sd-cta-row">
+        <div className="sd-cta-copy">
+          <h2>Ready to explore alternatives?</h2>
+          <p>
+            See the full ranked list for {currentName}, re-ranked by your
+            interests and crowding preference.
+          </p>
+        </div>
+        <button
+          type="button"
+          className="sd-btn sd-btn--primary"
+          onClick={() => navigate('/find-alternative')}
+        >
+          <Sparkles size={16} />
+          Find Alternative Destination
+          <ArrowRight size={16} />
+        </button>
+      </div>
 
       <Panel
-        title="Data & Methodology"
-        icon={Database}
-        description="Data transparency for the prototype. The architecture is designed to integrate official tourism, economic and environmental datasets."
+        title="Where they are"
+        icon={MapIcon}
+        description="Your destination and its top alternatives on the map. Highlighted markers are enlarged."
+        note="Marker colors use the demonstration tourism pressure index."
       >
-        <DataDisclaimer />
-        <p
-          style={{
-            fontSize: 13.5,
-            color: 'var(--sd-c-ink-2)',
-            margin: '14px 0',
-          }}
-        >
-          Alternatives are ranked by a precomputed Sustainable Diversion model
-          over demonstration data, with strict time-based train/test splits for
-          the rail forecast. No generated value is presented as an official
-          government statistic. {eligibleCount} of {destinations.length}{' '}
-          destinations are eligible for recommendation.
-        </p>
+        <LoadingState loading={loading} />
+        <ErrorState message={error ?? ''} />
+        <TourismConcentrationMap
+          tourismPressure={tourismPressure}
+          highlightIds={mapHighlightIds}
+          height={420}
+        />
+      </Panel>
+
+      <Panel
+        title="Economic potential vs tourism pressure"
+        icon={ChartScatter}
+        description="Where each destination sits on the pressure–economic matrix. The recommended alternatives are highlighted."
+        note="Quadrant boundaries use the medians of the demonstration dataset. Analytical categories only, not official classifications."
+      >
+        <LoadingState loading={loading} />
+        <ErrorState message={error ?? ''} />
+        {!loading ? (
+          <PressureEconomicScatter highlightIds={scatterHighlightIds} />
+        ) : null}
+      </Panel>
+
+      <Panel
+        title="Why it matters"
+        icon={Sprout}
+        description="The three forces behind SMART DESTINATION AI."
+      >
+        <div className="sd-hero">
+          {pillars.map((pillar) => (
+            <div className="sd-hero-col" key={pillar.tag}>
+              <span className={`sd-hero-tag ${pillar.tagClass}`}>
+                <pillar.icon size={14} />
+                {pillar.tag}
+              </span>
+              <h2>{pillar.title}</h2>
+              <p>{pillar.text}</p>
+            </div>
+          ))}
+        </div>
       </Panel>
     </div>
   )

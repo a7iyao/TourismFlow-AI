@@ -1,70 +1,41 @@
-import {
-  CartesianGrid,
-  Cell,
-  ReferenceLine,
-  ResponsiveContainer,
-  Scatter,
-  ScatterChart,
-  Tooltip,
-  XAxis,
-  YAxis,
-} from 'recharts'
 import { ChartScatter, Gauge, Target } from 'lucide-react'
 import { PageHeader } from '../components/common/PageHeader'
 import { Panel } from '../components/common/Panel'
+import { PressureEconomicScatter } from '../components/charts/PressureEconomicScatter'
+import { quadrantKeyOf } from '../utils/quadrants'
+import type { QuadrantKey } from '../utils/quadrants'
 import { destinations } from '../data'
 
-const median = (values: number[]) => {
-  const sorted = [...values].sort((a, b) => a - b)
-  const middle = Math.floor(sorted.length / 2)
-  return sorted.length % 2 === 0
-    ? (sorted[middle - 1] + sorted[middle]) / 2
-    : sorted[middle]
-}
-
-const MEDIAN_PRESSURE = median(destinations.map((d) => d.tourismPressure))
-const MEDIAN_ECONOMIC = median(destinations.map((d) => d.economicPotential))
-
-type QuadrantKey = 'opportunity' | 'established' | 'emerging' | 'risk'
-
-function quadrantKeyOf(pressure: number, economic: number): QuadrantKey {
-  if (economic >= MEDIAN_ECONOMIC && pressure < MEDIAN_PRESSURE) return 'opportunity'
-  if (economic >= MEDIAN_ECONOMIC && pressure >= MEDIAN_PRESSURE) return 'established'
-  if (economic < MEDIAN_ECONOMIC && pressure < MEDIAN_PRESSURE) return 'emerging'
-  return 'risk'
-}
-
-const QUADRANT_COLOR: Record<QuadrantKey, string> = {
-  opportunity: '#13a08a',
-  established: '#3b82f6',
-  emerging: '#d9910b',
-  risk: '#dc4448',
-}
-
-const quadrants = [
+const quadrants: {
+  key: QuadrantKey
+  className: string
+  tag: string
+  title: string
+  text: string
+}[] = [
   {
-    key: 'opportunity' as const,
+    key: 'opportunity',
     className: 'sd-quadrant--opportunity',
     tag: 'Low Pressure + High Potential',
     title: 'Opportunity Destinations',
     text: 'Ready to absorb more demand and convert it into sustainable economic value.',
   },
   {
-    key: 'established' as const,
+    key: 'established',
     className: 'sd-quadrant--established',
     tag: 'High Pressure + High Potential',
     title: 'Established Destinations',
     text: 'Popular and valuable, but at risk of overcrowding. Prime candidates for demand redistribution.',
   },
   {
-    key: 'emerging' as const,
+    key: 'emerging',
     className: 'sd-quadrant--emerging',
     tag: 'Low Pressure + Low Potential',
     title: 'Emerging Destinations',
     text: 'Early-stage destinations that could grow with targeted support and visibility.',
   },
   {
-    key: 'risk' as const,
+    key: 'risk',
     className: 'sd-quadrant--risk',
     tag: 'High Pressure + Low Potential',
     title: 'Pressure Risk',
@@ -72,15 +43,13 @@ const quadrants = [
   },
 ]
 
-const data = destinations.map((destination) => {
-  const point = {
-    name: destination.destination,
-    pressure: destination.tourismPressure,
-    economic: destination.economicPotential,
-    crowding: destination.crowdingLevel,
-  }
-  return { ...point, quadrant: quadrantKeyOf(point.pressure, point.economic) }
-})
+const data = destinations.map((destination) => ({
+  name: destination.destination,
+  quadrant: quadrantKeyOf(
+    destination.tourismPressure,
+    destination.economicPotential,
+  ),
+}))
 
 const categoryCounts = data.reduce<Record<QuadrantKey, number>>(
   (counts, point) => {
@@ -105,56 +74,7 @@ export function EconomicPotentialPage() {
         description="Tourism pressure on the horizontal axis, economic potential on the vertical axis. Hover a bubble to inspect it."
         note="Quadrant boundaries use the medians of the demonstration dataset. Analytical categories only, not official classifications."
       >
-        <div className="sd-chart">
-          <ResponsiveContainer width="100%" height={440}>
-            <ScatterChart margin={{ top: 16, right: 24, bottom: 16, left: 8 }}>
-              <CartesianGrid strokeDasharray="3 3" />
-              <XAxis
-                type="number"
-                dataKey="pressure"
-                name="Tourism Pressure"
-                domain={[0, 100]}
-                tick={{ fontSize: 12 }}
-                label={{ value: 'Tourism Pressure', position: 'insideBottom', offset: -6, fontSize: 12 }}
-              />
-              <YAxis
-                type="number"
-                dataKey="economic"
-                name="Economic Potential"
-                domain={[0, 100]}
-                tick={{ fontSize: 12 }}
-                label={{ value: 'Economic Potential', angle: -90, position: 'insideLeft', fontSize: 12 }}
-              />
-              <Tooltip
-                cursor={{ strokeDasharray: '3 3' }}
-                formatter={(value, name) => [
-                  `${value == null ? '—' : `${value}/100`}`,
-                  String(name),
-                ]}
-              />
-              <ReferenceLine
-                x={MEDIAN_PRESSURE}
-                stroke="#6b7c84"
-                strokeDasharray="4 4"
-                label={{ value: 'median pressure', fontSize: 11, fill: '#6b7c84', position: 'insideTopRight' }}
-              />
-              <ReferenceLine
-                y={MEDIAN_ECONOMIC}
-                stroke="#6b7c84"
-                strokeDasharray="4 4"
-                label={{ value: 'median economic', fontSize: 11, fill: '#6b7c84', position: 'insideTopRight' }}
-              />
-              <Scatter data={data} name="Destinations">
-                {data.map((point) => (
-                  <Cell
-                    key={point.name}
-                    fill={QUADRANT_COLOR[point.quadrant]}
-                  />
-                ))}
-              </Scatter>
-            </ScatterChart>
-          </ResponsiveContainer>
-        </div>
+        <PressureEconomicScatter />
       </Panel>
 
       <Panel

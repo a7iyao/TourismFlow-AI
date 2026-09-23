@@ -12,6 +12,7 @@ interface RecommendationCardProps {
   rank: number
   recommendation: RankedRecommendation
   onCompare: (destination: string) => void
+  onViewMap?: () => void
 }
 
 function formatChip(value: number | null): string {
@@ -24,6 +25,7 @@ export function RecommendationCard({
   rank,
   recommendation,
   onCompare,
+  onViewMap,
 }: RecommendationCardProps) {
   const {
     destination,
@@ -98,6 +100,16 @@ export function RecommendationCard({
       </div>
 
       <div className="sd-rec-actions">
+        {onViewMap ? (
+          <button
+            type="button"
+            className="sd-btn sd-btn--ghost"
+            onClick={onViewMap}
+          >
+            <MapPin size={15} />
+            View on Map
+          </button>
+        ) : null}
         <button
           type="button"
           className="sd-btn sd-btn--ghost"
